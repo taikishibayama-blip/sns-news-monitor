@@ -1698,5 +1698,39 @@
     "jp_status": "❓不明",
     "jp_note": "Google Ads APIは全世界共通ですが、v20.2の具体的な変更内容が記載されていないため、日本での対応可否を判定できません。",
     "detected_at": "2026-04-27T04:13:38.079057"
+  },
+  {
+    "item": {
+      "platform": "Meta",
+      "source_name": "Meta Newsroom (about.fb.com)",
+      "title": "Powering AI, Strengthening the Grid: Innovation in Space Solar Energy and Long-Duration Storage",
+      "url": "https://about.fb.com/news/2026/04/powering-ai-strengthening-the-grid-space-solar-energy-and-long-duration-storage/",
+      "summary": "<div><img alt=\"\" class=\"attachment-large size-large wp-post-image\" height=\"501\" src=\"https://about.fb.com/wp-content/uploads/2026/04/Innovative-Energy-Solutions_Thumbnail.gif?fit=890%2C501\" style=\"margin-bottom: 15px;\" width=\"890\" /></div>\n<p>We’re announcing two partnerships to help deliver the reliable power our AI infrastructure and data centers need by advancing innovative energy generation and storage.</p>\n<p>The post <a href=\"https://about.fb.com/news/2026/04/powering-ai-strengthening-the-",
+      "published": "Mon, 27 Apr 2026 10:00:08 +0000"
+    },
+    "importance": "低",
+    "category": "その他",
+    "summary_ja": "MetaがAIインフラとデータセンターの電力供給を確保するため、宇宙太陽光発電と長期間蓄電に関する2つのパートナーシップを発表しました。広告運用には直接影響がありません。",
+    "impact": "SNS広告の運用者には実質的な影響なし。Metaのインフラ整備に関する企業ニュース。",
+    "jp_status": "❓不明",
+    "jp_note": "企業のエネルギー戦略に関するニュースで、広告プラットフォーム運用との関連情報が記事内容に含まれていないため判定不可。",
+    "detected_at": "2026-04-27T12:09:46.898436"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Data API Revision History",
+      "title": "October 30, 2024",
+      "url": "https://developers.google.com/youtube/v3/revision_history#october-30,-2024",
+      "summary": "",
+      "published": ""
+    },
+    "importance": "低",
+    "category": "API",
+    "summary_ja": "YouTube Data APIの10月30日付けのリビジョン履歴更新です。具体的な変更内容の詳細が提供されていないため、軽微な修正やドキュメント更新の可能性があります。",
+    "impact": "API統合を行っているシステム運用者は念のため確認推奨だが、破壊的変更の可能性は低い。",
+    "jp_status": "❓不明",
+    "jp_note": "YouTube Data APIは日本を含む全世界で提供されていますが、このリビジョン更新の具体的内容が不明なため、日本への影響可否は判断できません。",
+    "detected_at": "2026-04-27T12:09:49.473531"
   }
 ]
