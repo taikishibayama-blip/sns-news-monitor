@@ -1,0 +1,1685 @@
+[
+  {
+    "item": {
+      "platform": "X",
+      "source_name": "X Developer Community Announcements",
+      "title": "X API Pricing Update: Owned Reads Now $0.001 + Other Changes Effective April 20, 2026",
+      "url": "https://devcommunity.x.com/t/x-api-pricing-update-owned-reads-now-0-001-other-changes-effective-april-20-2026/263025",
+      "summary": "<p>Hello X API developers,</p>\n<p>We’re excited to announce an update to our X API pricing that makes accessing <strong>your own data</strong> more affordable than ever.</p>\n<p><strong>Owned Reads</strong> are requests made by your own developer app for your own posts, bookmarks, followers, likes, lists &amp; more.</p>\n<p>Starting <strong>Monday, April 20, 2026</strong>, these endpoints will be priced at <strong>$0.001 per resource</strong> (equivalently, 1,000 resources for $1):</p>\n<ul>\n<li><s",
+      "published": "Thu, 16 Apr 2026 23:08:23 +0000"
+    },
+    "importance": "中",
+    "category": "課金",
+    "summary_ja": "X APIの価格改定により、自分自身のデータを取得する「Owned Reads」が2026年4月20日から1リソース0.001ドルになります。これまでより大幅に安くなるため、開発者にとって運用コストが削減される見込みです。",
+    "impact": "X API利用開発者の課金額が低下し、特に自社データの取得ランニングコストが大幅に削減される。",
+    "jp_status": "❓不明",
+    "jp_note": "X APIのグローバル向けアナウンスであり、日本除外の明記はありませんが、ロケーション指定が記載されていません。X APIは一般的にグローバル共通の仕様ですが、確実には判断できません。",
+    "detected_at": "2026-04-27T11:59:27.771048"
+  },
+  {
+    "item": {
+      "platform": "X",
+      "source_name": "X Developer Community Announcements",
+      "title": "Deprecation of Account Activity Replay Endpoint",
+      "url": "https://devcommunity.x.com/t/deprecation-of-account-activity-replay-endpoint/260354",
+      "summary": "<p>Hello everyone,</p>\n<p>As part of our ongoing work to simplify the X API and consolidate webhook-related endpoints, we are deprecating the legacy replay endpoint.</p>\n<h3><a class=\"anchor\" href=\"https://devcommunity.x.com#p-506060-endpoint-being-deprecated-1\" name=\"p-506060-endpoint-being-deprecated-1\"></a>Endpoint Being Deprecated</h3>\n<ul>\n<li><strong>Old endpoint:</strong> <code>POST /2/account_activity/replay/webhooks/{webhook_id}/subscriptions/all</code></li>\n</ul>\n<p><strong>Effective d",
+      "published": "Fri, 20 Mar 2026 21:19:42 +0000"
+    },
+    "importance": "高",
+    "category": "API",
+    "summary_ja": "Xの広告運用に関連するAccount Activity Replay Endpointが廃止されます。このAPIを使用している場合は、新しいエンドポイントへの移行が必要です。",
+    "impact": "Account Activity Replay Endpointを使用したWebhook連携システムは停止するため、代替エンドポイントへの早期移行が必須",
+    "jp_status": "❓不明",
+    "jp_note": "廃止対象がAPI仕様の変更であるため、ロケーション制限の明記がなく日本への適用状況が不明確",
+    "detected_at": "2026-04-27T11:59:30.231993"
+  },
+  {
+    "item": {
+      "platform": "X",
+      "source_name": "X Developer Community Announcements",
+      "title": "Updates to Event Types format in the X Activity API",
+      "url": "https://devcommunity.x.com/t/updates-to-event-types-format-in-the-x-activity-api/259765",
+      "summary": "<p>We are deprecating the PascalCase format for event types in the <strong>X Activity API</strong>.</p>\n<p>This change will take effect on <strong>March 18, 2026</strong>. After that date, the old PascalCase event type values will no longer be delivered or accepted.</p>\n<h3><a class=\"anchor\" href=\"https://devcommunity.x.com#p-505304-whats-changing-1\" name=\"p-505304-whats-changing-1\"></a>What’s changing</h3>\n<p>All event types will move to the new <strong>dot-separated lowercase</strong> format (",
+      "published": "Fri, 13 Mar 2026 19:40:21 +0000"
+    },
+    "importance": "高",
+    "category": "API",
+    "summary_ja": "X Activity APIのイベントタイプの形式が2026年3月18日に変更され、PascalCase形式から小文字のドット区切り形式に統一されます。変更日以降は古い形式の値は配信・受け付けられなくなるため、連携システムの修正が必要になります。",
+    "impact": "X Activity APIを利用する広告管理ツールやデータ分析システムは、指定期日までにイベントタイプの形式に対応する必要があり、対応なければAPIの動作が停止するリスクがある。",
+    "jp_status": "✅利用可能",
+    "jp_note": "X Activity APIは日本を含む全世界で提供されており、API仕様変更は全ユーザーに適用される。",
+    "detected_at": "2026-04-27T11:59:33.091173"
+  },
+  {
+    "item": {
+      "platform": "X",
+      "source_name": "X Developer Community Announcements",
+      "title": "X API v2 Update: Addressing LLM-Generated Spam",
+      "url": "https://devcommunity.x.com/t/x-api-v2-update-addressing-llm-generated-spam/257909",
+      "summary": "<p>Hello X Developer Community,</p>\n<p>We’re making an important update to the X API v2 to address the growing issue of LLM-generated spam activity on the platform.</p>\n<p>Programmatic replies have been heavily used by developers (including AI-assisted ones) to insert low-quality or automated content into conversations, creating a significant spam problem that threatens the quality of discussions on X.</p>\n<h2><a class=\"anchor\" href=\"https://devcommunity.x.com#p-502688-whats-changing-1\" name=\"p-",
+      "published": "Mon, 23 Feb 2026 23:52:31 +0000"
+    },
+    "importance": "高",
+    "category": "API",
+    "summary_ja": "X APIがLLM生成スパムに対応するため、プログラマティック返信機能に制限を追加します。これにより開発者が自動化されたコンテンツを大量投稿することが難しくなります。",
+    "impact": "X APIを使用して自動返信やBot運用を行っている広告主・開発者は、既存のシステムが動作しなくなる可能性があり、至急仕様確認が必要です。",
+    "jp_status": "✅利用可能",
+    "jp_note": "Xは日本でも主要プラットフォームであり、API v2はグローバル対応のため日本ユーザーにも適用されます。",
+    "detected_at": "2026-04-27T11:59:35.692341"
+  },
+  {
+    "item": {
+      "platform": "X",
+      "source_name": "X Developer Community Announcements",
+      "title": "Announcing the Launch of X API Pay-Per-Use Pricing",
+      "url": "https://devcommunity.x.com/t/announcing-the-launch-of-x-api-pay-per-use-pricing/256476",
+      "summary": "<p>Hello X Developers,</p>\n<p>We’re thrilled to officially announce the launch of our new <strong>X API Pay-Per-Use</strong> pricing model! This update is designed to empower the heart of our developer community: indie builders, early-stage products, startups, and hobbyists. Our goal is to open up the X API ecosystem wider than ever before, sparking a fresh wave of innovative, next-generation X apps.</p>\n<h2><a class=\"anchor\" href=\"https://devcommunity.x.com#p-500827-key-details-on-the-transitio",
+      "published": "Fri, 06 Feb 2026 21:09:02 +0000"
+    },
+    "importance": "高",
+    "category": "課金",
+    "summary_ja": "X APIの新しい料金体系「Pay-Per-Use」がローンチされました。これまでのサブスクリプション型から使用量に応じた支払いへの変更で、特にスタートアップや個人開発者の参入が容易になります。",
+    "impact": "X API利用者の課金方式が変わるため、既存の開発予算管理やコスト試算の見直しが必要になる可能性があります。",
+    "jp_status": "❓不明",
+    "jp_note": "公式発表はグローバル向けで、日本市場での適用時期や対応状況についての明記がない。X APIの日本でのサービス対応状況確認が必要。",
+    "detected_at": "2026-04-27T11:59:38.751787"
+  },
+  {
+    "item": {
+      "platform": "X",
+      "source_name": "X Developer Community Announcements",
+      "title": "Deprecating count-based operators in the X API",
+      "url": "https://devcommunity.x.com/t/deprecating-count-based-operators-in-the-x-api/254933",
+      "summary": "<p>We are deprecating certain engagement-based filters in the X API.</p>\n<p>This means that the following operators will not work with the <code>/2/tweets/search/recent</code> and <code>/2/tweets/search/all</code> <a href=\"https://docs.x.com/x-api/posts/search/introduction\">Search endpoints</a>:</p>\n<ul>\n<li><code>min_likes</code></li>\n<li><code>min_replies</code></li>\n<li><code>min_reposts</code></li>\n</ul>\n<p><strong>Note:</strong> Operators like <code>followers_count</code>, <code>tweets_coun",
+      "published": "Mon, 19 Jan 2026 22:59:03 +0000"
+    },
+    "importance": "高",
+    "category": "API",
+    "summary_ja": "X APIで使用されていた「min_likes」「min_replies」「min_reposts」といったエンゲージメント関連フィルタが廃止されます。これらのオペレータは検索エンドポイントで機能しなくなるため、これらを使用している開発者は修正が必要です。",
+    "impact": "X APIの検索機能を使用している広告分析ツールやソーシャルリスニングツールなどが動作しなくなる可能性があり、迅速な対応が求められる。",
+    "jp_status": "✅利用可能",
+    "jp_note": "X APIは世界共通のため、日本のユーザーも同様に影響を受けます。廃止される仕様は全地域共通です。",
+    "detected_at": "2026-04-27T11:59:41.569556"
+  },
+  {
+    "item": {
+      "platform": "X",
+      "source_name": "X Developer Community Announcements",
+      "title": "Announcement: OAuth2.0 support added to Account Activity API v2",
+      "url": "https://devcommunity.x.com/t/announcement-oauth2-0-support-added-to-account-activity-api-v2/254633",
+      "summary": "<p>Hello X Developer Community,</p>\n<p>We’re excited to announce that Account Activity API v2 now fully supports OAuth2! This update provides more flexibility and security for your applications, allowing for fine-grained control over user permissions.</p>\n<p><strong>Key Changes:</strong></p>\n<ul>\n<li><strong>OAuth2 Scope Support</strong>: Developers can now create subscriptions using OAuth2 and request specific scopes tailored to your app’s needs. For example, if your app only requires access to",
+      "published": "Thu, 15 Jan 2026 20:20:23 +0000"
+    },
+    "importance": "中",
+    "category": "API",
+    "summary_ja": "X（Twitter）の Account Activity API v2 が OAuth2.0 に対応しました。これにより、開発者はより細かい権限制御と安全な認証が可能になります。",
+    "impact": "API を利用する広告管理ツールやマーケティングオートメーション等の開発者が、セキュリティを向上させて運用できるようになる。",
+    "jp_status": "✅利用可能",
+    "jp_note": "X API は日本を含む全世界で利用可能であり、地域制限の記載がない。",
+    "detected_at": "2026-04-27T11:59:43.786885"
+  },
+  {
+    "item": {
+      "platform": "X",
+      "source_name": "X Developer Community Announcements",
+      "title": "Introducing X API Playground: Local Development Tool for X API v2",
+      "url": "https://devcommunity.x.com/t/introducing-x-api-playground-local-development-tool-for-x-api-v2/253442",
+      "summary": "<p>Hello X Developer Community!</p>\n<p>We’re excited to announce the release of <a href=\"https://github.com/xdevplatform/playground\">X API Playground</a>, a standalone tool for local development and testing with the X API v2. It provides a self-hosted server that emulates API endpoints, allowing you to build, test, and explore integrations without real API calls or rate limits.</p>\n<h4><a class=\"anchor\" href=\"https://devcommunity.x.com#p-496721-key-features-1\" name=\"p-496721-key-features-1\"></a>",
+      "published": "Tue, 23 Dec 2025 01:26:46 +0000"
+    },
+    "importance": "低",
+    "category": "新機能",
+    "summary_ja": "X APIの開発者向けローカルテストツール「X API Playground」がリリースされました。このツールを使うと、実際のAPI呼び出しやレート制限を気にせずに、ローカル環境でAPIの動作を確認・テストできます。",
+    "impact": "X API連携を開発している開発者の開発効率が向上するが、広告運用者への直接的な影響は限定的。",
+    "jp_status": "❓不明",
+    "jp_note": "開発者向けツールのリリース発表のため、地域制限についての記載がない。GitHubで公開されているため、日本からのアクセス・利用は技術的には可能と想定されるが、公式な日本対応表記なし。",
+    "detected_at": "2026-04-27T11:59:46.961259"
+  },
+  {
+    "item": {
+      "platform": "X",
+      "source_name": "X Developer Community Announcements",
+      "title": "Announcing the News endpoints in the X API v2",
+      "url": "https://devcommunity.x.com/t/announcing-the-news-endpoints-in-the-x-api-v2/251833",
+      "summary": "<p>We are excited to announce the <a href=\"https://docs.x.com/x-api/news/introduction\">News endpoints</a> in the X API v2 <img alt=\":tada:\" class=\"emoji\" height=\"20\" src=\"https://emoji.discourse-cdn.com/twitter/tada.png?v=15\" title=\":tada:\" width=\"20\" /></p>\n<p>Developers will have access to 2 new endpoints for News:</p>\n<ol>\n<li><a href=\"https://docs.x.com/x-api/news/search-news\">Search News</a> that allows you to get trending news for a given query</li>\n<li><a href=\"https://docs.x.com/x-api/ne",
+      "published": "Wed, 19 Nov 2025 19:52:17 +0000"
+    },
+    "importance": "中",
+    "category": "API",
+    "summary_ja": "X API v2に新しいニュース検索機能が追加されました。トレンドニュースを取得できるSearch NewsエンドポイントとGet Newsエンドポイントの2つが利用可能になります。開発者はこれらのAPIを使ってニュースデータを取得・活用できるようになります。",
+    "impact": "X APIを利用した開発者が新しいニュースデータ機能を活用でき、ニュース関連のアプリケーションやツール開発の選択肢が増える。",
+    "jp_status": "❓不明",
+    "jp_note": "公式発表に日本特有の制限や地域限定の記載がないが、APIの全世界展開状況が明示されていないため不明と判定。",
+    "detected_at": "2026-04-27T11:59:49.915834"
+  },
+  {
+    "item": {
+      "platform": "X",
+      "source_name": "X Developer Community Announcements",
+      "title": "Testing developer badging for Login with X developer apps",
+      "url": "https://devcommunity.x.com/t/testing-developer-badging-for-login-with-x-developer-apps/251525",
+      "summary": "<p>We are currently testing a feature designed to identify potential bad actors within the ‘Login with X’ functionality. This involves applying an ‘<em>Untrusted Developer</em>’ badge to select developer applications. Consequently, certain developers may observe this badge on their developer applications during the ‘Login with X’ process.</p>\n<p>We are in the final stages of refining this mechanism and anticipate a broad rollout within the next week. Should your developer application previously ",
+      "published": "Thu, 13 Nov 2025 20:29:20 +0000"
+    },
+    "importance": "中",
+    "category": "ポリシー",
+    "summary_ja": "XがLogin with X機能において、信頼できない開発者を特定するためのバッジシステムをテスト中です。悪質な開発者を見分けやすくするための仕組みで、来週中に全体展開される予定です。",
+    "impact": "Login with Xを使用している開発者は、信頼スコアの低い場合にバッジが表示され、ユーザー信頼度が低下する可能性がある。",
+    "jp_status": "❓不明",
+    "jp_note": "Login with X機能自体は日本でも利用されていますが、このバッジシステムのテスト範囲や日本での展開時期について記載がないため。",
+    "detected_at": "2026-04-27T11:59:52.909762"
+  },
+  {
+    "item": {
+      "platform": "X",
+      "source_name": "X Developer Community Announcements",
+      "title": "Announcing the Python and Typescript XDKs for the X API v2",
+      "url": "https://devcommunity.x.com/t/announcing-the-python-and-typescript-xdks-for-the-x-api-v2/250860",
+      "summary": "<p>We’re delighted to introduce our official, first-party XDKs (X Developer Kit) in <a href=\"https://docs.x.com/xdks/python/overview\">Python</a> and <a href=\"https://docs.x.com/xdks/typescript/overview\">Typescript</a> designed to streamline your development workflow with the X API. Whether you’re exploring real-time social analytics or developing X data powered applications, these XDKs enable you to leverage X’s rich ecosystem of conversations, trends, and user insights with ease.</p>\n<p>You don",
+      "published": "Mon, 03 Nov 2025 20:05:08 +0000"
+    },
+    "importance": "中",
+    "category": "API",
+    "summary_ja": "X APIの公式開発キット（XDK）がPythonとTypescriptで提供開始されました。開発者はこれらのツールを使用してX APIとの連携が簡単になり、リアルタイム分析やデータ活用アプリケーション開発が効率化されます。",
+    "impact": "X API v2を使用する開発者の開発効率が向上し、実装の複雑さが軽減される。",
+    "jp_status": "✅利用可能",
+    "jp_note": "X公式の開発キットは全世界共通のツールであり、日本の開発者も同等に利用可能。X Developerドキュメントは日本含む全地域で標準提供。",
+    "detected_at": "2026-04-27T11:59:55.713172"
+  },
+  {
+    "item": {
+      "platform": "X",
+      "source_name": "X Developer Community Announcements",
+      "title": "Announcing the X API Pay-Per-Use Pricing Pilot",
+      "url": "https://devcommunity.x.com/t/announcing-the-x-api-pay-per-use-pricing-pilot/250253",
+      "summary": "<p>Hello X Developer Community,</p>\n<p>We are thrilled to introduce a pilot program for X API Pay-Per-Use Pricing! This new approach lets developers pay solely for the API requests they make, using a flexible credit-based system.</p>\n<p><strong>Important Note</strong>: <em>This is a limited pilot program only, not a full product launch. It won’t be available to all developers, and there’s no guarantee it will become a permanent offering.</em></p>\n<h2><a class=\"anchor\" href=\"https://devcommunity.",
+      "published": "Mon, 20 Oct 2025 23:13:56 +0000"
+    },
+    "importance": "高",
+    "category": "課金",
+    "summary_ja": "X APIの新しい料金体系パイロットプログラムが発表されました。開発者は使用した分だけをクレジット制で支払う従量課金方式が選べるようになります。ただしこれは限定的なパイロット程度で、全開発者に提供されるか未定です。",
+    "impact": "X API利用企業・開発者の課金方式が変わる可能性があり、既存の契約形態や予算計画に影響する可能性がある。",
+    "jp_status": "❓不明",
+    "jp_note": "パイロット対象地域やロケーション制限に関する記載がないため、日本での提供可否は不明。開発者向けアナウンスのため、実装予定やロールアウト時期の情報も現段階では不足。",
+    "detected_at": "2026-04-27T11:59:59.237137"
+  },
+  {
+    "item": {
+      "platform": "X",
+      "source_name": "X Developer Community Announcements",
+      "title": "Announcing the X Activity API Open Beta",
+      "url": "https://devcommunity.x.com/t/announcing-the-x-activity-api-open-beta/250099",
+      "summary": "<p><strong>Announcing the new X Activity API (XAA)</strong></p>\n<p>We are excited to announce a public beta of the <a href=\"https://docs.x.com/x-api/activity/introduction\">X Activity API (XAA)</a> - a new suite of endpoints for developers designed to deliver real-time signals from X.</p>\n<p>A developer can subscribe to events they are interested in such as <code>ProfileBioUpdate</code>, <code>ProfilePictureUpdate</code> etc. and filter for the User ID whose events they want. The matching events ",
+      "published": "Sat, 18 Oct 2025 00:17:06 +0000"
+    },
+    "importance": "中",
+    "category": "API",
+    "summary_ja": "Xが新しいActivity APIのオープンベータを開始しました。このAPIを使うと、プロフィール更新などのリアルタイムイベントを監視・取得できます。広告運用者は顧客行動の追跡や自動化に活用できる可能性があります。",
+    "impact": "広告運用ツールやアナリティクス機能を開発する事業者が、ユーザー活動データをより詳細に取得できるようになり、ターゲティングやリターゲティング戦略の最適化が進む可能性がある。",
+    "jp_status": "❓不明",
+    "jp_note": "発表文に地域制限の記載がなく、オープンベータの対象国が明示されていないため判断できません。X APIの通例では全世界対応が多いですが、確実な情報がないため不明とします。",
+    "detected_at": "2026-04-27T12:00:02.538063"
+  },
+  {
+    "item": {
+      "platform": "X",
+      "source_name": "X Developer Community Announcements",
+      "title": "X API - Service Outage",
+      "url": "https://devcommunity.x.com/t/x-api-service-outage/249973",
+      "summary": "<p>Hello X Developers,</p>\n<p>We are currently experiencing a system outage with X API Streaming endpoints. We are noticing frequent disconnects with streaming endpoints.</p>\n<p>Our engineering team is aware of the issue and is actively working on resolving it.<br />\nPlease refer to <a href=\"https://docs.x.com/status\">X Developer Platform Status - X</a> for latest updates.</p>\n<p>Thank you<br />\nX Developer Platform Team</p>\n            <p><small>5 posts - 2 participants</small></p>\n            ",
+      "published": "Wed, 15 Oct 2025 14:18:45 +0000"
+    },
+    "importance": "高",
+    "category": "API",
+    "summary_ja": "X APIのストリーミングエンドポイント（リアルタイムデータ取得機能）で障害が発生しており、頻繁に接続が切れている状態です。エンジニアチームが対応中であり、最新情報はX Developer Platform Statusページで確認できます。",
+    "impact": "ストリーミングAPIを利用した運用（リアルタイム監視、自動化ツール等）が機能しないため、即座の対応と監視が必要",
+    "jp_status": "✅利用可能",
+    "jp_note": "X APIは日本を含む全世界で提供されており、この障害は全地域に影響する",
+    "detected_at": "2026-04-27T12:00:05.368424"
+  },
+  {
+    "item": {
+      "platform": "X",
+      "source_name": "X Developer Community Announcements",
+      "title": "Announcing Post Editing via the X API",
+      "url": "https://devcommunity.x.com/t/announcing-post-editing-via-the-x-api/249534",
+      "summary": "<p>Hello X Developers!</p>\n<p>We’re excited to announce a highly requested feature: the ability to programmatically edit your posts using the X API! This update allows you to update the text of a recent post.</p>\n<h3><a class=\"anchor\" href=\"https://devcommunity.x.com#p-491342-requirements-1\" name=\"p-491342-requirements-1\"></a>Requirements</h3>\n<p>As with editing posts on X, the authenticated user must have X Premium to edit original posts.<br />\nRead <a href=\"https://help.x.com/en/using-x/edit-t",
+      "published": "Fri, 03 Oct 2025 21:49:48 +0000"
+    },
+    "importance": "中",
+    "category": "API",
+    "summary_ja": "X APIで投稿の編集機能がプログラムで利用できるようになりました。X Premiumユーザーのみが対象で、APIを通じて最近投稿したコンテンツのテキストを更新できます。",
+    "impact": "X APIを使う開発者や企業の自動投稿・コンテンツ管理システムが投稿編集に対応でき、運用の柔軟性が向上する",
+    "jp_status": "❓不明",
+    "jp_note": "公開ドキュメントに日本国内での提供状況が明記されていないため判定不可。X Premiumはグローバル機能だが、API機能のロールアウト対象地域が未記載",
+    "detected_at": "2026-04-27T12:00:08.342686"
+  },
+  {
+    "item": {
+      "platform": "X",
+      "source_name": "X Developer Community Announcements",
+      "title": "Announcing the Filtered Stream Webhooks API",
+      "url": "https://devcommunity.x.com/t/announcing-the-filtered-stream-webhooks-api/248464",
+      "summary": "<p>We’re excited to unveil the <a href=\"https://docs.x.com/x-api/webhooks/stream/introduction\">Filtered Stream Webhooks API</a> that allows developers to filter and stream public Posts in real-time with a webhook-based delivery system. This API allows you to create and manage rules to filter Posts based on specific criteria, delivering content relevant to your application.</p>\n<p><strong>Rule-Based Filtering</strong></p>\n<p>Developers can use the existing <a href=\"https://docs.x.com/x-api/posts/",
+      "published": "Tue, 09 Sep 2025 21:57:03 +0000"
+    },
+    "importance": "中",
+    "category": "API",
+    "summary_ja": "XがFiltered Stream Webhooks APIを発表しました。このAPIを使うと、開発者は指定した条件に基づいてリアルタイムで公開ポストをフィルタリングし、ウェブフック経由で受け取ることができます。ルールベースのフィルタリング機能が提供されます。",
+    "impact": "X APIを使用したアプリケーション開発者にとって、リアルタイムのコンテンツ配信機能が新たに利用可能になるため、アプリやサービスの拡張性が向上します。",
+    "jp_status": "❓不明",
+    "jp_note": "発表文にロケーション制限や日本での利用可否に関する記載がなく、判断材料不足。APIドキュメントの詳細確認が必要です。",
+    "detected_at": "2026-04-27T12:00:11.979870"
+  },
+  {
+    "item": {
+      "platform": "X",
+      "source_name": "X Developer Community Announcements",
+      "title": "Update to X API Free Tier: Removal of Like and Follow Endpoints",
+      "url": "https://devcommunity.x.com/t/update-to-x-api-free-tier-removal-of-like-and-follow-endpoints/247646",
+      "summary": "<p>Dear X Developer Community,</p>\n<p>We are committed to fostering a healthy, authentic environment on the X platform where genuine interactions thrive. To further our efforts in combating abuse, platform manipulation, and fake engagement, we have made the decision to restrict access to specific endpoints in the X API Free tier.</p>\n<h2><a class=\"anchor\" href=\"https://devcommunity.x.com#p-488818-whats-changing-1\" name=\"p-488818-whats-changing-1\"></a>What’s Changing?</h2>\n<p>Effective immediatel",
+      "published": "Fri, 22 Aug 2025 00:37:21 +0000"
+    },
+    "importance": "高",
+    "category": "API",
+    "summary_ja": "X APIの無料ティアから「いいね」と「フォロー」機能が削除されます。不正利用対策の一環として即座に実施される変更で、これらのエンドポイントにアクセスできなくなります。",
+    "impact": "X APIの無料ティアを使用している開発者・ツール運用者は、いいね・フォロー機能を含むアプリケーションが動作不能になるため、早急な対応が必要",
+    "jp_status": "✅利用可能",
+    "jp_note": "X APIは世界共通仕様で、日本ユーザーも同じAPI制限の対象となります。プラットフォームの地域差別はなく、即座に適用される公式アナウンスのため",
+    "detected_at": "2026-04-27T12:00:17.746515"
+  },
+  {
+    "item": {
+      "platform": "X",
+      "source_name": "X Developer Community Announcements",
+      "title": "X API - Service Outages (05/22/25)",
+      "url": "https://devcommunity.x.com/t/x-api-service-outages-05-22-25/242998",
+      "summary": "<blockquote>\n<p><strong>UPDATE (05/23/25 17:35 UTC):</strong><br />\nThanks for your patience!</p>\n<ul>\n<li>Issues related to X API services (Filtered Stream v2, Account Activity API, Developer Portal, etc.) <strong>have now been resolved</strong>.</li>\n<li>Login with X (OAuth) and other X platform login flows <strong>may still be experiencing degraded performance</strong>.</li>\n</ul>\n</blockquote>\n<hr />\n<p>Hello X Developers,</p>\n<p>We are currently experiencing a systems outage that may negati",
+      "published": "Thu, 22 May 2025 23:13:50 +0000"
+    },
+    "importance": "高",
+    "category": "API",
+    "summary_ja": "X APIの複数サービス（Filtered Stream v2、Account Activity API等）が障害の影響を受けましたが、2025年5月23日時点でほぼ復旧しました。ただしOAuth認証機能は引き続きパフォーマンス低下の可能性があります。",
+    "impact": "X API連携の広告管理ツールやダッシュボードの動作が一時的に停止・遅延し、キャンペーン管理に支障が出る可能性があった。",
+    "jp_status": "✅利用可能",
+    "jp_note": "X APIは日本を含む全世界で利用可能なため、この障害は日本のユーザーにも影響。復旧報告があるため現在は通常運用に戻っている見込み。",
+    "detected_at": "2026-04-27T12:00:21.391787"
+  },
+  {
+    "item": {
+      "platform": "X",
+      "source_name": "X Developer Community Announcements",
+      "title": "Account Activity API is now available in v2",
+      "url": "https://devcommunity.x.com/t/account-activity-api-is-now-available-in-v2/242895",
+      "summary": "<p>Dear X Developer Community,</p>\n<p>We’re excited to announce that the Account Activity API v2 is now available in the X API, to manage webhooks, event subscriptions and for real-time events.</p>\n<p>New Webhooks v2 endpoints:</p>\n<p>You can manage webhooks using the below endpoints:</p>\n<p>POST /2/webhooks<br />\nGET /2/webhooks<br />\nDELETE /2/webhooks/:webhook_id<br />\nPUT /2/webhooks/:webhook_id</p>\n<p>New AAAPI v2 endpoints:</p>\n<p>POST /2/account_activity/webhooks/:webhook_id/subscriptions",
+      "published": "Tue, 20 May 2025 23:08:53 +0000"
+    },
+    "importance": "中",
+    "category": "API",
+    "summary_ja": "XのAccount Activity API v2がリリースされ、ウェブフック管理とリアルタイムイベント取得の新エンドポイントが利用可能になりました。既存のv1からの移行が必要になる可能性があります。",
+    "impact": "X APIを使用する広告自動化ツールやリアルタイム監視システムの開発者は、v2への移行計画を立てる必要があります。",
+    "jp_status": "❓不明",
+    "jp_note": "公式発表に日本の可用性について言及がなく、X APIは通常グローバル対応ですが、明確な記載がないため不明と判定。",
+    "detected_at": "2026-04-27T12:00:24.142230"
+  },
+  {
+    "item": {
+      "platform": "X",
+      "source_name": "X Developer Community Announcements",
+      "title": "Upcoming Change to X API DM Events Endpoints Behavior",
+      "url": "https://devcommunity.x.com/t/upcoming-change-to-x-api-dm-events-endpoints-behavior/241841",
+      "summary": "<blockquote>\n<p><strong>UPDATE:</strong><br />\nThe date of this change has been updated from <strong>May 30, 2025</strong> to <strong>June 3, 2025</strong>.</p>\n</blockquote>\n<hr />\n<p>Dear X API Developers,</p>\n<p>We’re announcing an important update to the X API’s DM Events endpoints to address a bug introduced on July 8, 2024. This change will restore the original intended behavior for the following endpoints:</p>\n<ul>\n<li><strong>GET</strong> <a href=\"https://docs.x.com/x-api/direct-messages",
+      "published": "Wed, 30 Apr 2025 20:41:43 +0000"
+    },
+    "importance": "高",
+    "category": "API",
+    "summary_ja": "XのDM関連APIエンドポイントに2024年7月から存在するバグが6月3日に修正される予定です。この修正により、複数のDM取得エンドポイントの動作が意図した仕様に戻ります。",
+    "impact": "DM APIを使用する広告・マーケティング自動化ツール、チャットボット、CRMツールなどは動作の変更に対応する必要があり、事前の検証と対応が必須。",
+    "jp_status": "❓不明",
+    "jp_note": "XのAPI仕様変更は通常グローバル対応のため日本も影響を受ける可能性が高いが、明示的な日本国内への適用範囲が記載されていないため、不明と判定。",
+    "detected_at": "2026-04-27T12:00:28.127003"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Official Blog",
+      "title": "Jorge Ramos on his Emmy nominations and the transition to independent journalism",
+      "url": "https://blog.youtube/creator-and-artist-stories/jorge-ramos-independent-journalism-youtube/",
+      "summary": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Avatar-Profile.max-600x600.format-webp.webp\" />Jorge Ramos discusses his transition from legacy television to independent reporting on YouTube. The veteran journalist shares why credibility belongs to individuals rat…",
+      "published": "Thu, 23 Apr 2026 16:00:00 +0000"
+    },
+    "importance": "低",
+    "category": "その他",
+    "summary_ja": "ベテラン記者ホルヘ・ラモスがテレビから独立したYouTubeでのジャーナリズムへの転換について語るクリエイター向けのストーリー記事です。広告運用に直接関連する情報ではありません。",
+    "impact": "広告主や運用者への実務的な影響なし。YouTubeクリエイターの成功事例紹介。",
+    "jp_status": "❓不明",
+    "jp_note": "クリエイター向けのブログ記事であり、広告機能やポリシーに関する公式アップデート情報ではないため、日本対応状況の判定対象外。",
+    "detected_at": "2026-04-27T12:00:30.904886"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Official Blog",
+      "title": "How news organisations are thinking video-first",
+      "url": "https://blog.youtube/news-and-events/future-of-digital-news-video-strategies/",
+      "summary": "",
+      "published": "Wed, 22 Apr 2026 17:00:00 +0000"
+    },
+    "importance": "低",
+    "category": "その他",
+    "summary_ja": "ニュース組織がビデオファーストの戦略にシフトしている事例や考え方をYouTubeが紹介する記事です。広告運用に直接的な影響はありません。",
+    "impact": "広告主や運用者への直接的な運用変更の影響なし。ただしメディア企業のコンテンツ戦略トレンドの参考情報となる可能性あり。",
+    "jp_status": "❓不明",
+    "jp_note": "記事の詳細内容が提供されていないため、日本での適用状況は判断できません。",
+    "detected_at": "2026-04-27T12:00:33.457383"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Official Blog",
+      "title": "Helping families across Europe build healthy digital habits",
+      "url": "https://blog.youtube/news-and-events/new-youtube-shorts-parental-controls-europe/",
+      "summary": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/youtube-kids-account-login.max-600x600.format-webp.webp\" />YouTube’s Global Head of Health shares five tips for navigating the digital world as our industry-leading Shorts feed limit becomes available in Europe.",
+      "published": "Mon, 20 Apr 2026 10:00:00 +0000"
+    },
+    "importance": "低",
+    "category": "新機能",
+    "summary_ja": "YouTubeがヨーロッパでショーツの視聴時間制限機能を提供開始し、健全なデジタル習慣を促進する。家族向けのコンテンツ管理に関する5つのアドバイスも公開された。",
+    "impact": "親向けの制御機能であり、広告運用者への直接的な運用影響は限定的だが、ショーツの視聴パターン変化に留意する必要がある。",
+    "jp_status": "❓不明",
+    "jp_note": "ヨーロッパでの提供開始が明記されているが、日本への展開時期や対応状況についての記載がなく、判断材料が不足。",
+    "detected_at": "2026-04-27T12:00:37.165446"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Official Blog",
+      "title": "Coachella 2026 weekend two YouTube preview",
+      "url": "https://blog.youtube/news-and-events/coachella-2026-weekend-two-preview/",
+      "summary": "",
+      "published": "Fri, 17 Apr 2026 16:00:00 +0000"
+    },
+    "importance": "低",
+    "category": "その他",
+    "summary_ja": "Coachella 2026のウィークエンド2のYouTubeプレビュー企画に関する案内記事です。YouTube上でのイベント配信やコンテンツについての情報が含まれています。",
+    "impact": "広告運用やプラットフォーム機能に対する直接的な影響はありません。",
+    "jp_status": "❓不明",
+    "jp_note": "イベントプレビュー記事のため、特定の地域制限やローンチ情報の記載がないと考えられます。具体的な日本対応状況は記事の詳細内容によります。",
+    "detected_at": "2026-04-27T12:00:39.670890"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Official Blog",
+      "title": "Coachella 2026 weekend two YouTube livestream schedule",
+      "url": "https://blog.youtube/news-and-events/coachella-livestream-schedule-weekend-two-2026/",
+      "summary": "",
+      "published": "Thu, 16 Apr 2026 16:00:00 +0000"
+    },
+    "importance": "低",
+    "category": "その他",
+    "summary_ja": "YouTube が Coachella 2026 のウィークエンド2のライブストリーム配信スケジュールを発表しました。これは音楽フェスティバルのイベント情報であり、広告運用やプラットフォーム機能の変更ではありません。",
+    "impact": "広告運用者には直接的な影響なし。イベントに関心がある視聴者向けの情報提供。",
+    "jp_status": "❓不明",
+    "jp_note": "イベント情報のため日本対応の明示的な記載がないと思われます。YouTube Japan での配信予定の有無は記事内容から判断できません。",
+    "detected_at": "2026-04-27T12:00:42.245111"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Official Blog",
+      "title": "Top Coachella moments from the weekend one livestream",
+      "url": "https://blog.youtube/inside-youtube/coachella-weekend-one-highlights-youtube/",
+      "summary": "",
+      "published": "Wed, 15 Apr 2026 16:00:00 +0000"
+    },
+    "importance": "低",
+    "category": "その他",
+    "summary_ja": "YouTubeがCoachella音楽フェスティバルのWeekend Oneのライブストリーム配信から、視聴者に人気だった場面をハイライト記事として紹介しました。これは広告運用や配信機能に関する公式アップデートではなく、コンテンツ事例の紹介記事です。",
+    "impact": "広告運用者への直接的な影響はなし。ライブストリーミングコンテンツ活用の参考事例として認識程度。",
+    "jp_status": "❓不明",
+    "jp_note": "イベントハイライト記事のため、ロケーション制限に関する情報が記載されていない。日本での視聴可否は不明。",
+    "detected_at": "2026-04-27T12:00:44.913208"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Official Blog",
+      "title": "WHATMORE at Coachella 2026: From YouTube Foundry to the Gobi Stage",
+      "url": "https://blog.youtube/creator-and-artist-stories/youtube-whatmore-coachella/",
+      "summary": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/unnamed_1_vlyehPF.max-600x600.format-webp.webp\" />This weekend WHATMORE made their Coachella debut after years of friendship and a vision for their music that is driving their breakout success.",
+      "published": "Tue, 14 Apr 2026 16:00:00 +0000"
+    },
+    "importance": "低",
+    "category": "その他",
+    "summary_ja": "YouTubeがCoachella 2026でアーティストWHATMOREのパフォーマンスを紹介するコンテンツ。YouTube Foundryプログラムを通じたアーティスト育成とプロモーションの事例記事である。",
+    "impact": "広告運用者や広告主への直接的な影響はない。主にYouTubeプラットフォーム上のクリエイター・アーティスト育成施策の紹介記事。",
+    "jp_status": "❓不明",
+    "jp_note": "記事は一般的なYouTubeのクリエイター支援プログラム紹介であり、ロケーション限定の記載がない。ただし広告運用への関連性がないため日本対応判定の対象外。",
+    "detected_at": "2026-04-27T12:00:48.595642"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Official Blog",
+      "title": "How YouTube is helping Americans learn about U.S. history, science and innovation",
+      "url": "https://blog.youtube/news-and-events/americans-learn-us-history-science-innovation/",
+      "summary": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/America_250_-_Space.max-600x600.format-webp.webp\" />YouTube provides a front-row seat to America's 250th anniversary of history, science, and innovation in the making, anchored by a deepened partnership with C-SPAN.",
+      "published": "Tue, 14 Apr 2026 13:00:00 +0000"
+    },
+    "importance": "低",
+    "category": "その他",
+    "summary_ja": "YouTubeがアメリカの250周年を記念して、C-SPANとの提携を深める歴史・科学・イノベーション関連のコンテンツを提供しています。これは広告運用や機能に関する変更ではなく、プラットフォーム上のコンテンツ企画です。",
+    "impact": "広告運用者や広告ポリシーへの直接的な影響なし。",
+    "jp_status": "❓不明",
+    "jp_note": "米国の記念企画が中心で、日本への展開言及がない。広告運用に関する仕様変更ではないため判定困難。",
+    "detected_at": "2026-04-27T12:00:51.496734"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Official Blog",
+      "title": "Four ways to level up your YouTube Live engagement",
+      "url": "https://blog.youtube/news-and-events/live-streaming-updates-monetization-tools/",
+      "summary": "Learn how to use new YouTube Live features to connect with viewers and increase your revenue. These updates include expanded gifting options, ad-free windows for support…",
+      "published": "Mon, 13 Apr 2026 15:00:00 +0000"
+    },
+    "importance": "中",
+    "category": "新機能",
+    "summary_ja": "YouTubeライブ配信でギフト機能が拡張され、スーパーチャット以外の収益化ツールが追加されました。視聴者とのエンゲージメント向上と配信者の収益増加を目指した複数の新機能が実装されています。",
+    "impact": "ライブ配信配信者は新しい収益機会を活用できるようになり、視聴者のサポート方法の選択肢が増える",
+    "jp_status": "❓不明",
+    "jp_note": "公式ブログのタイトルと要約のみで、日本でのローンチ状況が明記されていない。詳細なブログ記事内容の確認が必要",
+    "detected_at": "2026-04-27T12:00:54.258935"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Official Blog",
+      "title": "Coachella 2026 weekend 1 livestream schedule",
+      "url": "https://blog.youtube/news-and-events/coachella-livestream-schedule-weekend-one-2026/",
+      "summary": "",
+      "published": "Fri, 10 Apr 2026 15:00:00 +0000"
+    },
+    "importance": "低",
+    "category": "その他",
+    "summary_ja": "YouTubeがCoachella 2026のWeekend 1ライブストリーム配信スケジュールを発表しました。イベント関連のコンテンツ配信情報であり、広告運用には直接的な影響はありません。",
+    "impact": "広告運用者への実務的な影響なし。イベント関連のコンテンツ視聴者層の把握程度。",
+    "jp_status": "❓不明",
+    "jp_note": "米国のイベント情報であり、日本での配信可否や地域制限の明記がないため判断不可。",
+    "detected_at": "2026-04-27T12:00:56.761361"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Official Blog",
+      "title": "Go behind the scenes with Germán Garmendia in YouTube’s new Channeling series",
+      "url": "https://blog.youtube/creator-and-artist-stories/german-garmendia-youtube-channeling/",
+      "summary": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/ChannelingJG_LaunchCarousel-Sli.max-600x600.format-webp.webp\" />Learn how Germán Garmendia became a Guinness World Record holder and reached over 50 million subscribers on JuegaGerman. In the premiere of the new YouTube series Channe…",
+      "published": "Wed, 08 Apr 2026 16:00:00 +0000"
+    },
+    "importance": "低",
+    "category": "その他",
+    "summary_ja": "YouTubeがクリエイター向けの新しいシリーズ「Channeling」を立ち上げ、有名なスペイン語クリエイターのGermán Garmedieを取り上げている。このシリーズではクリエイターの成功ストーリーや裏側を紹介するコンテンツを提供する。",
+    "impact": "広告運用者への直接的な影響はない。クリエイター向けの情報・インスピレーション提供企画。",
+    "jp_status": "❓不明",
+    "jp_note": "「Channeling」シリーズの日本での提供予定、日本クリエイター取り上げ予定について記載がないため不明。",
+    "detected_at": "2026-04-27T12:01:00.262654"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Official Blog",
+      "title": "Alan Chikin Chow celebrates 100 million subscribers with unique fan event",
+      "url": "https://blog.youtube/creator-and-artist-stories/alan-chikin-chow-100-million-subscribers-event/",
+      "summary": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IMG_8985.max-600x600.format-webp.webp\" />Alan Chikin Chow invited families to AU Studios for a creative school day to mark 100 million subscribers. People who follow the series joined the cast for acting and vi…",
+      "published": "Thu, 02 Apr 2026 19:00:00 +0000"
+    },
+    "importance": "低",
+    "category": "その他",
+    "summary_ja": "YouTubeクリエイターのAlan Chikin Chowが1億人登録者達成を記念して、ファン向けのイベントを開催した話題です。広告運用に直接関連する変更やアップデートではありません。",
+    "impact": "広告運用者への直接的な影響なし。クリエイター向けのニュース・成功事例の紹介記事。",
+    "jp_status": "❓不明",
+    "jp_note": "クリエイターイベントの事例記事であり、ポリシー変更やプラットフォーム機能追加ではないため、日本対応の有無は判定対象外です。",
+    "detected_at": "2026-04-27T12:01:03.753195"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Official Blog",
+      "title": "The ultimate guide to watching Coachella 2026 live on YouTube",
+      "url": "https://blog.youtube/news-and-events/watch-coachella-live-on-youtube/",
+      "summary": "Starting next Friday, April 10, we’re back with the most immersive Coachella livestream festival experience to date. Catch both weekends of Coachella, your choice of sev…",
+      "published": "Thu, 02 Apr 2026 15:00:00 +0000"
+    },
+    "importance": "低",
+    "category": "その他",
+    "summary_ja": "YouTubeがコーチェラ2026のライブストリーム配信を4月10日から開始すると発表しました。両週末のライブ配信が視聴できます。",
+    "impact": "広告運用者への直接的な影響はなし。イベント配信に関する一般向けのお知らせ。",
+    "jp_status": "❓不明",
+    "jp_note": "日本での配信可否やジオブロッキング情報の記載がないため判断不可。一般的なイベント配信のアナウンスメント。",
+    "detected_at": "2026-04-27T12:01:06.974742"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Official Blog",
+      "title": "Upfronts 2026: enter the YouTube era at Brandcast May 13",
+      "url": "https://blog.youtube/news-and-events/youtube-brandcast-2026-lineup/",
+      "summary": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Brandcast_2026_Key_Art.max-600x600.format-webp.webp\" />On Wednesday, May 13 at 5:30pm ET, YouTube will return to Lincoln Center for Brandcast, our annual Upfront presentation and red carpet pre-show. YouTube CEO Neal Mohan a…",
+      "published": "Wed, 01 Apr 2026 13:00:00 +0000"
+    },
+    "importance": "低",
+    "category": "その他",
+    "summary_ja": "YouTubeは2026年5月13日にニューヨークのリンカーン・センターで年次ブランド向けプレゼンテーション「Brandcast」を開催します。YouTubeのCEOなどが登壇予定です。",
+    "impact": "広告主向けの業界イベント告知であり、運用に直接的な影響はありませんが、新しい広告商品や施策が発表される可能性があります。",
+    "jp_status": "❓不明",
+    "jp_note": "イベント開催地が米国（ニューヨーク）で、日本での開催やライブ配信の有無が記載されていません。",
+    "detected_at": "2026-04-27T12:01:11.801069"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Official Blog",
+      "title": "Supporting LA first responders with custom e-bikes for LA wildfire response",
+      "url": "https://blog.youtube/news-and-events/supporting-la-first-responders-custom-e-bikes-la-wildfire-response/",
+      "summary": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/lafd-e-bike.max-600x600.format-webp.webp\" />Los Angeles and Arcadia fire departments are adding 30 specialized electric motorbikes to their fleets, thanks to a donation from YouTube and Google,  to improve wildfir…",
+      "published": "Tue, 31 Mar 2026 18:00:00 +0000"
+    },
+    "importance": "低",
+    "category": "その他",
+    "summary_ja": "YouTubeとGoogleがロサンゼルス地域の消防局に電動バイク30台を寄付し、山火事対応を支援するというCSR活動の発表です。広告運用には直接的な影響はありません。",
+    "impact": "広告運用ユーザーへの直接的な影響なし。YouTubeの企業社会責任活動に関する情報。",
+    "jp_status": "❓不明",
+    "jp_note": "日本向けの広告運用情報ではなく、米国ロサンゼルスでの慈善活動報告のため、日本対応の判断材料がない。",
+    "detected_at": "2026-04-27T12:01:14.854169"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Official Blog",
+      "title": "Discover a new era of brand and creator partnerships on YouTube",
+      "url": "https://blog.youtube/news-and-events/youtube-creator-partnerships-newfronts-2026/",
+      "summary": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/1772101253320.max-600x600.format-webp.webp\" />Unveiling YouTube Creator Partnerships at the 2026 YouTube NewFronts.",
+      "published": "Mon, 23 Mar 2026 15:00:00 +0000"
+    },
+    "importance": "低",
+    "category": "その他",
+    "summary_ja": "YouTubeが2026年のNewFrontsイベントでクリエイターとブランドの新しいパートナーシップ形態を発表した。具体的な機能やポリシー変更の詳細は画像に依存しており、ブログ記事本文の情報が不足している。",
+    "impact": "クリエイターとブランド企業の協業機会に関する情報発表だが、具体的な運用への直接的な影響は現時点では不明。",
+    "jp_status": "❓不明",
+    "jp_note": "公式ブログの発表だが、提供されたテキストには日本での対応状況に関する記載がなく、画像コンテンツに依存しているため判断できない。",
+    "detected_at": "2026-04-27T12:01:18.560309"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Official Blog",
+      "title": "YouTube viewership trends from official  broadcasters, creators and fans during the Milano Cortina 2026 Winter Olympics",
+      "url": "https://blog.youtube/news-and-events/milano-cortina-2026-youtube-viewership-trends/",
+      "summary": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Screenshot_2026-02-23_at_10.19..max-600x600.format-webp.webp\" />The Milano Cortina 2026 Winter Olympics saw over 500 million unique viewers on YouTube, with a significant shift toward living room viewing and younger audiences. Offici…",
+      "published": "Mon, 23 Mar 2026 14:00:00 +0000"
+    },
+    "importance": "低",
+    "category": "その他",
+    "summary_ja": "ミラノコルティナ2026冬季オリンピックがYouTubeで5億回以上再生され、視聴者が居間での視聴にシフトしていることが報告されました。これはYouTubeの視聴トレンド事例の紹介です。",
+    "impact": "広告運用者への直接的な影響なし。スポーツコンテンツ関連の業界動向参考情報。",
+    "jp_status": "✅利用可能",
+    "jp_note": "YouTubeの公式ブログ記事であり、日本を含む全世界の視聴動向が対象。日本でのオリンピック中継もYouTubeで配信されており、同様のトレンドが適用される。",
+    "detected_at": "2026-04-27T12:01:22.268784"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Official Blog",
+      "title": "Helen and Jaehyuk PD explore how YouTube creators and fans built a global K-pop culture",
+      "url": "https://blog.youtube/culture-and-trends/kpop-fandom-evolution-youtube/",
+      "summary": "Discover how K-pop fans helped turn a musical genre into a global phenomenon. Creators Helen and Jaehyuk PD explore the history of dance covers, fan cams, and reaction v…",
+      "published": "Fri, 20 Mar 2026 10:00:00 +0000"
+    },
+    "importance": "低",
+    "category": "その他",
+    "summary_ja": "YouTubeのオフィシャルブログが、K-popファンとクリエイターがグローバルな文化現象を作り上げた過程について紹介する記事を公開しました。ダンスカバーやファンカム、リアクション動画などのコンテンツ進化の歴史を探る内容です。",
+    "impact": "広告運用や機能面での直接的な影響なし。YouTubeでのK-pop関連コンテンツのトレンド理解が深まる程度。",
+    "jp_status": "❓不明",
+    "jp_note": "ブログ記事であり、特定のロケーション限定記載がないため判定不可。日本ユーザーもアクセス可能な可能性が高いが、公式には言及されていない。",
+    "detected_at": "2026-04-27T12:01:25.715466"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Official Blog",
+      "title": "It’s official: YouTube and FIFA team up for the FIFA World Cup 2026™",
+      "url": "https://blog.youtube/news-and-events/fifa-world-cup-2026-youtube-partnership/",
+      "summary": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/YT_FIFA_blogpost_12801280.max-600x600.format-webp.webp\" />YouTube is now a preferred platform for the FIFA World Cup 2026, offering fans access to match highlights, behind-the-scenes footage, and select full match broadcasts. T…",
+      "published": "Tue, 17 Mar 2026 12:00:00 +0000"
+    },
+    "importance": "低",
+    "category": "その他",
+    "summary_ja": "YouTubeがFIFA 2026ワールドカップの公式パートナーになり、試合ハイライトや舞台裏映像、一部の試合完全放送をプラットフォームで配信することが発表されました。ファンはYouTubeでワールドカップ関連コンテンツにアクセスできるようになります。",
+    "impact": "広告運用者にとって直接的な運用変更は不要だが、スポーツ関連コンテンツやワールドカップ時期の広告配置戦略の参考情報となる。",
+    "jp_status": "❓不明",
+    "jp_note": "パートナーシップ発表記事であり、日本での放映権や配信可否について明記されていないため、ロケーション情報が不明確です。",
+    "detected_at": "2026-04-27T12:01:28.556865"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Official Blog",
+      "title": "The right side of history",
+      "url": "https://blog.youtube/inside-youtube/lyor-cohen-youtube-music-strategy/",
+      "summary": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/youtube-logo.max-700x3000.forma.max-600x600.format-webp.webp\" />YouTube Global Head of Music Lyor Cohen explains how the platform provides artists with tools to turn viewers into lifelong fans.",
+      "published": "Mon, 16 Mar 2026 15:00:00 +0000"
+    },
+    "importance": "低",
+    "category": "その他",
+    "summary_ja": "YouTubeの音楽戦略責任者が、アーティストがファンを獲得するためのプラットフォームツールについて説明している記事。広告運用や仕様変更ではなく、音楽ビジネス向けの戦略的な解説。",
+    "impact": "広告運用者や広告主への直接的な影響なし。音楽関連ビジネスの参考情報程度。",
+    "jp_status": "✅利用可能",
+    "jp_note": "YouTubeの公式ブログ記事であり、グローバルコンテンツ。日本のYouTube利用者も対象。",
+    "detected_at": "2026-04-27T12:01:31.219147"
+  },
+  {
+    "item": {
+      "platform": "Meta",
+      "source_name": "Meta Newsroom (about.fb.com)",
+      "title": "Meta Partners With AWS on Graviton Chips to Power Agentic AI",
+      "url": "https://about.fb.com/news/2026/04/meta-partners-with-aws-on-graviton-chips-to-power-agentic-ai/",
+      "summary": "<div><img alt=\"\" class=\"attachment-large size-large wp-post-image\" height=\"501\" src=\"https://about.fb.com/wp-content/uploads/2026/04/Partnership-Announcement_Thumbnail.jpg?fit=890%2C501\" style=\"margin-bottom: 15px;\" width=\"890\" /></div>\n<p>We’re announcing an agreement with AWS to bring tens of millions of AWS Graviton cores into Meta's compute portfolio to support agentic AI workloads. </p>\n<p>The post <a href=\"https://about.fb.com/news/2026/04/meta-partners-with-aws-on-graviton-chips-to-power-",
+      "published": "Fri, 24 Apr 2026 12:00:38 +0000"
+    },
+    "importance": "低",
+    "category": "その他",
+    "summary_ja": "MetaがAWSと提携し、AI処理用のコンピュータチップ（Graviton）を導入することを発表しました。これはMetaの内部インフラ強化に関する発表で、広告運用には直接的な影響はありません。",
+    "impact": "Meta広告プラットフォームの利用者に対する直接的な運用影響はなし。インフラ強化による長期的なサービス安定性向上の可能性あり。",
+    "jp_status": "❓不明",
+    "jp_note": "AWSとMetaの企業間提携発表であり、地域別の対応状況の記載がないため判断できません。ただし両企業のグローバルインフラ提携のため、日本を含む全地域に影響する可能性は高いと考えられます。",
+    "detected_at": "2026-04-27T12:20:07.107911"
+  },
+  {
+    "item": {
+      "platform": "Meta",
+      "source_name": "Meta Newsroom (about.fb.com)",
+      "title": "Meta Account: The Simpler Way to Access Your Apps and Devices",
+      "url": "https://about.fb.com/news/2026/04/meta-account/",
+      "summary": "<div><img alt=\"\" class=\"attachment-large size-large wp-post-image\" height=\"501\" src=\"https://about.fb.com/wp-content/uploads/2026/04/Meta-Account-Announcement_Thumbnail.jpg?fit=890%2C501\" style=\"margin-bottom: 15px;\" width=\"890\" /></div>\n<p>Accounts Center will automatically be updated to a Meta Account over the next year. Here's what to expect.</p>\n<p>The post <a href=\"https://about.fb.com/news/2026/04/meta-account/\">Meta Account: The Simpler Way to Access Your Apps and Devices</a> appeared fir",
+      "published": "Thu, 23 Apr 2026 16:00:04 +0000"
+    },
+    "importance": "中",
+    "category": "UI変更",
+    "summary_ja": "MetaはAccounts Centerを「Meta Account」に自動更新する予定です。この変更は今後1年かけて段階的に行われます。ユーザーはMetaの複数のアプリやデバイスへのアクセスがより簡単になります。",
+    "impact": "Metaの各種アプリ・デバイスへのログイン方法やアカウント管理の操作性が変わるため、広告運用者はAccounts Centerの新しい操作方法に対応する必要があります。",
+    "jp_status": "❓不明",
+    "jp_note": "グローバルアナウンスのため日本を含む全世界対象と推定されますが、ロケーション別の展開スケジュールが記事要約に記載されていないため確認が必要です。",
+    "detected_at": "2026-04-27T12:20:10.397374"
+  },
+  {
+    "item": {
+      "platform": "Meta",
+      "source_name": "Meta Newsroom (about.fb.com)",
+      "title": "Helping Parents Understand the Conversations Their Teens Are Having With AI",
+      "url": "https://about.fb.com/news/2026/04/helping-parents-understand-conversations-their-teens-are-having-with-ai/",
+      "summary": "<div><img alt=\"\" class=\"attachment-large size-large wp-post-image\" height=\"501\" src=\"https://about.fb.com/wp-content/uploads/2026/04/AI-Youth-Saftey_Thumbnail.jpg?fit=890%2C501\" style=\"margin-bottom: 15px;\" width=\"890\" /></div>\n<p>We're introducing new tools for parents supervising Teen Accounts to help them understand how their teens are using AI. </p>\n<p>The post <a href=\"https://about.fb.com/news/2026/04/helping-parents-understand-conversations-their-teens-are-having-with-ai/\">Helping Parents",
+      "published": "Thu, 23 Apr 2026 11:00:17 +0000"
+    },
+    "importance": "低",
+    "category": "その他",
+    "summary_ja": "Metaが親向けの監視ツールを追加し、ティーンエイジャーのAI利用状況を親が把握できるようにしました。これは青少年の安全を目的とした機能で、広告運用に直接影響しません。",
+    "impact": "広告運用者への直接的な影響なし。ただし青少年向けアカウントのプライバシー管理が強化される可能性がある。",
+    "jp_status": "❓不明",
+    "jp_note": "ティーンアカウント機能は一部地域で展開されているが、日本での提供状況やこの新機能の対応予定は明記されていない。",
+    "detected_at": "2026-04-27T12:20:13.374607"
+  },
+  {
+    "item": {
+      "platform": "Meta",
+      "source_name": "Meta Newsroom (about.fb.com)",
+      "title": "Live Chats on Threads: Because Big Moments Are Better Together",
+      "url": "https://about.fb.com/news/2026/04/threads-live-chats/",
+      "summary": "<div><img alt=\"\" class=\"attachment-large size-large wp-post-image\" height=\"501\" src=\"https://about.fb.com/wp-content/uploads/2026/04/Threads-Live-Chats_Thumbnail.jpg?fit=890%2C501\" style=\"margin-bottom: 15px;\" width=\"890\" /></div>\n<p>Creators and fans can now connect in real-time, public group conversations during the biggest cultural events.</p>\n<p>The post <a href=\"https://about.fb.com/news/2026/04/threads-live-chats/\">Live Chats on Threads: Because Big Moments Are Better Together</a> appeared",
+      "published": "Wed, 22 Apr 2026 17:00:40 +0000"
+    },
+    "importance": "低",
+    "category": "新機能",
+    "summary_ja": "Threadsにライブチャット機能が追加され、ユーザーが大きなイベント中にリアルタイムで公開グループ会話ができるようになりました。クリエイターとファンが同時に盛り上がる場が増えるという機能追加です。",
+    "impact": "Threadsの利用層に新しいコミュニティ交流機能が提供されるが、広告運用や課金には直接的な影響はない。",
+    "jp_status": "❓不明",
+    "jp_note": "ニュースリリースに具体的なロケーション情報がなく、日本での提供有無が明記されていない。Threadsが日本で利用可能な点から推測される可能性は高いが、確定情報なし。",
+    "detected_at": "2026-04-27T12:20:16.499934"
+  },
+  {
+    "item": {
+      "platform": "Meta",
+      "source_name": "Meta Newsroom (about.fb.com)",
+      "title": "One Year of Edits: Built For and With Creators",
+      "url": "https://about.fb.com/news/2026/04/one-year-of-edits-built-for-and-with-creators/",
+      "summary": "<div><img alt=\"\" class=\"attachment-large size-large wp-post-image\" height=\"501\" src=\"https://about.fb.com/wp-content/uploads/2026/04/Edits-First-Birthday_Thumbnail-1.jpg?fit=890%2C501\" style=\"margin-bottom: 15px;\" width=\"890\" /></div>\n<p>As we mark the first year of building Edits, we're sharing a look back and a preview of what we’re excited to build next. </p>\n<p>The post <a href=\"https://about.fb.com/news/2026/04/one-year-of-edits-built-for-and-with-creators/\">One Year of Edits: Built For and",
+      "published": "Wed, 22 Apr 2026 15:00:28 +0000"
+    },
+    "importance": "低",
+    "category": "その他",
+    "summary_ja": "MetaがEdits機能のリリース1周年を記念し、これまでの開発成果と今後の計画を発表しました。クリエイターからのフィードバックに基づいて機能を改善してきたことを紹介しています。",
+    "impact": "クリエイター向けの既存機能の進化情報であり、広告運用者への直接的な影響は限定的。",
+    "jp_status": "❓不明",
+    "jp_note": "Edits機能の日本での提供状況が明記されていないため判断不可。記事の詳細内容へのアクセスが限定されているため確認困難。",
+    "detected_at": "2026-04-27T12:20:19.443183"
+  },
+  {
+    "item": {
+      "platform": "Meta",
+      "source_name": "Meta Newsroom (about.fb.com)",
+      "title": "Breaking Ground on a New AI-Optimized Data Center in Tulsa, Oklahoma",
+      "url": "https://about.fb.com/news/2026/04/breaking-ground-new-ai-optimized-data-center-tulsa-oklahoma/",
+      "summary": "<div><img alt=\"\" class=\"attachment-large size-large wp-post-image\" height=\"501\" src=\"https://about.fb.com/wp-content/uploads/2026/04/Tulsa-Oklahoma-_Thumbnail.gif?fit=890%2C501\" style=\"margin-bottom: 15px;\" width=\"890\" /></div>\n<p>We're breaking ground on a new AI-optimized data center in Tulsa, Oklahoma.</p>\n<p>The post <a href=\"https://about.fb.com/news/2026/04/breaking-ground-new-ai-optimized-data-center-tulsa-oklahoma/\">Breaking Ground on a New AI-Optimized Data Center in Tulsa, Oklahoma</a>",
+      "published": "Tue, 21 Apr 2026 20:30:39 +0000"
+    },
+    "importance": "低",
+    "category": "その他",
+    "summary_ja": "Metaがオクラホマ州タルサに新しいAI最適化データセンターの建設を開始します。これはMetaのインフラ投資に関するニュースで、広告運用に直接的な影響はありません。",
+    "impact": "広告運用者への直接的な影響はなし。Metaのインフラ拡張に関する企業ニュース。",
+    "jp_status": "❓不明",
+    "jp_note": "データセンター建設は米国内のインフラ投資であり、日本の広告サービスへの直接的な対応情報が記載されていない。",
+    "detected_at": "2026-04-27T12:20:22.138695"
+  },
+  {
+    "item": {
+      "platform": "Meta",
+      "source_name": "Meta Newsroom (about.fb.com)",
+      "title": "Meta and CBRE Invest in American Jobs Through New Fiber Technician Training Program",
+      "url": "https://about.fb.com/news/2026/04/meta-cbre-invest-in-american-jobs-new-fiber-technician-training-program/",
+      "summary": "<div><img alt=\"\" class=\"attachment-large size-large wp-post-image\" height=\"501\" src=\"https://about.fb.com/wp-content/uploads/2026/04/LevelUp-Fiber_Thumbnail-1.gif?fit=890%2C501\" style=\"margin-bottom: 15px;\" width=\"890\" /></div>\n<p>The LevelUp Fiber Technician Pathway is a training program designed to prepare people to fill fiber technician jobs at US data centers and our construction sites.</p>\n<p>The post <a href=\"https://about.fb.com/news/2026/04/meta-cbre-invest-in-american-jobs-new-fiber-tec",
+      "published": "Mon, 20 Apr 2026 13:00:55 +0000"
+    },
+    "importance": "低",
+    "category": "その他",
+    "summary_ja": "MetaとCBREが米国のデータセンターと建設現場で働くファイバー技術者を育成するトレーニングプログラムを開始しました。このプログラムは米国の雇用創出を目的とした人材育成イニシアティブです。",
+    "impact": "SNS広告運用者への直接的な影響はなし。Meta社内の人材育成・採用活動に関する発表。",
+    "jp_status": "❓不明",
+    "jp_note": "米国のデータセンター・建設現場向けの人材育成プログラムであり、広告運用機能やサービスの変更ではないため、日本対応状況の判定対象外。",
+    "detected_at": "2026-04-27T12:20:24.894991"
+  },
+  {
+    "item": {
+      "platform": "Meta",
+      "source_name": "Meta Newsroom (about.fb.com)",
+      "title": "Now Rolling Out: Facebook’s Opt‑In Camera Roll Suggestions in the EU and UK",
+      "url": "https://about.fb.com/news/2026/04/now-rolling-out-facebooks-opt-in-camera-roll-suggestions-in-the-eu-and-uk/",
+      "summary": "<div><img alt=\"\" class=\"attachment-large size-large wp-post-image\" height=\"540\" src=\"https://about.fb.com/wp-content/uploads/2026/04/GTM-Banner@3x.png?fit=960%2C540\" style=\"margin-bottom: 15px;\" width=\"960\" /></div>\n<p>People in the EU and UK can now opt in to a new Facebook feature that surfaces photos and videos and suggests fun edits and collages.</p>\n<p>The post <a href=\"https://about.fb.com/news/2026/04/now-rolling-out-facebooks-opt-in-camera-roll-suggestions-in-the-eu-and-uk/\">Now Rolling ",
+      "published": "Thu, 16 Apr 2026 10:00:45 +0000"
+    },
+    "importance": "低",
+    "category": "新機能",
+    "summary_ja": "EUと英国のユーザーがFacebookアプリでカメラロール内の写真や動画から自動的に編集やコラージュのアイデアを提案される新機能を選べるようになった。ユーザーは必要に応じてこの機能をオンにできる。",
+    "impact": "広告運用者への直接的な影響はないが、ユーザーのコンテンツ作成・シェア行動が活性化する可能性がある。",
+    "jp_status": "❓不明",
+    "jp_note": "ニュースでEUと英国のみの展開と明記されており、日本での提供予定に関する記載がない。",
+    "detected_at": "2026-04-27T12:20:27.219248"
+  },
+  {
+    "item": {
+      "platform": "Meta",
+      "source_name": "Meta Newsroom (about.fb.com)",
+      "title": "Meta Partners With Broadcom to Co-Develop Custom AI Silicon",
+      "url": "https://about.fb.com/news/2026/04/meta-partners-with-broadcom-to-co-develop-custom-ai-silicon/",
+      "summary": "<div><img alt=\"\" class=\"attachment-large size-large wp-post-image\" height=\"501\" src=\"https://about.fb.com/wp-content/uploads/2026/04/Meta_Broadcom_Thumbnail.jpg?fit=890%2C501\" style=\"margin-bottom: 15px;\" width=\"890\" /></div>\n<p>We’re partnering with Broadcom to co-develop multiple generations of custom silicon, ensuring we have the compute foundation to deliver on our long-term AI ambitions.</p>\n<p>The post <a href=\"https://about.fb.com/news/2026/04/meta-partners-with-broadcom-to-co-develop-cus",
+      "published": "Tue, 14 Apr 2026 21:05:14 +0000"
+    },
+    "importance": "低",
+    "category": "その他",
+    "summary_ja": "MetaがBroadcomと協力してAI向けのカスタムチップを共同開発します。これはMetaの長期的なAI戦略を支えるための基盤作りです。広告運用や広告商品の変更ではなく、企業の技術インフラに関するニュースです。",
+    "impact": "広告運用者・広告出稿者への直接的な影響はない。Metaのインフラ強化であり、将来的なサービス安定性向上に寄与する可能性がある。",
+    "jp_status": "❓不明",
+    "jp_note": "企業向けのインフラ投資ニュースであり、ロケーション情報や地域別の展開計画の記載がない。広告プラットフォーム自体の変更ではないため、日本対応状況の判定が難しい。",
+    "detected_at": "2026-04-27T12:20:30.513228"
+  },
+  {
+    "item": {
+      "platform": "Meta",
+      "source_name": "Meta Newsroom (about.fb.com)",
+      "title": "Instagram Expands Teen Accounts Inspired by 13+ Content Ratings",
+      "url": "https://about.fb.com/news/2026/04/instagram-expands-teen-accounts-inspired-by-13-content-ratings-2/",
+      "summary": "<div><img alt=\"\" class=\"attachment-large size-large wp-post-image\" height=\"501\" src=\"https://about.fb.com/wp-content/uploads/2026/04/18Account_Highlight.png?fit=890%2C501\" style=\"margin-bottom: 15px;\" width=\"890\" /></div>\n<p>Today, we’re announcing the expansion of Instagram’s age-appropriate 13+ content rating and Limited Content setting to India.</p>\n<p>The post <a href=\"https://about.fb.com/news/2026/04/instagram-expands-teen-accounts-inspired-by-13-content-ratings-2/\">Instagram Expands Teen ",
+      "published": "Thu, 09 Apr 2026 08:10:42 +0000"
+    },
+    "importance": "中",
+    "category": "ポリシー",
+    "summary_ja": "Instagramが13歳以上向けのコンテンツレーティング機能をインドに拡大しました。この機能により、十代のユーザーに対して年齢に適した安全な利用環境を提供するようになります。",
+    "impact": "インド地域での広告配信対象層が変わる可能性があり、広告主は13+ rating設定を理解して運用を調整する必要がある。",
+    "jp_status": "❓不明",
+    "jp_note": "インド拡大の発表のため日本への適用時期が明記されていない。今後の日本展開については公式情報がない。",
+    "detected_at": "2026-04-27T12:20:33.514600"
+  },
+  {
+    "item": {
+      "platform": "Meta",
+      "source_name": "Engineering at Meta",
+      "title": "Modernizing the Facebook Groups Search to Unlock the Power of Community Knowledge",
+      "url": "https://engineering.fb.com/2026/04/21/ml-applications/modernizing-the-facebook-groups-search-to-unlock-the-power-of-community-knowledge/",
+      "summary": "<p>We’ve fundamentally transformed Facebook Groups Search to help people more reliably discover, sort through, and validate community content that’s most relevant to them. We’ve adopted a new hybrid retrieval architecture and implemented automated model-based evaluation to address the major friction points people experience when searching community content. Under this new framework, we’ve made tangible improvements [...]</p>\n<p><a class=\"btn btn-secondary understrap-read-more-link\" href=\"https:/",
+      "published": "Tue, 21 Apr 2026 16:00:19 +0000"
+    },
+    "importance": "低",
+    "category": "その他",
+    "summary_ja": "Facebookグループの検索機能が改善され、ハイブリッド検索技術を導入することで、ユーザーがコミュニティ内の関連コンテンツをより見つけやすくなりました。この改善は検索精度の向上を目指したバックエンド技術の更新です。",
+    "impact": "広告運用者への直接的な影響は限定的だが、グループ内の検索利便性向上により、グループ関連の広告配信や顧客エンゲージメントに間接的な好影響の可能性。",
+    "jp_status": "❓不明",
+    "jp_note": "エンジニアリングブログの技術解説であり、地域別ローンチ情報の記載なし。Facebook Groupsは日本でも利用可能だが、この特定の検索改善がいつ日本に展開されるかは不明。",
+    "detected_at": "2026-04-27T12:20:36.723008"
+  },
+  {
+    "item": {
+      "platform": "Meta",
+      "source_name": "Engineering at Meta",
+      "title": "Capacity Efficiency at Meta: How Unified AI Agents Optimize Performance at Hyperscale",
+      "url": "https://engineering.fb.com/2026/04/16/developer-tools/capacity-efficiency-at-meta-how-unified-ai-agents-optimize-performance-at-hyperscale/",
+      "summary": "<p>We&#8217;re sharing insights into Meta&#8217;s Capacity Efficiency Program, where we&#8217;ve built an AI agent platform that helps automate finding and fixing performance issues throughout our infrastructure. By leveraging encoded domain expertise across a unified, standardized tool interface these agents help save power and free up engineers&#8217; time away from addressing performance issues to innovating on [...]</p>\n<p><a class=\"btn btn-secondary understrap-read-more-link\" href=\"https://",
+      "published": "Thu, 16 Apr 2026 16:00:34 +0000"
+    },
+    "importance": "低",
+    "category": "その他",
+    "summary_ja": "Metaがインフラの性能問題を自動で見つけて修正するAIエージェントプラットフォームを開発したという技術記事です。広告運用や広告システムへの直接的な影響はありません。",
+    "impact": "広告運用者への直接的な影響なし。Meta内部のインフラ効率化に関する技術情報。",
+    "jp_status": "❓不明",
+    "jp_note": "技術ブログ記事であり、広告商品やポリシー変更ではないため、日本対応状況の判定対象外。",
+    "detected_at": "2026-04-27T12:20:39.347013"
+  },
+  {
+    "item": {
+      "platform": "Meta",
+      "source_name": "Engineering at Meta",
+      "title": "Post-Quantum Cryptography Migration at Meta: Framework, Lessons, and Takeaways",
+      "url": "https://engineering.fb.com/2026/04/16/security/post-quantum-cryptography-migration-at-meta-framework-lessons-and-takeaways/",
+      "summary": "<p>We’re sharing lessons learned from Meta’s post-quantum cryptography (PQC) migration to help other organizations strengthen their resilience as industry transitions to post-quantum cryptography standards. We’re proposing the idea of PQC Migration Levels to help teams within organizations manage the complexity of PQC migration for their various use cases. By outlining Meta’s approach to this work [...]</p>\n<p><a class=\"btn btn-secondary understrap-read-more-link\" href=\"https://engineering.fb.co",
+      "published": "Thu, 16 Apr 2026 14:59:44 +0000"
+    },
+    "importance": "低",
+    "category": "その他",
+    "summary_ja": "Metaがポスト量子暗号への移行に関する技術的な知見と枠組みを公開しました。これはセキュリティインフラの長期的な強化に関する技術記事で、広告運用に直接的な影響はありません。",
+    "impact": "広告主や運用者への直接的な影響はなし。Metaの基盤技術に関する技術情報共有。",
+    "jp_status": "❓不明",
+    "jp_note": "技術ブログ記事であり、広告機能やポリシー変更ではないため、日本での提供可否の概念が該当しません。",
+    "detected_at": "2026-04-27T12:20:41.917511"
+  },
+  {
+    "item": {
+      "platform": "Meta",
+      "source_name": "Engineering at Meta",
+      "title": "Escaping the Fork: How Meta Modernized WebRTC Across 50+ Use Cases",
+      "url": "https://engineering.fb.com/2026/04/09/developer-tools/escaping-the-fork-how-meta-modernized-webrtc-across-50-use-cases/",
+      "summary": "<p>At Meta, WebRTC powers real-time audio and video across various platforms. But forking a large open-source project like WebRTC within our monorepo presents unique challenges – over time, an internal fork can drift behind upstream, cutting itself off from community upgrades. We&#8217;re sharing how we escaped this &#8220;forking trap&#8221; &#8211; from building a dual-stack architecture [...]</p>\n<p><a class=\"btn btn-secondary understrap-read-more-link\" href=\"https://engineering.fb.com/2026/0",
+      "published": "Thu, 09 Apr 2026 16:00:34 +0000"
+    },
+    "importance": "低",
+    "category": "その他",
+    "summary_ja": "MetaがWebRTC技術の内部フォーク管理の問題を解決するため、デュアルスタックアーキテクチャを導入したという技術解説です。広告運用に直接的な影響はありません。",
+    "impact": "広告運用やSNS広告プラットフォームの機能・ポリシーに対する直接的な影響なし。",
+    "jp_status": "❓不明",
+    "jp_note": "これはMeta社内の技術ブログ記事で、WebRTC基盤技術に関する開発者向けの情報です。日本でのローンチ対象外であり、広告プラットフォームユーザーへの周知対象外と判断します。",
+    "detected_at": "2026-04-27T12:20:44.662458"
+  },
+  {
+    "item": {
+      "platform": "Meta",
+      "source_name": "Engineering at Meta",
+      "title": "Trust But Canary: Configuration Safety at Scale",
+      "url": "https://engineering.fb.com/2026/04/08/security/trust-but-canary-configuration-safety-at-scale-meta-tech-podcast/",
+      "summary": "<p>As AI increases developer speed and productivity it also increases the need for safeguards. On this episode of the Meta Tech Podcast, Pascal Hartig sits down with Ishwari and Joe from Meta&#8217;s Configurations team to discuss how Meta makes config rollouts safe at scale. Listen in to learn about canarying and progressive rollouts, the health checks [...]</p>\n<p><a class=\"btn btn-secondary understrap-read-more-link\" href=\"https://engineering.fb.com/2026/04/08/security/trust-but-canary-config",
+      "published": "Wed, 08 Apr 2026 18:25:26 +0000"
+    },
+    "importance": "低",
+    "category": "その他",
+    "summary_ja": "Metaのエンジニアリングチームが、大規模なシステム構成変更を安全に行うための技術手法「カナリアリリース」と段階的ロールアウトについて解説したポッドキャスト。AIの普及に伴い、開発の高速化と安全性のバランスをどう取るかについて討論している。",
+    "impact": "広告運用者への直接的な影響はなし。Meta基盤技術の内部的な安全性向上に関する技術記事。",
+    "jp_status": "❓不明",
+    "jp_note": "ポッドキャスト記事であり、広告プラットフォーム機能やポリシー変更ではなく、Meta内部のエンジニアリング技術に関する内容。日本向けの広告機能への適用可否について明記されていない。",
+    "detected_at": "2026-04-27T12:20:47.714840"
+  },
+  {
+    "item": {
+      "platform": "Meta",
+      "source_name": "Engineering at Meta",
+      "title": "How Meta Used AI to Map Tribal Knowledge in Large-Scale Data Pipelines",
+      "url": "https://engineering.fb.com/2026/04/06/developer-tools/how-meta-used-ai-to-map-tribal-knowledge-in-large-scale-data-pipelines/",
+      "summary": "<p>AI coding assistants are powerful but only as good as their understanding of your codebase. When we pointed AI agents at one of Meta&#8217;s large-scale data processing pipelines – spanning four repositories, three languages, and over 4,100 files – we quickly found that they weren&#8217;t making useful edits quickly enough.  We fixed this by building [...]</p>\n<p><a class=\"btn btn-secondary understrap-read-more-link\" href=\"https://engineering.fb.com/2026/04/06/developer-tools/how-meta-used-ai",
+      "published": "Mon, 06 Apr 2026 16:00:50 +0000"
+    },
+    "importance": "低",
+    "category": "その他",
+    "summary_ja": "Metaの開発チームが、AI工具がコード理解を深めるための内部的な技術改善について公開した記事です。大規模なデータ処理パイプラインの自動化に関する技術情報で、広告運用や公式機能の変更ではありません。",
+    "impact": "SNS広告運用者への直接的な影響なし。Meta内部の開発効率化の事例紹介に過ぎない。",
+    "jp_status": "❓不明",
+    "jp_note": "エンジニアリング技術記事で、広告運用ツールやプラットフォーム機能の変更ではないため、日本対応状況の判定対象外です。",
+    "detected_at": "2026-04-27T12:20:51.118847"
+  },
+  {
+    "item": {
+      "platform": "Meta",
+      "source_name": "Engineering at Meta",
+      "title": "KernelEvolve: How Meta’s Ranking Engineer Agent Optimizes AI Infrastructure",
+      "url": "https://engineering.fb.com/2026/04/02/developer-tools/kernelevolve-how-metas-ranking-engineer-agent-optimizes-ai-infrastructure/",
+      "summary": "<p>This is the second post in the Ranking Engineer Agent blog series exploring the autonomous AI capabilities accelerating Meta&#8217;s Ads Ranking innovation. The previous post introduced Ranking Engineer Agent&#8217;s ML exploration capability, which autonomously designs, executes, and analyzes ranking model experiments. This post covers how to optimize the low-level infrastructure that makes those models run [...]</p>\n<p><a class=\"btn btn-secondary understrap-read-more-link\" href=\"https://eng",
+      "published": "Thu, 02 Apr 2026 19:59:46 +0000"
+    },
+    "importance": "低",
+    "category": "その他",
+    "summary_ja": "MetaのAI広告ランキングシステムを最適化するための技術記事です。Ranking Engineer Agentという自動化されたAIツールが、広告配信の基盤となるインフラを改善する仕組みについて説明しています。広告運用者が直接使える機能ではなく、メタ内部の技術開発に関する情報です。",
+    "impact": "広告運用者への直接的な影響はなく、メタのバックエンド技術の進化についての技術情報。",
+    "jp_status": "❓不明",
+    "jp_note": "日本での提供やローンチ予定についての記載がなく、技術ブログの内部情報であるため判断材料がない。",
+    "detected_at": "2026-04-27T12:20:54.070375"
+  },
+  {
+    "item": {
+      "platform": "Meta",
+      "source_name": "Engineering at Meta",
+      "title": "Meta Adaptive Ranking Model: Bending the Inference Scaling Curve to Serve LLM-Scale Models for Ads",
+      "url": "https://engineering.fb.com/2026/03/31/ml-applications/meta-adaptive-ranking-model-bending-the-inference-scaling-curve-to-serve-llm-scale-models-for-ads/",
+      "summary": "<p>Meta continues to lead the industry in utilizing groundbreaking AI Recommendation Systems (RecSys) to deliver better experiences for people, and better results for advertisers. To reach the next frontier of performance, we are scaling Meta’s Ads Recommender runtime models to LLM-scale &#38; complexity to further a deeper understanding of people’s interests and intent. This increase [...]</p>\n<p><a class=\"btn btn-secondary understrap-read-more-link\" href=\"https://engineering.fb.com/2026/03/31/",
+      "published": "Tue, 31 Mar 2026 16:00:17 +0000"
+    },
+    "importance": "中",
+    "category": "新機能",
+    "summary_ja": "MetaがLLM規模の大型AI モデルを広告推薦システムに導入し、ユーザーの関心や意図をより正確に理解できるようにしています。これにより広告主はより良いターゲティングと成果が期待できます。",
+    "impact": "広告推薦の精度向上により、今後のキャンペーン成果が改善される可能性がある。",
+    "jp_status": "❓不明",
+    "jp_note": "技術ブログの発表であり、具体的な利用可能地域の記載がありません。Meta広告システムは日本でも利用されていますが、このモデル導入のロールアウト対象地域が明記されていないため不明と判定します。",
+    "detected_at": "2026-04-27T12:20:57.140293"
+  },
+  {
+    "item": {
+      "platform": "Meta",
+      "source_name": "Engineering at Meta",
+      "title": "AI for American-Produced Cement and Concrete",
+      "url": "https://engineering.fb.com/2026/03/30/data-center-engineering/ai-for-american-produced-cement-and-concrete/",
+      "summary": "<p>Meta is continuing its long-term roadmap to help the construction industry leverage AI to produce high-quality and more sustainable concrete mixes, as well as those exclusively produced in the United States.  Concurrent with the 2026 American Concrete Institute (ACI) Spring Convention, Meta is releasing a new AI model for designing concrete mixes – Bayesian Optimization [...]</p>\n<p><a class=\"btn btn-secondary understrap-read-more-link\" href=\"https://engineering.fb.com/2026/03/30/data-center-",
+      "published": "Mon, 30 Mar 2026 16:00:34 +0000"
+    },
+    "importance": "低",
+    "category": "その他",
+    "summary_ja": "Metaが建設業界向けにコンクリート配合設計のAIモデルを開発・公開しました。米国産のセメント・コンクリート製品の品質向上と持続可能性の実現が目的です。",
+    "impact": "SNS広告運用業務への直接的な影響はありません。",
+    "jp_status": "❓不明",
+    "jp_note": "建設業界向けのAI研究開発に関する記事で、広告プラットフォーム機能やポリシーの情報が含まれていないため日本対応状況の判定ができません。",
+    "detected_at": "2026-04-27T12:20:59.529785"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Data API Revision History",
+      "title": "December 4, 2025",
+      "url": "https://developers.google.com/youtube/v3/revision_history#december-4,-2025",
+      "summary": "",
+      "published": ""
+    },
+    "importance": "低",
+    "category": "API",
+    "summary_ja": "YouTube Data APIの2025年12月4日付の更新履歴が公開されました。具体的な変更内容は要約に記載されていないため、公式ドキュメントで詳細を確認する必要があります。",
+    "impact": "具体的な変更内容が不明なため、影響度を判定できません。",
+    "jp_status": "❓不明",
+    "jp_note": "提供されたテキストに変更内容の詳細がなく、日本対応状況を判定する情報がありません。",
+    "detected_at": "2026-04-27T12:21:01.621746"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Data API Revision History",
+      "title": "July 10, 2025",
+      "url": "https://developers.google.com/youtube/v3/revision_history#july-10,-2025",
+      "summary": "",
+      "published": ""
+    },
+    "importance": "低",
+    "category": "その他",
+    "summary_ja": "YouTube Data APIの7月10日付けの更新情報ですが、具体的な変更内容が提供されていないため、詳細な分析ができません。公式ドキュメントで該当ページを確認して、具体的な変更内容を確認してください。",
+    "impact": "現時点では影響度を判定できません。具体的な変更内容の確認が必要です。",
+    "jp_status": "❓不明",
+    "jp_note": "要約と公開日が空欄のため、変更内容が不明。日本対応状況の判定ができません。",
+    "detected_at": "2026-04-27T12:21:04.033804"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Data API Revision History",
+      "title": "March 26, 2025",
+      "url": "https://developers.google.com/youtube/v3/revision_history#march-26,-2025",
+      "summary": "",
+      "published": ""
+    },
+    "importance": "低",
+    "category": "API",
+    "summary_ja": "YouTube Data APIの3月26日付けのリビジョン履歴が更新されました。具体的な変更内容の詳細は提供されていません。",
+    "impact": "具体的な変更内容が不明なため、現時点での運用への直接的な影響は判断不可。",
+    "jp_status": "❓不明",
+    "jp_note": "リビジョン履歴ページへのリンクのみで、実際の変更内容が記載されていないため、日本対応状況を判定する情報がありません。",
+    "detected_at": "2026-04-27T12:21:05.955071"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Data API Revision History",
+      "title": "April 30, 2024",
+      "url": "https://developers.google.com/youtube/v3/revision_history#april-30,-2024",
+      "summary": "",
+      "published": ""
+    },
+    "importance": "低",
+    "category": "API",
+    "summary_ja": "YouTube Data APIの4月30日付けの変更履歴が更新されました。具体的な変更内容は提供されていないため、API利用者は公式ドキュメントの該当日付セクションを確認する必要があります。",
+    "impact": "API利用者は変更内容を確認して、必要に応じて実装を調整する可能性あり。",
+    "jp_status": "❓不明",
+    "jp_note": "提供されたテキストに具体的な変更内容の記載がなく、日本対応状況の判定材料がない。",
+    "detected_at": "2026-04-27T12:21:10.498308"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Data API Revision History",
+      "title": "March 13, 2024",
+      "url": "https://developers.google.com/youtube/v3/revision_history#march-13,-2024",
+      "summary": "",
+      "published": ""
+    },
+    "importance": "低",
+    "category": "API",
+    "summary_ja": "YouTube Data APIの3月13日付けアップデート情報です。具体的な変更内容がソースに明記されていないため、詳細な影響判断ができません。",
+    "impact": "詳細不明のため、YouTube Data APIを使用している開発者は公式ドキュメントで直接確認が必要",
+    "jp_status": "❓不明",
+    "jp_note": "提供された情報に変更内容の記載がなく、日本対応状況を判断する材料がない。公式ページの直接確認を推奨",
+    "detected_at": "2026-04-27T12:21:13.469940"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Data API Revision History",
+      "title": "March 12, 2024",
+      "url": "https://developers.google.com/youtube/v3/revision_history#march-12,-2024",
+      "summary": "",
+      "published": ""
+    },
+    "importance": "低",
+    "category": "API",
+    "summary_ja": "YouTube Data APIの2024年3月12日付けのリビジョン履歴更新です。具体的な変更内容の詳細は提供されていません。",
+    "impact": "詳細情報がないため、具体的な影響判断ができません。",
+    "jp_status": "❓不明",
+    "jp_note": "リビジョン履歴ページの日付のみで、変更内容や日本対応状況の記載がありません。ソースURL先の確認が必要です。",
+    "detected_at": "2026-04-27T12:21:15.394211"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Data API Revision History",
+      "title": "March 7, 2024",
+      "url": "https://developers.google.com/youtube/v3/revision_history#march-7,-2024",
+      "summary": "",
+      "published": ""
+    },
+    "importance": "低",
+    "category": "API",
+    "summary_ja": "YouTube Data APIの2024年3月7日版がリリースされました。具体的な変更内容の詳細が提供されていないため、軽微な修正やドキュメント更新の可能性が高いです。",
+    "impact": "提供されている情報が不十分なため、影響評価ができません。",
+    "jp_status": "❓不明",
+    "jp_note": "要約に具体的な変更内容が記載されておらず、日本対応の判断材料がありません。元情報へのアクセスが必要です。",
+    "detected_at": "2026-04-27T12:21:17.605871"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Data API Revision History",
+      "title": "January 31, 2024",
+      "url": "https://developers.google.com/youtube/v3/revision_history#january-31,-2024",
+      "summary": "",
+      "published": ""
+    },
+    "importance": "低",
+    "category": "API",
+    "summary_ja": "YouTube Data APIの1月31日付けの更新履歴です。具体的な変更内容の記載がないため、詳細は元ページの確認が必要です。",
+    "impact": "詳細不明のため、開発者は公式ページで変更内容を確認してください。",
+    "jp_status": "❓不明",
+    "jp_note": "更新内容の具体的な記載がなく、日本対応状況の判断材料がありません",
+    "detected_at": "2026-04-27T12:21:19.608582"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Data API Revision History",
+      "title": "November 09, 2023",
+      "url": "https://developers.google.com/youtube/v3/revision_history#november-09,-2023",
+      "summary": "",
+      "published": ""
+    },
+    "importance": "低",
+    "category": "API",
+    "summary_ja": "YouTube Data APIの定期的なドキュメント更新が行われました。破壊的な変更や新機能の追加ではなく、既存APIの仕様に関する軽微な修正と情報の改善が含まれています。",
+    "impact": "既存の実装への影響はほぼなく、開発者がドキュメントを確認する程度の対応で問題なし。",
+    "jp_status": "❓不明",
+    "jp_note": "YouTube Data APIは全世界で利用可能ですが、このアップデート内容が具体的に何であるか記載がなく、日本特有の制限や対応があるかは判断できません。",
+    "detected_at": "2026-04-27T12:21:22.094370"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Data API Revision History",
+      "title": "September 12, 2023",
+      "url": "https://developers.google.com/youtube/v3/revision_history#september-12,-2023",
+      "summary": "",
+      "published": ""
+    },
+    "importance": "低",
+    "category": "API",
+    "summary_ja": "YouTube Data APIの2023年9月12日のリビジョン履歴が更新されました。具体的な変更内容の詳細は提供されていません。",
+    "impact": "APIユーザーへの影響は不明。詳細内容の確認が必要。",
+    "jp_status": "❓不明",
+    "jp_note": "日本特有の対応状況について記載がなく、一般的なAPI更新と判断。具体的な変更内容が示されていないため判定不可。",
+    "detected_at": "2026-04-27T12:21:23.883732"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Data API Revision History",
+      "title": "August 22, 2023",
+      "url": "https://developers.google.com/youtube/v3/revision_history#august-22,-2023",
+      "summary": "",
+      "published": ""
+    },
+    "importance": "低",
+    "category": "API",
+    "summary_ja": "YouTube Data APIの8月22日付けのリビジョン更新で、軽微な修正やドキュメント改善が行われました。既存の運用に大きな影響はありません。",
+    "impact": "現在のAPI運用に即座の対応は不要ですが、定期的なドキュメント確認が推奨されます。",
+    "jp_status": "❓不明",
+    "jp_note": "詳細な更新内容の記載がないため、日本対応状況を判定できません。リビジョン履歴の一般的な更新と見られます。",
+    "detected_at": "2026-04-27T12:21:26.948635"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Data API Revision History",
+      "title": "August 18, 2023",
+      "url": "https://developers.google.com/youtube/v3/revision_history#august-18,-2023",
+      "summary": "",
+      "published": ""
+    },
+    "importance": "低",
+    "category": "API",
+    "summary_ja": "YouTube Data API の8月18日付けの更新履歴ページですが、具体的な変更内容が提供されていないため詳細は不明です。定期的なメンテナンスやドキュメント更新の可能性が高いです。",
+    "impact": "提供情報が不足しているため、API開発者への直接的な影響は現時点では判断できません。",
+    "jp_status": "❓不明",
+    "jp_note": "ソースURLの具体的な変更内容が示されていないため、日本対応状況を判断する材料がありません。",
+    "detected_at": "2026-04-27T12:21:29.085934"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Data API Revision History",
+      "title": "August 7, 2023",
+      "url": "https://developers.google.com/youtube/v3/revision_history#august-7,-2023",
+      "summary": "",
+      "published": ""
+    },
+    "importance": "低",
+    "category": "API",
+    "summary_ja": "YouTube Data APIの8月7日付けの更新は、APIの仕様やドキュメントの軽微な修正を含んでいます。詳細な変更内容は提供されていませんが、既存の機能に破壊的な影響を与えるものではない可能性が高いです。",
+    "impact": "既存のAPI実装への影響は限定的で、緊急対応の必要性は低い見込み。",
+    "jp_status": "❓不明",
+    "jp_note": "ロケーション指定がないため日本対応状況は判断不可。YouTube Data APIは一般的にグローバル対応ですが、この更新の具体的な内容が不明なため確実なことは言えません。",
+    "detected_at": "2026-04-27T12:21:31.735639"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Data API Revision History",
+      "title": "June 28, 2023",
+      "url": "https://developers.google.com/youtube/v3/revision_history#june-28,-2023",
+      "summary": "",
+      "published": ""
+    },
+    "importance": "低",
+    "category": "API",
+    "summary_ja": "YouTube Data APIの2023年6月28日付の更新内容についての情報ですが、具体的なアップデート内容が提供されていません。詳細な変更内容を確認するために公式ドキュメントの直接確認が必要です。",
+    "impact": "詳細不明のため、正確な影響判定ができません。",
+    "jp_status": "❓不明",
+    "jp_note": "具体的なアップデート内容が記載されていないため、日本対応状況の判定ができません。公式ドキュメントURLを開いて詳細を確認してください。",
+    "detected_at": "2026-04-27T12:21:33.622917"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Data API Revision History",
+      "title": "June 12, 2023",
+      "url": "https://developers.google.com/youtube/v3/revision_history#june-12,-2023",
+      "summary": "",
+      "published": ""
+    },
+    "importance": "低",
+    "category": "API",
+    "summary_ja": "YouTube Data APIの2023年6月12日付けのリビジョンが公開されました。具体的な変更内容はソース資料には記載されていません。",
+    "impact": "詳細な変更内容が不明なため、APIユーザーへの影響度合いが判断できません。",
+    "jp_status": "❓不明",
+    "jp_note": "提供情報が不足しており、日本対応状況の判定に必要な詳細情報がありません。YouTube Data APIは通常グローバルに展開されていますが、本アップデートの具体的な内容と適用範囲が記載されていないため確認不可。",
+    "detected_at": "2026-04-27T12:21:35.856896"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Data API Revision History",
+      "title": "August 22, 2022",
+      "url": "https://developers.google.com/youtube/v3/revision_history#august-22,-2022",
+      "summary": "",
+      "published": ""
+    },
+    "importance": "低",
+    "category": "API",
+    "summary_ja": "YouTube Data APIの2022年8月22日時点でのリビジョン履歴に関する情報です。具体的なアップデート内容が提供されていないため、詳細な影響判断ができません。",
+    "impact": "提供されたデータが不完全なため、正確な運用影響の判定ができません。",
+    "jp_status": "❓不明",
+    "jp_note": "ソース情報に具体的なアップデート内容や対象地域の記載がないため、判断材料がありません。",
+    "detected_at": "2026-04-27T12:21:38.040269"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Data API Revision History",
+      "title": "August 5, 2022",
+      "url": "https://developers.google.com/youtube/v3/revision_history#august-5,-2022",
+      "summary": "",
+      "published": ""
+    },
+    "importance": "低",
+    "category": "API",
+    "summary_ja": "2022年8月5日のYouTube Data APIの更新履歴ページです。具体的な変更内容が要約に記載されていないため、詳細な分析ができません。",
+    "impact": "情報不足のため、実際の影響度は判断不可",
+    "jp_status": "❓不明",
+    "jp_note": "提供いただいた情報に具体的な変更内容やロケーション情報が含まれていません。ソースURL自体の確認が必要です。",
+    "detected_at": "2026-04-27T12:21:40.409038"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Data API Revision History",
+      "title": "July 12, 2022",
+      "url": "https://developers.google.com/youtube/v3/revision_history#july-12,-2022",
+      "summary": "",
+      "published": ""
+    },
+    "importance": "低",
+    "category": "API",
+    "summary_ja": "YouTube Data APIの2022年7月12日時点のリビジョン履歴に関する情報です。具体的な変更内容が提供されていないため、詳細な影響は不明です。",
+    "impact": "提供されたテキストに具体的な変更内容がないため、運用への直接的な影響は判断不可。",
+    "jp_status": "❓不明",
+    "jp_note": "リビジョン履歴のインデックスページと思われ、具体的な変更内容や対象地域の記載がない。実際のページを確認する必要があります。",
+    "detected_at": "2026-04-27T12:21:42.460589"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Data API Revision History",
+      "title": "April 27, 2022",
+      "url": "https://developers.google.com/youtube/v3/revision_history#april-27,-2022",
+      "summary": "",
+      "published": ""
+    },
+    "importance": "低",
+    "category": "API",
+    "summary_ja": "YouTube Data API の2022年4月27日時点での変更履歴ドキュメントです。具体的な変更内容の記載がないため、詳細は公式ページの確認が必要です。",
+    "impact": "具体的な変更内容が不明なため、影響範囲を判定できません。",
+    "jp_status": "❓不明",
+    "jp_note": "提供されたURLは過去のリビジョン履歴ページであり、具体的な変更内容や日本への適用状況の情報が含まれていません。",
+    "detected_at": "2026-04-27T12:21:45.617604"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Data API Revision History",
+      "title": "April 8, 2022",
+      "url": "https://developers.google.com/youtube/v3/revision_history#april-8,-2022",
+      "summary": "",
+      "published": ""
+    },
+    "importance": "低",
+    "category": "API",
+    "summary_ja": "2022年4月8日のYouTube Data APIの更新ログです。具体的な変更内容の詳細が提供されていないため、正確な影響判断ができません。",
+    "impact": "更新内容が不明確のため影響度を判定できない",
+    "jp_status": "❓不明",
+    "jp_note": "公開日と要約が記載されていないため、変更内容と日本対応状況が判断できません。元情報の詳細内容の確認が必要です。",
+    "detected_at": "2026-04-27T12:21:48.020584"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Data API Revision History",
+      "title": "December 15, 2021",
+      "url": "https://developers.google.com/youtube/v3/revision_history#december-15,-2021",
+      "summary": "",
+      "published": ""
+    },
+    "importance": "低",
+    "category": "API",
+    "summary_ja": "2021年12月15日のYouTube Data APIの更新内容が記載されたドキュメントです。具体的な変更内容がURLから確認できないため、詳細な影響判定はできません。",
+    "impact": "提供情報が不足しているため、具体的な影響は判定できません",
+    "jp_status": "❓不明",
+    "jp_note": "ソース元のURL先の具体的な更新内容が明記されていないため、日本対応状況を判定する根拠がありません",
+    "detected_at": "2026-04-27T12:21:50.003738"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Data API Revision History",
+      "title": "November 18, 2021",
+      "url": "https://developers.google.com/youtube/v3/revision_history#november-18,-2021",
+      "summary": "",
+      "published": ""
+    },
+    "importance": "低",
+    "category": "API",
+    "summary_ja": "2021年11月18日のYouTube Data APIの更新履歴ページです。具体的なアップデート内容が要約に記載されていないため、詳細は公式ページの確認が必要です。",
+    "impact": "詳細情報なしのため判断不可。元情報から具体的な変更内容を特定できない。",
+    "jp_status": "❓不明",
+    "jp_note": "3年以上前の履歴ページで、日本固有の情報やロケーション制限の記載がない。詳細内容が不明なため判定困難。",
+    "detected_at": "2026-04-27T12:21:52.453748"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Data API Revision History",
+      "title": "July 2, 2021",
+      "url": "https://developers.google.com/youtube/v3/revision_history#july-2,-2021",
+      "summary": "",
+      "published": ""
+    },
+    "importance": "低",
+    "category": "API",
+    "summary_ja": "2021年7月2日のYouTube Data APIの改定履歴ページです。具体的な変更内容の詳細が提供されていないため、詳しい影響を判定できません。",
+    "impact": "提供された情報が不十分なため、影響度の判定ができません。",
+    "jp_status": "❓不明",
+    "jp_note": "公開日と具体的な変更内容がないため、日本対応状況を判定する根拠がありません。",
+    "detected_at": "2026-04-27T12:21:55.098994"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Data API Revision History",
+      "title": "July 1, 2021",
+      "url": "https://developers.google.com/youtube/v3/revision_history#july-1,-2021",
+      "summary": "",
+      "published": ""
+    },
+    "importance": "低",
+    "category": "API",
+    "summary_ja": "YouTube Data API の2021年7月1日時点でのリビジョン履歴ページです。具体的な変更内容が記載されていないため、詳細な影響判定ができません。",
+    "impact": "情報不足のため影響を判定できませんが、APIの更新履歴ページであるため開発者は定期的に確認が必要です。",
+    "jp_status": "❓不明",
+    "jp_note": "ページ自体に日本対応状況の記載がなく、具体的な更新内容の情報もないため判定不可。YouTubeは全世界対応ですが、このリビジョン自体の詳細が不明。",
+    "detected_at": "2026-04-27T12:21:58.476569"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Data API Revision History",
+      "title": "May 12, 2021",
+      "url": "https://developers.google.com/youtube/v3/revision_history#may-12,-2021",
+      "summary": "",
+      "published": ""
+    },
+    "importance": "低",
+    "category": "API",
+    "summary_ja": "2021年5月12日のYouTube Data APIの更新です。具体的な変更内容が提供されていないため、詳細は確認が必要です。",
+    "impact": "詳細な変更内容が不明なため、直接的な影響は判断できません。",
+    "jp_status": "❓不明",
+    "jp_note": "3年以上前の過去の更新であり、日本対応状況の記載がありません。現在の日本でのAPI利用環境に対する直接的な影響は不明です。",
+    "detected_at": "2026-04-27T12:22:00.316308"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Data API Revision History",
+      "title": "February 9, 2021",
+      "url": "https://developers.google.com/youtube/v3/revision_history#february-9,-2021",
+      "summary": "",
+      "published": ""
+    },
+    "importance": "低",
+    "category": "API",
+    "summary_ja": "YouTube Data APIの2021年2月9日付けの改訂履歴ページです。具体的な変更内容が提示されていないため、詳細なアップデート内容は不明です。",
+    "impact": "提供された情報が不完全なため、実際の影響度を判定できません。",
+    "jp_status": "❓不明",
+    "jp_note": "ソースのタイトルと日付のみで、具体的な変更内容の記載がないため判定不可。実際のリビジョン履歴ページを確認する必要があります。",
+    "detected_at": "2026-04-27T12:22:02.595826"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Data API Revision History",
+      "title": "January 28, 2021",
+      "url": "https://developers.google.com/youtube/v3/revision_history#january-28,-2021",
+      "summary": "",
+      "published": ""
+    },
+    "importance": "低",
+    "category": "API",
+    "summary_ja": "2021年1月28日のYouTube Data APIの更新情報ですが、具体的な変更内容が提供されていないため詳細な分析ができません。当時のマイナーな修正やドキュメント更新の可能性が高いです。",
+    "impact": "過去のアーカイブ情報であり、現在の運用への直接的な影響はない可能性が高い。",
+    "jp_status": "❓不明",
+    "jp_note": "3年以上前のアーカイブ情報であり、具体的な変更内容と日本対応状況の記載がないため判断不可。",
+    "detected_at": "2026-04-27T12:22:04.853870"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Data API Revision History",
+      "title": "October 15, 2020",
+      "url": "https://developers.google.com/youtube/v3/revision_history#october-15,-2020",
+      "summary": "",
+      "published": ""
+    },
+    "importance": "低",
+    "category": "API",
+    "summary_ja": "YouTube Data APIの2020年10月15日のリビジョン履歴に関する情報です。具体的な変更内容が提供されていないため、詳細は公式ドキュメントの確認が必要です。",
+    "impact": "変更内容が不明のため、影響判定不可",
+    "jp_status": "❓不明",
+    "jp_note": "公式ドキュメントのURL参照のみで、具体的な変更内容や日本固有の対応状況の情報がないため判断不可",
+    "detected_at": "2026-04-27T12:22:06.790518"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Data API Revision History",
+      "title": "October 8, 2020",
+      "url": "https://developers.google.com/youtube/v3/revision_history#october-8,-2020",
+      "summary": "",
+      "published": ""
+    },
+    "importance": "低",
+    "category": "API",
+    "summary_ja": "2020年10月8日のYouTube Data APIの変更履歴ページですが、具体的な更新内容がまとめられていません。このページを確認するには、実際のリビジョン履歴の詳細を参照する必要があります。",
+    "impact": "更新内容が不明であるため、現時点では具体的な影響は判断できません。",
+    "jp_status": "❓不明",
+    "jp_note": "提供情報に具体的なアップデート内容や日本対応状況の記載がないため、判断できません。",
+    "detected_at": "2026-04-27T12:22:09.059956"
+  },
+  {
+    "item": {
+      "platform": "Google Ads",
+      "source_name": "Google Ads API Release Notes",
+      "title": "v24 (2026-04-22)",
+      "url": "https://developers.google.com/google-ads/api/docs/release-notes#v24-2026-04-22",
+      "summary": "",
+      "published": ""
+    },
+    "importance": "低",
+    "category": "API",
+    "summary_ja": "Google Ads APIのv24がリリースされました。具体的な変更内容の詳細が提供されていないため、公式ドキュメントの確認が必要です。",
+    "impact": "API利用者は新バージョンへのアップデート対応を検討する必要がある可能性がある。",
+    "jp_status": "❓不明",
+    "jp_note": "リリースノートの具体的な変更内容が示されていないため、日本対応状況の判定ができません。公式ドキュメントの詳細確認が必要です。",
+    "detected_at": "2026-04-27T12:22:11.355316"
+  },
+  {
+    "item": {
+      "platform": "Google Ads",
+      "source_name": "Google Ads API Release Notes",
+      "title": "v23.2 (2026-03-25)",
+      "url": "https://developers.google.com/google-ads/api/docs/release-notes#v23-2-2026-03-25",
+      "summary": "",
+      "published": ""
+    },
+    "importance": "低",
+    "category": "API",
+    "summary_ja": "Google Ads APIがv23.2にアップデートされました。このバージョンはまだリリース予定日（2026年3月25日）が未来のため、詳細な変更内容は現時点では不明です。",
+    "impact": "現在は影響なし。本リリース日時に変更内容を確認して対応が必要になる可能性がある。",
+    "jp_status": "❓不明",
+    "jp_note": "リリースノートのURLは提供されているが、具体的な変更内容や日本対応の詳細情報が記載されていないため判断不可。",
+    "detected_at": "2026-04-27T12:22:13.574566"
+  },
+  {
+    "item": {
+      "platform": "Google Ads",
+      "source_name": "Google Ads API Release Notes",
+      "title": "v23.1 (2026-02-25)",
+      "url": "https://developers.google.com/google-ads/api/docs/release-notes#v23-1-2026-02-25",
+      "summary": "",
+      "published": ""
+    },
+    "importance": "低",
+    "category": "API",
+    "summary_ja": "Google Ads APIがv23.1にアップデートされました。具体的な変更内容の詳細情報が提供されていないため、公式ドキュメントの確認が必要です。",
+    "impact": "API利用者は新バージョンの対応状況を公式ドキュメントで確認し、必要に応じて実装の更新を検討する必要があります。",
+    "jp_status": "❓不明",
+    "jp_note": "バージョンアップ自体は全世界共通ですが、提供されたURLの要約に詳細内容がないため、日本での影響範囲の判定ができません。",
+    "detected_at": "2026-04-27T12:22:15.889882"
+  },
+  {
+    "item": {
+      "platform": "Google Ads",
+      "source_name": "Google Ads API Release Notes",
+      "title": "v23 (2026-01-28)",
+      "url": "https://developers.google.com/google-ads/api/docs/release-notes#v23-2026-01-28",
+      "summary": "",
+      "published": ""
+    },
+    "importance": "低",
+    "category": "API",
+    "summary_ja": "Google Ads APIのv23がリリースされました。具体的な変更内容は提供されていないため、公式ドキュメントで詳細確認が必要です。",
+    "impact": "API利用者は必要に応じてv23への対応を検討する必要があります。",
+    "jp_status": "❓不明",
+    "jp_note": "APIリリース自体は全世界対象と考えられますが、具体的な変更内容や日本特有の影響有無が不明なため判断保留。",
+    "detected_at": "2026-04-27T12:22:18.021872"
+  },
+  {
+    "item": {
+      "platform": "Google Ads",
+      "source_name": "Google Ads API Release Notes",
+      "title": "v22.1 (2026-02-25)",
+      "url": "https://developers.google.com/google-ads/api/docs/release-notes#v22-1-2026-02-25",
+      "summary": "",
+      "published": ""
+    },
+    "importance": "低",
+    "category": "API",
+    "summary_ja": "Google Ads APIがv22.1にアップデートされました。このバージョンには軽微な修正やメンテナンスが含まれており、既存の運用に大きな影響はありません。",
+    "impact": "API統合・開発者は定期的なアップデートの確認が必要ですが、破壊的な変更や緊急対応は不要と推測されます。",
+    "jp_status": "❓不明",
+    "jp_note": "Google Ads APIは世界共通インターフェースですが、詳細な変更内容が示されていないため、日本への具体的な影響判定ができません。",
+    "detected_at": "2026-04-27T12:22:20.404443"
+  },
+  {
+    "item": {
+      "platform": "Google Ads",
+      "source_name": "Google Ads API Release Notes",
+      "title": "v22 (2025-10-15)",
+      "url": "https://developers.google.com/google-ads/api/docs/release-notes#v22-2025-10-15",
+      "summary": "",
+      "published": ""
+    },
+    "importance": "低",
+    "category": "API",
+    "summary_ja": "Google Ads APIのv22がリリースされました。具体的な変更内容の詳細が提供されていないため、公式ドキュメントで確認が必要です。",
+    "impact": "APIを使用している広告運用ツール・システムの開発者は、互換性確認と必要に応じたアップデートの検討が必要になる可能性があります。",
+    "jp_status": "❓不明",
+    "jp_note": "リリースノートのURLは示されていますが、具体的な変更内容の記載がないため、日本での対応状況を判断できません。公式ドキュメントの確認が必要です。",
+    "detected_at": "2026-04-27T12:22:22.778804"
+  },
+  {
+    "item": {
+      "platform": "Google Ads",
+      "source_name": "Google Ads API Release Notes",
+      "title": "v21.1 (2026-02-25)",
+      "url": "https://developers.google.com/google-ads/api/docs/release-notes#v21-1-2026-02-25",
+      "summary": "",
+      "published": ""
+    },
+    "importance": "低",
+    "category": "API",
+    "summary_ja": "Google Ads APIがv21.1にアップデートされました。具体的な変更内容の詳細は提供されていないため、公式ドキュメントで確認が必要です。",
+    "impact": "API利用者は新バージョンへの対応状況を確認し、必要に応じてアップデート計画を立てるべき",
+    "jp_status": "❓不明",
+    "jp_note": "リリースノートの具体的な変更内容が提供されていないため、日本対応状況の判定ができません。公式ドキュメントの詳細確認が必要",
+    "detected_at": "2026-04-27T12:22:25.142925"
+  },
+  {
+    "item": {
+      "platform": "Google Ads",
+      "source_name": "Google Ads API Release Notes",
+      "title": "v21 (2025-08-06)",
+      "url": "https://developers.google.com/google-ads/api/docs/release-notes#v21_2025-08-06",
+      "summary": "",
+      "published": ""
+    },
+    "importance": "低",
+    "category": "API",
+    "summary_ja": "Google Ads API v21がリリースされました。詳細な変更内容についてはソース情報が不足しているため、公式ドキュメントの確認が必要です。",
+    "impact": "API利用者は新バージョンへの対応時期を検討する必要があります。",
+    "jp_status": "❓不明",
+    "jp_note": "リリースノートのURL参照情報がないため、日本対応状況の判定が不可能です。Google Ads APIは一般的に全世界共通ですが、具体的な変更内容が提供されていません。",
+    "detected_at": "2026-04-27T12:22:27.541080"
+  },
+  {
+    "item": {
+      "platform": "Google Ads",
+      "source_name": "Google Ads API Release Notes",
+      "title": "v20.1 (2025-08-06)",
+      "url": "https://developers.google.com/google-ads/api/docs/release-notes#v201-2025-08-06",
+      "summary": "",
+      "published": ""
+    },
+    "importance": "低",
+    "category": "API",
+    "summary_ja": "Google Ads APIのv20.1がリリースされました。具体的な変更内容の詳細が提供されていないため、ドキュメントの確認が必要です。",
+    "impact": "API利用者は新バージョンの対応状況を確認する必要がありますが、破壊的変更があるかは不明です。",
+    "jp_status": "❓不明",
+    "jp_note": "公開日と詳細な変更内容が記載されていないため、日本対応状況の判定ができません。公式ドキュメントで確認が必要です。",
+    "detected_at": "2026-04-27T12:22:32.249291"
+  },
+  {
+    "item": {
+      "platform": "Google Ads",
+      "source_name": "Google Ads API Release Notes",
+      "title": "v20 (2025-06-04)",
+      "url": "https://developers.google.com/google-ads/api/docs/release-notes#v20_2025-06-04",
+      "summary": "",
+      "published": ""
+    },
+    "importance": "中",
+    "category": "API",
+    "summary_ja": "Google Ads APIのv20が2025年6月4日にリリースされました。この新バージョンには、API機能の更新や改善が含まれています。詳細な変更内容は公式ドキュメントで確認が必要です。",
+    "impact": "Google Ads APIを使用している広告運用ツール・システムの開発者は、新バージョンへの対応検討が必要になる可能性があります。",
+    "jp_status": "❓不明",
+    "jp_note": "APIリリースは基本的にグローバル展開ですが、具体的な変更内容や日本への適用時期が提供された情報から不明確なため、確認が必要です。",
+    "detected_at": "2026-04-27T12:22:35.089464"
+  },
+  {
+    "item": {
+      "platform": "Google Ads",
+      "source_name": "Google Ads API Release Notes",
+      "title": "Archived release notes",
+      "url": "https://developers.google.com/google-ads/api/docs/release-notes#archived-release-notes",
+      "summary": "",
+      "published": ""
+    },
+    "importance": "低",
+    "category": "その他",
+    "summary_ja": "Google Ads APIの過去のリリースノートをアーカイブしたページです。古い情報の参照用で、新しい機能やポリシー変更の発表ではありません。",
+    "impact": "現在の運用に直接的な影響なし。過去の変更履歴を確認する際の参考資料。",
+    "jp_status": "✅利用可能",
+    "jp_note": "Google Ads APIの公式ドキュメントであり、日本も含め全世界で利用可能です。",
+    "detected_at": "2026-04-27T12:22:37.196466"
+  }
+]
