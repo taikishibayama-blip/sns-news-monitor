@@ -1681,5 +1681,22 @@
     "jp_status": "✅利用可能",
     "jp_note": "Google Ads APIの公式ドキュメントであり、日本も含め全世界で利用可能です。",
     "detected_at": "2026-04-27T12:22:37.196466"
+  },
+  {
+    "item": {
+      "platform": "Google Ads",
+      "source_name": "Google Ads API Release Notes",
+      "title": "v20.2 (2026-02-25)",
+      "url": "https://developers.google.com/google-ads/api/docs/release-notes#v202-2026-02-25",
+      "summary": "",
+      "published": ""
+    },
+    "importance": "中",
+    "category": "API",
+    "summary_ja": "Google Ads APIがv20.2にアップデートされました。APIを使用して広告運用を自動化している場合は、互換性を確認する必要があります。詳細はソースURLで確認してください。",
+    "impact": "API経由で広告運用をしているユーザーは、バージョン対応状況を確認して必要に応じて更新対応が必要になる可能性がある。",
+    "jp_status": "❓不明",
+    "jp_note": "Google Ads APIは全世界共通ですが、v20.2の具体的な変更内容が記載されていないため、日本での対応可否を判定できません。",
+    "detected_at": "2026-04-27T04:13:38.079057"
   }
 ]
