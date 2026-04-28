@@ -1732,5 +1732,22 @@
     "jp_status": "❓不明",
     "jp_note": "YouTube Data APIは日本を含む全世界で提供されていますが、このリビジョン更新の具体的内容が不明なため、日本への影響可否は判断できません。",
     "detected_at": "2026-04-27T12:09:49.473531"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Official Blog",
+      "title": "The global campus: How YouTube is empowering learners everywhere",
+      "url": "https://blog.youtube/news-and-events/youtube-empowering-learning-tools/",
+      "summary": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/youtube-logo.max-700x3000.forma.max-600x600.format-webp.webp\" />At YouTube, we believe \"learning to learn\" is the most vital skill one can acquire. Whether you are at a desk in school or in your home office, we are committed to provi…",
+      "published": "Tue, 28 Apr 2026 11:00:00 +0000"
+    },
+    "importance": "低",
+    "category": "その他",
+    "summary_ja": "YouTubeが学習支援ツールの拡充を発表し、学校や自宅での学習環境を整備する取り組みを進めている。広告運用や課金に直接的な影響はない。",
+    "impact": "広告運用者への直接的な運用上の影響なし。ただし教育関連コンテンツの視聴増加による視聴者層の変化は長期的に注視の価値あり。",
+    "jp_status": "❓不明",
+    "jp_note": "学習ツールの提供範囲が明記されていないため、日本での利用可否が不明。全世界展開の可能性が高いが、確認情報がない。",
+    "detected_at": "2026-04-28T17:59:07.668304"
   }
 ]
