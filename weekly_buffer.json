@@ -1749,5 +1749,22 @@
     "jp_status": "❓不明",
     "jp_note": "学習ツールの提供範囲が明記されていないため、日本での利用可否が不明。全世界展開の可能性が高いが、確認情報がない。",
     "detected_at": "2026-04-28T17:59:07.668304"
+  },
+  {
+    "item": {
+      "platform": "Meta",
+      "source_name": "Meta Newsroom (about.fb.com)",
+      "title": "Infrastructure Explained: Data Centers",
+      "url": "https://about.fb.com/news/2026/04/infrastructure-explained-meta-data-centers/",
+      "summary": "<div><img alt=\"\" class=\"attachment-large size-large wp-post-image\" height=\"501\" src=\"https://about.fb.com/wp-content/uploads/2026/04/Infrastructure-Explained-Data-Centers_Thumbnail.gif?fit=890%2C501\" style=\"margin-bottom: 15px;\" width=\"890\" /></div>\n<p>We're explaining what data centers are and how they help you connect to your favorite digital experiences, from sharing a photo on Instagram to chatting with AI assistants.</p>\n<p>The post <a href=\"https://about.fb.com/news/2026/04/infrastructure-",
+      "published": "Tue, 28 Apr 2026 18:30:54 +0000"
+    },
+    "importance": "低",
+    "category": "その他",
+    "summary_ja": "Metaがデータセンターの仕組みについて説明する教育的なコンテンツを公開しました。写真共有やAIチャットなど、Metaの各サービスがどのように支えられているかを解説しています。",
+    "impact": "広告運用者への直接的な影響なし。背景情報として参考になる程度。",
+    "jp_status": "❓不明",
+    "jp_note": "教育的なニュース記事であり、特定のロケーション制限やローンチ情報の記載がないため判断不可。日本でも閲覧可能と考えられるが確実性に欠ける。",
+    "detected_at": "2026-04-28T21:42:23.173610"
   }
 ]
