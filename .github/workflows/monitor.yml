@@ -16,6 +16,7 @@ on:
         options:
           - check
           - weekly
+          - test_dm
 
 jobs:
   monitor:
@@ -49,6 +50,7 @@ jobs:
       - name: Run monitor
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          USER_EMAIL: ${{ secrets.USER_EMAIL }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
           SMTP_PORT: ${{ secrets.SMTP_PORT }}

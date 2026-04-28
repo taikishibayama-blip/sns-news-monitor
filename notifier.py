@@ -17,6 +17,10 @@ IMPORTANCE_ORDER = {"高": 0, "中": 1, "低": 2}
 # 媒体グループの表示順（config.yamlのプラットフォーム値と対応）
 PLATFORM_ORDER = ["Meta", "X", "TikTok", "YouTube", "Google Ads"]
 
+# 社内CA-API（HENNGE One OIDC経由のToken管理API）
+CA_API_BASE_DEFAULT = "https://ca-token-api-278149334715.asia-northeast1.run.app"
+DASHBOARD_URL = "https://taikishibayama-blip.github.io/sns-news-monitor/"
+
 logger = logging.getLogger(__name__)
 
 IMPORTANCE_EMOJI = {
@@ -37,19 +41,32 @@ class Notifier:
         self.smtp_pass = os.getenv("SMTP_PASS", "")
         self.mail_from = os.getenv("MAIL_FROM", "")
         self.mail_to = [a.strip() for a in os.getenv("MAIL_TO", "").split(",") if a.strip()]
+        # CA-API経由のSlack DM送信（USER_EMAILが設定されている場合に利用）
+        self.user_email = os.getenv("USER_EMAIL", "")
+        self.ca_api_base = os.getenv("CA_API_BASE", CA_API_BASE_DEFAULT)
 
     def notify(self, items: List[AnalyzedItem], mode: str) -> None:
         if not items:
             logger.info("no items to notify")
             return
         if mode == "urgent":
-            self._send_slack(items, header_text=f":rotating_light: 重要アップデート速報 ({len(items)}件)", group_by_platform=False)
-            self._send_email(items, subject=f"[速報] SNS重要アップデート ({len(items)}件)", group_by_platform=False)
+            header = f":rotating_light: 重要アップデート速報 ({len(items)}件)"
+            subject = f"[速報] SNS重要アップデート ({len(items)}件)"
+            group = False
         elif mode == "weekly":
-            self._send_slack(items, header_text=f":calendar: 週次SNSアップデートレポート ({len(items)}件)", group_by_platform=True)
-            self._send_email(items, subject=f"[週次] SNSアップデートレポート ({len(items)}件)", group_by_platform=True)
+            header = f":calendar: 週次SNSアップデートレポート ({len(items)}件)"
+            subject = f"[週次] SNSアップデートレポート ({len(items)}件)"
+            group = True
         else:
             logger.warning(f"unknown notify mode: {mode}")
+            return
+
+        # Slack配信は CA-API経由DM > Webhook の優先順
+        if self.user_email:
+            self._send_slack_dm_via_ca_api(items, header_text=header, group_by_platform=group)
+        elif self.slack_url:
+            self._send_slack(items, header_text=header, group_by_platform=group)
+        self._send_email(items, subject=subject, group_by_platform=group)
 
     # ----- Slack -----
 
@@ -77,16 +94,13 @@ class Notifier:
             {"type": "divider"},
         ]
 
-    def _send_slack(self, items: List[AnalyzedItem], header_text: str, group_by_platform: bool) -> None:
-        if not self.slack_url:
-            logger.warning("SLACK_WEBHOOK_URL not set, skipping Slack")
-            return
-
+    def _build_full_blocks(self, items: List[AnalyzedItem], header_text: str, group_by_platform: bool) -> list:
+        """Slack送信用の完全なBlock Kit構造を構築（Webhook/CA-API共用）。"""
         blocks = [
             {"type": "header", "text": {"type": "plain_text", "text": header_text, "emoji": True}},
+            {"type": "section", "text": {"type": "mrkdwn", "text": f"<{DASHBOARD_URL}|📊 ダッシュボードを開く>"}},
             {"type": "divider"},
         ]
-
         if group_by_platform:
             grouped = self._group_by_platform(items)
             for platform, plat_items in grouped.items():
@@ -99,16 +113,86 @@ class Notifier:
         else:
             for a in items:
                 blocks.extend(self._build_item_blocks(a))
+        return blocks
 
-        # 上限超過時はチャンク送信
+    def _send_slack(self, items: List[AnalyzedItem], header_text: str, group_by_platform: bool) -> None:
+        if not self.slack_url:
+            logger.warning("SLACK_WEBHOOK_URL not set, skipping Slack webhook")
+            return
+        blocks = self._build_full_blocks(items, header_text, group_by_platform)
         for i in range(0, len(blocks), SLACK_BLOCK_LIMIT):
             chunk = blocks[i : i + SLACK_BLOCK_LIMIT]
             try:
                 resp = requests.post(self.slack_url, json={"blocks": chunk}, timeout=30)
                 resp.raise_for_status()
-                logger.info(f"slack chunk sent: {len(chunk)} blocks")
+                logger.info(f"slack webhook chunk sent: {len(chunk)} blocks")
             except Exception as e:
-                logger.error(f"slack post failed: {e}")
+                logger.error(f"slack webhook post failed: {e}")
+
+    # ----- Slack DM via CA-API（社内HENNGE One認証）-----
+
+    def _get_slack_token_via_ca_api(self) -> str:
+        """CA-API経由で Slack OAuth Token を取得。"""
+        res = requests.post(
+            f"{self.ca_api_base}/token/hennge",
+            json={"email": self.user_email},
+            timeout=15,
+        )
+        if res.status_code == 404:
+            raise RuntimeError(f"CA-API初回認証が未完了。ブラウザで {self.ca_api_base}/auth を開いてください")
+        res.raise_for_status()
+        hennge_token = res.json()["access_token"]
+
+        res = requests.get(
+            f"{self.ca_api_base}/token/slack",
+            headers={"Authorization": f"Bearer {hennge_token}"},
+            timeout=15,
+        )
+        res.raise_for_status()
+        return res.json()["access_token"]
+
+    def _send_slack_dm_via_ca_api(self, items: List[AnalyzedItem], header_text: str, group_by_platform: bool) -> None:
+        """CA-API経由で Slack DM を社長宛に送信。"""
+        try:
+            token = self._get_slack_token_via_ca_api()
+        except Exception as e:
+            logger.error(f"CA-API token取得失敗: {e}")
+            return
+
+        # 自分のSlack User IDを auth.test で取得
+        try:
+            auth_resp = requests.get(
+                "https://slack.com/api/auth.test",
+                headers={"Authorization": f"Bearer {token}"},
+                timeout=15,
+            ).json()
+            if not auth_resp.get("ok"):
+                logger.error(f"slack auth.test failed: {auth_resp.get('error')}")
+                return
+            user_id = auth_resp["user_id"]
+        except Exception as e:
+            logger.error(f"slack auth.test error: {e}")
+            return
+
+        blocks = self._build_full_blocks(items, header_text, group_by_platform)
+        for i in range(0, len(blocks), SLACK_BLOCK_LIMIT):
+            chunk = blocks[i : i + SLACK_BLOCK_LIMIT]
+            try:
+                resp = requests.post(
+                    "https://slack.com/api/chat.postMessage",
+                    headers={
+                        "Authorization": f"Bearer {token}",
+                        "Content-Type": "application/json; charset=utf-8",
+                    },
+                    json={"channel": user_id, "text": header_text, "blocks": chunk},
+                    timeout=30,
+                ).json()
+                if not resp.get("ok"):
+                    logger.error(f"slack chat.postMessage failed: {resp.get('error')}")
+                else:
+                    logger.info(f"slack DM chunk sent: {len(chunk)} blocks")
+            except Exception as e:
+                logger.error(f"slack DM post failed: {e}")
 
     # ----- HTML レンダリング共通（メール本文・ファイル出力で共有）-----
 

@@ -106,9 +106,31 @@ def cmd_weekly() -> None:
     logger.info("=== weekly mode complete ===")
 
 
+def cmd_test_dm() -> None:
+    """検証用: バッファ内の重要度最上位3件をurgent扱いで通知（DM経路の疎通確認）。"""
+    logger.info("=== test_dm mode start ===")
+    storage = Storage()
+    notifier = Notifier()
+
+    items = storage.get_weekly_items()
+    if not items:
+        logger.info("no items in buffer, exiting")
+        return
+
+    from summarizer import AnalyzedItem  # type: ignore
+    sorted_items = sorted(
+        items,
+        key=lambda a: ({"高": 0, "中": 1, "低": 2}.get(a.importance, 99),),
+    )
+    sample = sorted_items[:3]
+    logger.info(f"sending test DM with {len(sample)} sample items")
+    notifier.notify(sample, mode="urgent")
+    logger.info("=== test_dm mode complete ===")
+
+
 def main() -> None:
     if len(sys.argv) < 2:
-        print("Usage: python main.py [check|weekly]")
+        print("Usage: python main.py [check|weekly|test_dm]")
         sys.exit(1)
 
     mode = sys.argv[1]
@@ -116,9 +138,11 @@ def main() -> None:
         cmd_check()
     elif mode == "weekly":
         cmd_weekly()
+    elif mode == "test_dm":
+        cmd_test_dm()
     else:
         print(f"Unknown mode: {mode}")
-        print("Usage: python main.py [check|weekly]")
+        print("Usage: python main.py [check|weekly|test_dm]")
         sys.exit(1)
 
 
