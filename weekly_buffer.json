@@ -1766,5 +1766,22 @@
     "jp_status": "❓不明",
     "jp_note": "教育的なニュース記事であり、特定のロケーション制限やローンチ情報の記載がないため判断不可。日本でも閲覧可能と考えられるが確実性に欠ける。",
     "detected_at": "2026-04-28T21:42:23.173610"
+  },
+  {
+    "item": {
+      "platform": "Meta",
+      "source_name": "Meta Newsroom (about.fb.com)",
+      "title": "Bringing Prepaid Mobile Recharges to WhatsApp Users in India",
+      "url": "https://about.fb.com/news/2026/04/bringing-prepaid-mobile-recharges-to-whatsapp-users-in-india/",
+      "summary": "<div><img alt=\"\" class=\"attachment-large size-large wp-post-image\" height=\"501\" src=\"https://about.fb.com/wp-content/uploads/2026/04/Mobile-recharge-1.jpg?fit=890%2C501\" style=\"margin-bottom: 15px;\" width=\"890\" /></div>\n<p>We're introducing the ability for people in India to complete prepaid mobile recharges directly within WhatsApp, making it easier to stay connected by getting an everyday essential done within the app they already use.</p>\n<p>The post <a href=\"https://about.fb.com/news/2026/04",
+      "published": "Wed, 29 Apr 2026 10:02:32 +0000"
+    },
+    "importance": "低",
+    "category": "新機能",
+    "summary_ja": "インドのWhatsAppユーザーが、アプリ内で直接プリペイド携帯電話のチャージができるようになります。ユーザーは既に使っているアプリで日常的な手続きを完結できるようになるため、利便性が向上します。",
+    "impact": "インド市場のWhatsAppユーザーの利便性向上。日本の広告運用者への直接的な影響は限定的。",
+    "jp_status": "❌未提供",
+    "jp_note": "インド限定での機能ローンチであり、日本での利用開始予定は記載されていません。",
+    "detected_at": "2026-04-29T16:05:34.427679"
   }
 ]
