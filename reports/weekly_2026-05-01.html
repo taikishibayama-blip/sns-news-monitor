@@ -1,0 +1,1349 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>週次SNSアップデートレポート (2026-05-01)</title>
+
+        <style>
+        :root { --primary: #4a90e2; --bg: #f5f7fa; --card: #fff; }
+        * { box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif; margin: 0; background: var(--bg); color: #333; }
+        .container { max-width: 960px; margin: 0 auto; padding: 24px; }
+        h1 { color: #1a1a1a; border-bottom: 2px solid var(--primary); padding-bottom: 12px; margin-top: 0; }
+        .summary { display: flex; gap: 12px; flex-wrap: wrap; margin: 16px 0 24px; }
+        .summary-card { flex: 1 1 140px; background: var(--card); padding: 12px 16px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+        .summary-card .label { font-size: 12px; color: #666; }
+        .summary-card .count { font-size: 24px; font-weight: bold; color: var(--primary); }
+        .summary-card .breakdown { font-size: 11px; color: #888; margin-top: 4px; }
+        .tabs { display: flex; gap: 4px; border-bottom: 2px solid #ddd; margin-bottom: 16px; flex-wrap: wrap; }
+        .tab-btn { background: none; border: none; padding: 12px 20px; cursor: pointer; font-size: 14px; font-weight: 600; color: #666; border-bottom: 3px solid transparent; margin-bottom: -2px; transition: all 0.15s; }
+        .tab-btn:hover { color: var(--primary); background: #eef3fa; }
+        .tab-btn.active { color: var(--primary); border-bottom-color: var(--primary); }
+        .tab-btn .badge { display: inline-block; background: #ddd; color: #555; border-radius: 10px; font-size: 11px; padding: 1px 8px; margin-left: 6px; }
+        .tab-btn.active .badge { background: var(--primary); color: white; }
+        .tab-pane { display: none; }
+        .tab-pane.active { display: block; }
+        .item { background: var(--card); border-left: 4px solid #ccc; padding: 14px 18px; margin: 12px 0; border-radius: 6px; box-shadow: 0 1px 2px rgba(0,0,0,0.04); }
+        .item.high { border-left-color: #e74c3c; background: #fdecec; }
+        .item.medium { border-left-color: #f39c12; background: #fef9ee; }
+        .item.low { border-left-color: #95a5a6; }
+        .meta { font-size: 11px; color: #888; margin-bottom: 6px; }
+        .badge-imp { display: inline-block; padding: 2px 8px; border-radius: 4px; font-weight: bold; margin-right: 6px; font-size: 11px; }
+        .badge-imp.high { background: #e74c3c; color: white; }
+        .badge-imp.medium { background: #f39c12; color: white; }
+        .badge-imp.low { background: #95a5a6; color: white; }
+        .title-row { font-size: 15px; font-weight: bold; margin-bottom: 8px; line-height: 1.4; }
+        .summary-text { margin: 8px 0; line-height: 1.7; font-size: 14px; }
+        .impact { background: #fff7e0; padding: 8px 12px; border-radius: 4px; margin: 8px 0; font-size: 13px; }
+        .jp { background: #e8f4f8; padding: 8px 12px; border-radius: 4px; margin: 8px 0; font-size: 12px; }
+        .source-link { font-size: 12px; }
+        .source-link a { color: var(--primary); text-decoration: none; }
+        .source-link a:hover { text-decoration: underline; }
+        .empty { color: #999; padding: 40px; text-align: center; }
+        </style>
+        
+</head>
+<body>
+<div class="container">
+<h1>週次SNSアップデートレポート (2026-05-01)</h1>
+<div class="summary">
+            <div class="summary-card">
+                <div class="label">Meta</div>
+                <div class="count">22</div>
+                <div class="breakdown">高0 / 中3 / 低19</div>
+            </div>
+            
+            <div class="summary-card">
+                <div class="label">X</div>
+                <div class="count">20</div>
+                <div class="breakdown">高10 / 中9 / 低1</div>
+            </div>
+            
+            <div class="summary-card">
+                <div class="label">YouTube</div>
+                <div class="count">51</div>
+                <div class="breakdown">高0 / 中1 / 低50</div>
+            </div>
+            
+            <div class="summary-card">
+                <div class="label">Google Ads</div>
+                <div class="count">12</div>
+                <div class="breakdown">高0 / 中2 / 低10</div>
+            </div>
+            </div>
+<div class="tabs"><button class="tab-btn active" id="btn-meta" onclick="showTab('meta')">Meta<span class="badge">22</span></button><button class="tab-btn " id="btn-x" onclick="showTab('x')">X<span class="badge">20</span></button><button class="tab-btn " id="btn-youtube" onclick="showTab('youtube')">YouTube<span class="badge">51</span></button><button class="tab-btn " id="btn-google-ads" onclick="showTab('google-ads')">Google Ads<span class="badge">12</span></button></div>
+<div class="tab-pane active" id="pane-meta">
+        <div class="item medium">
+            <div class="meta">
+                <span class="badge-imp medium">中</span>
+                新機能 · 検知: 2026-04-27 12:20
+            </div>
+            <div class="title-row">Meta Adaptive Ranking Model: Bending the Inference Scaling Curve to Serve LLM-Scale Models for Ads</div>
+            <div class="summary-text">MetaがLLM規模の大型AI モデルを広告推薦システムに導入し、ユーザーの関心や意図をより正確に理解できるようにしています。これにより広告主はより良いターゲティングと成果が期待できます。</div>
+            <div class="impact"><b>影響:</b> 広告推薦の精度向上により、今後のキャンペーン成果が改善される可能性がある。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — 技術ブログの発表であり、具体的な利用可能地域の記載がありません。Meta広告システムは日本でも利用されていますが、このモデル導入のロールアウト対象地域が明記されていないため不明と判定します。</div>
+            <div class="source-link"><a href="https://engineering.fb.com/2026/03/31/ml-applications/meta-adaptive-ranking-model-bending-the-inference-scaling-curve-to-serve-llm-scale-models-for-ads/" target="_blank">出典: Engineering at Meta</a></div>
+        </div>
+        
+        <div class="item medium">
+            <div class="meta">
+                <span class="badge-imp medium">中</span>
+                ポリシー · 検知: 2026-04-27 12:20
+            </div>
+            <div class="title-row">Instagram Expands Teen Accounts Inspired by 13+ Content Ratings</div>
+            <div class="summary-text">Instagramが13歳以上向けのコンテンツレーティング機能をインドに拡大しました。この機能により、十代のユーザーに対して年齢に適した安全な利用環境を提供するようになります。</div>
+            <div class="impact"><b>影響:</b> インド地域での広告配信対象層が変わる可能性があり、広告主は13+ rating設定を理解して運用を調整する必要がある。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — インド拡大の発表のため日本への適用時期が明記されていない。今後の日本展開については公式情報がない。</div>
+            <div class="source-link"><a href="https://about.fb.com/news/2026/04/instagram-expands-teen-accounts-inspired-by-13-content-ratings-2/" target="_blank">出典: Meta Newsroom (about.fb.com)</a></div>
+        </div>
+        
+        <div class="item medium">
+            <div class="meta">
+                <span class="badge-imp medium">中</span>
+                UI変更 · 検知: 2026-04-27 12:20
+            </div>
+            <div class="title-row">Meta Account: The Simpler Way to Access Your Apps and Devices</div>
+            <div class="summary-text">MetaはAccounts Centerを「Meta Account」に自動更新する予定です。この変更は今後1年かけて段階的に行われます。ユーザーはMetaの複数のアプリやデバイスへのアクセスがより簡単になります。</div>
+            <div class="impact"><b>影響:</b> Metaの各種アプリ・デバイスへのログイン方法やアカウント管理の操作性が変わるため、広告運用者はAccounts Centerの新しい操作方法に対応する必要があります。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — グローバルアナウンスのため日本を含む全世界対象と推定されますが、ロケーション別の展開スケジュールが記事要約に記載されていないため確認が必要です。</div>
+            <div class="source-link"><a href="https://about.fb.com/news/2026/04/meta-account/" target="_blank">出典: Meta Newsroom (about.fb.com)</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                新機能 · 検知: 2026-04-29 16:05
+            </div>
+            <div class="title-row">Bringing Prepaid Mobile Recharges to WhatsApp Users in India</div>
+            <div class="summary-text">インドのWhatsAppユーザーが、アプリ内で直接プリペイド携帯電話のチャージができるようになります。ユーザーは既に使っているアプリで日常的な手続きを完結できるようになるため、利便性が向上します。</div>
+            <div class="impact"><b>影響:</b> インド市場のWhatsAppユーザーの利便性向上。日本の広告運用者への直接的な影響は限定的。</div>
+            <div class="jp"><b>日本対応:</b> ❌未提供 — インド限定での機能ローンチであり、日本での利用開始予定は記載されていません。</div>
+            <div class="source-link"><a href="https://about.fb.com/news/2026/04/bringing-prepaid-mobile-recharges-to-whatsapp-users-in-india/" target="_blank">出典: Meta Newsroom (about.fb.com)</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                その他 · 検知: 2026-04-28 21:42
+            </div>
+            <div class="title-row">Infrastructure Explained: Data Centers</div>
+            <div class="summary-text">Metaがデータセンターの仕組みについて説明する教育的なコンテンツを公開しました。写真共有やAIチャットなど、Metaの各サービスがどのように支えられているかを解説しています。</div>
+            <div class="impact"><b>影響:</b> 広告運用者への直接的な影響なし。背景情報として参考になる程度。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — 教育的なニュース記事であり、特定のロケーション制限やローンチ情報の記載がないため判断不可。日本でも閲覧可能と考えられるが確実性に欠ける。</div>
+            <div class="source-link"><a href="https://about.fb.com/news/2026/04/infrastructure-explained-meta-data-centers/" target="_blank">出典: Meta Newsroom (about.fb.com)</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                その他 · 検知: 2026-04-27 12:20
+            </div>
+            <div class="title-row">AI for American-Produced Cement and Concrete</div>
+            <div class="summary-text">Metaが建設業界向けにコンクリート配合設計のAIモデルを開発・公開しました。米国産のセメント・コンクリート製品の品質向上と持続可能性の実現が目的です。</div>
+            <div class="impact"><b>影響:</b> SNS広告運用業務への直接的な影響はありません。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — 建設業界向けのAI研究開発に関する記事で、広告プラットフォーム機能やポリシーの情報が含まれていないため日本対応状況の判定ができません。</div>
+            <div class="source-link"><a href="https://engineering.fb.com/2026/03/30/data-center-engineering/ai-for-american-produced-cement-and-concrete/" target="_blank">出典: Engineering at Meta</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                その他 · 検知: 2026-04-27 12:20
+            </div>
+            <div class="title-row">KernelEvolve: How Meta’s Ranking Engineer Agent Optimizes AI Infrastructure</div>
+            <div class="summary-text">MetaのAI広告ランキングシステムを最適化するための技術記事です。Ranking Engineer Agentという自動化されたAIツールが、広告配信の基盤となるインフラを改善する仕組みについて説明しています。広告運用者が直接使える機能ではなく、メタ内部の技術開発に関する情報です。</div>
+            <div class="impact"><b>影響:</b> 広告運用者への直接的な影響はなく、メタのバックエンド技術の進化についての技術情報。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — 日本での提供やローンチ予定についての記載がなく、技術ブログの内部情報であるため判断材料がない。</div>
+            <div class="source-link"><a href="https://engineering.fb.com/2026/04/02/developer-tools/kernelevolve-how-metas-ranking-engineer-agent-optimizes-ai-infrastructure/" target="_blank">出典: Engineering at Meta</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                その他 · 検知: 2026-04-27 12:20
+            </div>
+            <div class="title-row">How Meta Used AI to Map Tribal Knowledge in Large-Scale Data Pipelines</div>
+            <div class="summary-text">Metaの開発チームが、AI工具がコード理解を深めるための内部的な技術改善について公開した記事です。大規模なデータ処理パイプラインの自動化に関する技術情報で、広告運用や公式機能の変更ではありません。</div>
+            <div class="impact"><b>影響:</b> SNS広告運用者への直接的な影響なし。Meta内部の開発効率化の事例紹介に過ぎない。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — エンジニアリング技術記事で、広告運用ツールやプラットフォーム機能の変更ではないため、日本対応状況の判定対象外です。</div>
+            <div class="source-link"><a href="https://engineering.fb.com/2026/04/06/developer-tools/how-meta-used-ai-to-map-tribal-knowledge-in-large-scale-data-pipelines/" target="_blank">出典: Engineering at Meta</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                その他 · 検知: 2026-04-27 12:20
+            </div>
+            <div class="title-row">Trust But Canary: Configuration Safety at Scale</div>
+            <div class="summary-text">Metaのエンジニアリングチームが、大規模なシステム構成変更を安全に行うための技術手法「カナリアリリース」と段階的ロールアウトについて解説したポッドキャスト。AIの普及に伴い、開発の高速化と安全性のバランスをどう取るかについて討論している。</div>
+            <div class="impact"><b>影響:</b> 広告運用者への直接的な影響はなし。Meta基盤技術の内部的な安全性向上に関する技術記事。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — ポッドキャスト記事であり、広告プラットフォーム機能やポリシー変更ではなく、Meta内部のエンジニアリング技術に関する内容。日本向けの広告機能への適用可否について明記されていない。</div>
+            <div class="source-link"><a href="https://engineering.fb.com/2026/04/08/security/trust-but-canary-configuration-safety-at-scale-meta-tech-podcast/" target="_blank">出典: Engineering at Meta</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                その他 · 検知: 2026-04-27 12:20
+            </div>
+            <div class="title-row">Escaping the Fork: How Meta Modernized WebRTC Across 50+ Use Cases</div>
+            <div class="summary-text">MetaがWebRTC技術の内部フォーク管理の問題を解決するため、デュアルスタックアーキテクチャを導入したという技術解説です。広告運用に直接的な影響はありません。</div>
+            <div class="impact"><b>影響:</b> 広告運用やSNS広告プラットフォームの機能・ポリシーに対する直接的な影響なし。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — これはMeta社内の技術ブログ記事で、WebRTC基盤技術に関する開発者向けの情報です。日本でのローンチ対象外であり、広告プラットフォームユーザーへの周知対象外と判断します。</div>
+            <div class="source-link"><a href="https://engineering.fb.com/2026/04/09/developer-tools/escaping-the-fork-how-meta-modernized-webrtc-across-50-use-cases/" target="_blank">出典: Engineering at Meta</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                その他 · 検知: 2026-04-27 12:20
+            </div>
+            <div class="title-row">Post-Quantum Cryptography Migration at Meta: Framework, Lessons, and Takeaways</div>
+            <div class="summary-text">Metaがポスト量子暗号への移行に関する技術的な知見と枠組みを公開しました。これはセキュリティインフラの長期的な強化に関する技術記事で、広告運用に直接的な影響はありません。</div>
+            <div class="impact"><b>影響:</b> 広告主や運用者への直接的な影響はなし。Metaの基盤技術に関する技術情報共有。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — 技術ブログ記事であり、広告機能やポリシー変更ではないため、日本での提供可否の概念が該当しません。</div>
+            <div class="source-link"><a href="https://engineering.fb.com/2026/04/16/security/post-quantum-cryptography-migration-at-meta-framework-lessons-and-takeaways/" target="_blank">出典: Engineering at Meta</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                その他 · 検知: 2026-04-27 12:20
+            </div>
+            <div class="title-row">Capacity Efficiency at Meta: How Unified AI Agents Optimize Performance at Hyperscale</div>
+            <div class="summary-text">Metaがインフラの性能問題を自動で見つけて修正するAIエージェントプラットフォームを開発したという技術記事です。広告運用や広告システムへの直接的な影響はありません。</div>
+            <div class="impact"><b>影響:</b> 広告運用者への直接的な影響なし。Meta内部のインフラ効率化に関する技術情報。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — 技術ブログ記事であり、広告商品やポリシー変更ではないため、日本対応状況の判定対象外。</div>
+            <div class="source-link"><a href="https://engineering.fb.com/2026/04/16/developer-tools/capacity-efficiency-at-meta-how-unified-ai-agents-optimize-performance-at-hyperscale/" target="_blank">出典: Engineering at Meta</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                その他 · 検知: 2026-04-27 12:20
+            </div>
+            <div class="title-row">Modernizing the Facebook Groups Search to Unlock the Power of Community Knowledge</div>
+            <div class="summary-text">Facebookグループの検索機能が改善され、ハイブリッド検索技術を導入することで、ユーザーがコミュニティ内の関連コンテンツをより見つけやすくなりました。この改善は検索精度の向上を目指したバックエンド技術の更新です。</div>
+            <div class="impact"><b>影響:</b> 広告運用者への直接的な影響は限定的だが、グループ内の検索利便性向上により、グループ関連の広告配信や顧客エンゲージメントに間接的な好影響の可能性。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — エンジニアリングブログの技術解説であり、地域別ローンチ情報の記載なし。Facebook Groupsは日本でも利用可能だが、この特定の検索改善がいつ日本に展開されるかは不明。</div>
+            <div class="source-link"><a href="https://engineering.fb.com/2026/04/21/ml-applications/modernizing-the-facebook-groups-search-to-unlock-the-power-of-community-knowledge/" target="_blank">出典: Engineering at Meta</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                その他 · 検知: 2026-04-27 12:20
+            </div>
+            <div class="title-row">Meta Partners With Broadcom to Co-Develop Custom AI Silicon</div>
+            <div class="summary-text">MetaがBroadcomと協力してAI向けのカスタムチップを共同開発します。これはMetaの長期的なAI戦略を支えるための基盤作りです。広告運用や広告商品の変更ではなく、企業の技術インフラに関するニュースです。</div>
+            <div class="impact"><b>影響:</b> 広告運用者・広告出稿者への直接的な影響はない。Metaのインフラ強化であり、将来的なサービス安定性向上に寄与する可能性がある。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — 企業向けのインフラ投資ニュースであり、ロケーション情報や地域別の展開計画の記載がない。広告プラットフォーム自体の変更ではないため、日本対応状況の判定が難しい。</div>
+            <div class="source-link"><a href="https://about.fb.com/news/2026/04/meta-partners-with-broadcom-to-co-develop-custom-ai-silicon/" target="_blank">出典: Meta Newsroom (about.fb.com)</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                新機能 · 検知: 2026-04-27 12:20
+            </div>
+            <div class="title-row">Now Rolling Out: Facebook’s Opt‑In Camera Roll Suggestions in the EU and UK</div>
+            <div class="summary-text">EUと英国のユーザーがFacebookアプリでカメラロール内の写真や動画から自動的に編集やコラージュのアイデアを提案される新機能を選べるようになった。ユーザーは必要に応じてこの機能をオンにできる。</div>
+            <div class="impact"><b>影響:</b> 広告運用者への直接的な影響はないが、ユーザーのコンテンツ作成・シェア行動が活性化する可能性がある。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — ニュースでEUと英国のみの展開と明記されており、日本での提供予定に関する記載がない。</div>
+            <div class="source-link"><a href="https://about.fb.com/news/2026/04/now-rolling-out-facebooks-opt-in-camera-roll-suggestions-in-the-eu-and-uk/" target="_blank">出典: Meta Newsroom (about.fb.com)</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                その他 · 検知: 2026-04-27 12:20
+            </div>
+            <div class="title-row">Meta and CBRE Invest in American Jobs Through New Fiber Technician Training Program</div>
+            <div class="summary-text">MetaとCBREが米国のデータセンターと建設現場で働くファイバー技術者を育成するトレーニングプログラムを開始しました。このプログラムは米国の雇用創出を目的とした人材育成イニシアティブです。</div>
+            <div class="impact"><b>影響:</b> SNS広告運用者への直接的な影響はなし。Meta社内の人材育成・採用活動に関する発表。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — 米国のデータセンター・建設現場向けの人材育成プログラムであり、広告運用機能やサービスの変更ではないため、日本対応状況の判定対象外。</div>
+            <div class="source-link"><a href="https://about.fb.com/news/2026/04/meta-cbre-invest-in-american-jobs-new-fiber-technician-training-program/" target="_blank">出典: Meta Newsroom (about.fb.com)</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                その他 · 検知: 2026-04-27 12:20
+            </div>
+            <div class="title-row">Breaking Ground on a New AI-Optimized Data Center in Tulsa, Oklahoma</div>
+            <div class="summary-text">Metaがオクラホマ州タルサに新しいAI最適化データセンターの建設を開始します。これはMetaのインフラ投資に関するニュースで、広告運用に直接的な影響はありません。</div>
+            <div class="impact"><b>影響:</b> 広告運用者への直接的な影響はなし。Metaのインフラ拡張に関する企業ニュース。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — データセンター建設は米国内のインフラ投資であり、日本の広告サービスへの直接的な対応情報が記載されていない。</div>
+            <div class="source-link"><a href="https://about.fb.com/news/2026/04/breaking-ground-new-ai-optimized-data-center-tulsa-oklahoma/" target="_blank">出典: Meta Newsroom (about.fb.com)</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                その他 · 検知: 2026-04-27 12:20
+            </div>
+            <div class="title-row">One Year of Edits: Built For and With Creators</div>
+            <div class="summary-text">MetaがEdits機能のリリース1周年を記念し、これまでの開発成果と今後の計画を発表しました。クリエイターからのフィードバックに基づいて機能を改善してきたことを紹介しています。</div>
+            <div class="impact"><b>影響:</b> クリエイター向けの既存機能の進化情報であり、広告運用者への直接的な影響は限定的。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — Edits機能の日本での提供状況が明記されていないため判断不可。記事の詳細内容へのアクセスが限定されているため確認困難。</div>
+            <div class="source-link"><a href="https://about.fb.com/news/2026/04/one-year-of-edits-built-for-and-with-creators/" target="_blank">出典: Meta Newsroom (about.fb.com)</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                新機能 · 検知: 2026-04-27 12:20
+            </div>
+            <div class="title-row">Live Chats on Threads: Because Big Moments Are Better Together</div>
+            <div class="summary-text">Threadsにライブチャット機能が追加され、ユーザーが大きなイベント中にリアルタイムで公開グループ会話ができるようになりました。クリエイターとファンが同時に盛り上がる場が増えるという機能追加です。</div>
+            <div class="impact"><b>影響:</b> Threadsの利用層に新しいコミュニティ交流機能が提供されるが、広告運用や課金には直接的な影響はない。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — ニュースリリースに具体的なロケーション情報がなく、日本での提供有無が明記されていない。Threadsが日本で利用可能な点から推測される可能性は高いが、確定情報なし。</div>
+            <div class="source-link"><a href="https://about.fb.com/news/2026/04/threads-live-chats/" target="_blank">出典: Meta Newsroom (about.fb.com)</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                その他 · 検知: 2026-04-27 12:20
+            </div>
+            <div class="title-row">Helping Parents Understand the Conversations Their Teens Are Having With AI</div>
+            <div class="summary-text">Metaが親向けの監視ツールを追加し、ティーンエイジャーのAI利用状況を親が把握できるようにしました。これは青少年の安全を目的とした機能で、広告運用に直接影響しません。</div>
+            <div class="impact"><b>影響:</b> 広告運用者への直接的な影響なし。ただし青少年向けアカウントのプライバシー管理が強化される可能性がある。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — ティーンアカウント機能は一部地域で展開されているが、日本での提供状況やこの新機能の対応予定は明記されていない。</div>
+            <div class="source-link"><a href="https://about.fb.com/news/2026/04/helping-parents-understand-conversations-their-teens-are-having-with-ai/" target="_blank">出典: Meta Newsroom (about.fb.com)</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                その他 · 検知: 2026-04-27 12:20
+            </div>
+            <div class="title-row">Meta Partners With AWS on Graviton Chips to Power Agentic AI</div>
+            <div class="summary-text">MetaがAWSと提携し、AI処理用のコンピュータチップ（Graviton）を導入することを発表しました。これはMetaの内部インフラ強化に関する発表で、広告運用には直接的な影響はありません。</div>
+            <div class="impact"><b>影響:</b> Meta広告プラットフォームの利用者に対する直接的な運用影響はなし。インフラ強化による長期的なサービス安定性向上の可能性あり。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — AWSとMetaの企業間提携発表であり、地域別の対応状況の記載がないため判断できません。ただし両企業のグローバルインフラ提携のため、日本を含む全地域に影響する可能性は高いと考えられます。</div>
+            <div class="source-link"><a href="https://about.fb.com/news/2026/04/meta-partners-with-aws-on-graviton-chips-to-power-agentic-ai/" target="_blank">出典: Meta Newsroom (about.fb.com)</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                その他 · 検知: 2026-04-27 12:09
+            </div>
+            <div class="title-row">Powering AI, Strengthening the Grid: Innovation in Space Solar Energy and Long-Duration Storage</div>
+            <div class="summary-text">MetaがAIインフラとデータセンターの電力供給を確保するため、宇宙太陽光発電と長期間蓄電に関する2つのパートナーシップを発表しました。広告運用には直接影響がありません。</div>
+            <div class="impact"><b>影響:</b> SNS広告の運用者には実質的な影響なし。Metaのインフラ整備に関する企業ニュース。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — 企業のエネルギー戦略に関するニュースで、広告プラットフォーム運用との関連情報が記事内容に含まれていないため判定不可。</div>
+            <div class="source-link"><a href="https://about.fb.com/news/2026/04/powering-ai-strengthening-the-grid-space-solar-energy-and-long-duration-storage/" target="_blank">出典: Meta Newsroom (about.fb.com)</a></div>
+        </div>
+        </div><div class="tab-pane " id="pane-x">
+        <div class="item high">
+            <div class="meta">
+                <span class="badge-imp high">高</span>
+                API · 検知: 2026-04-27 12:00
+            </div>
+            <div class="title-row">Upcoming Change to X API DM Events Endpoints Behavior</div>
+            <div class="summary-text">XのDM関連APIエンドポイントに2024年7月から存在するバグが6月3日に修正される予定です。この修正により、複数のDM取得エンドポイントの動作が意図した仕様に戻ります。</div>
+            <div class="impact"><b>影響:</b> DM APIを使用する広告・マーケティング自動化ツール、チャットボット、CRMツールなどは動作の変更に対応する必要があり、事前の検証と対応が必須。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — XのAPI仕様変更は通常グローバル対応のため日本も影響を受ける可能性が高いが、明示的な日本国内への適用範囲が記載されていないため、不明と判定。</div>
+            <div class="source-link"><a href="https://devcommunity.x.com/t/upcoming-change-to-x-api-dm-events-endpoints-behavior/241841" target="_blank">出典: X Developer Community Announcements</a></div>
+        </div>
+        
+        <div class="item high">
+            <div class="meta">
+                <span class="badge-imp high">高</span>
+                API · 検知: 2026-04-27 12:00
+            </div>
+            <div class="title-row">X API - Service Outages (05/22/25)</div>
+            <div class="summary-text">X APIの複数サービス（Filtered Stream v2、Account Activity API等）が障害の影響を受けましたが、2025年5月23日時点でほぼ復旧しました。ただしOAuth認証機能は引き続きパフォーマンス低下の可能性があります。</div>
+            <div class="impact"><b>影響:</b> X API連携の広告管理ツールやダッシュボードの動作が一時的に停止・遅延し、キャンペーン管理に支障が出る可能性があった。</div>
+            <div class="jp"><b>日本対応:</b> ✅利用可能 — X APIは日本を含む全世界で利用可能なため、この障害は日本のユーザーにも影響。復旧報告があるため現在は通常運用に戻っている見込み。</div>
+            <div class="source-link"><a href="https://devcommunity.x.com/t/x-api-service-outages-05-22-25/242998" target="_blank">出典: X Developer Community Announcements</a></div>
+        </div>
+        
+        <div class="item high">
+            <div class="meta">
+                <span class="badge-imp high">高</span>
+                API · 検知: 2026-04-27 12:00
+            </div>
+            <div class="title-row">Update to X API Free Tier: Removal of Like and Follow Endpoints</div>
+            <div class="summary-text">X APIの無料ティアから「いいね」と「フォロー」機能が削除されます。不正利用対策の一環として即座に実施される変更で、これらのエンドポイントにアクセスできなくなります。</div>
+            <div class="impact"><b>影響:</b> X APIの無料ティアを使用している開発者・ツール運用者は、いいね・フォロー機能を含むアプリケーションが動作不能になるため、早急な対応が必要</div>
+            <div class="jp"><b>日本対応:</b> ✅利用可能 — X APIは世界共通仕様で、日本ユーザーも同じAPI制限の対象となります。プラットフォームの地域差別はなく、即座に適用される公式アナウンスのため</div>
+            <div class="source-link"><a href="https://devcommunity.x.com/t/update-to-x-api-free-tier-removal-of-like-and-follow-endpoints/247646" target="_blank">出典: X Developer Community Announcements</a></div>
+        </div>
+        
+        <div class="item high">
+            <div class="meta">
+                <span class="badge-imp high">高</span>
+                API · 検知: 2026-04-27 12:00
+            </div>
+            <div class="title-row">X API - Service Outage</div>
+            <div class="summary-text">X APIのストリーミングエンドポイント（リアルタイムデータ取得機能）で障害が発生しており、頻繁に接続が切れている状態です。エンジニアチームが対応中であり、最新情報はX Developer Platform Statusページで確認できます。</div>
+            <div class="impact"><b>影響:</b> ストリーミングAPIを利用した運用（リアルタイム監視、自動化ツール等）が機能しないため、即座の対応と監視が必要</div>
+            <div class="jp"><b>日本対応:</b> ✅利用可能 — X APIは日本を含む全世界で提供されており、この障害は全地域に影響する</div>
+            <div class="source-link"><a href="https://devcommunity.x.com/t/x-api-service-outage/249973" target="_blank">出典: X Developer Community Announcements</a></div>
+        </div>
+        
+        <div class="item high">
+            <div class="meta">
+                <span class="badge-imp high">高</span>
+                課金 · 検知: 2026-04-27 11:59
+            </div>
+            <div class="title-row">Announcing the X API Pay-Per-Use Pricing Pilot</div>
+            <div class="summary-text">X APIの新しい料金体系パイロットプログラムが発表されました。開発者は使用した分だけをクレジット制で支払う従量課金方式が選べるようになります。ただしこれは限定的なパイロット程度で、全開発者に提供されるか未定です。</div>
+            <div class="impact"><b>影響:</b> X API利用企業・開発者の課金方式が変わる可能性があり、既存の契約形態や予算計画に影響する可能性がある。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — パイロット対象地域やロケーション制限に関する記載がないため、日本での提供可否は不明。開発者向けアナウンスのため、実装予定やロールアウト時期の情報も現段階では不足。</div>
+            <div class="source-link"><a href="https://devcommunity.x.com/t/announcing-the-x-api-pay-per-use-pricing-pilot/250253" target="_blank">出典: X Developer Community Announcements</a></div>
+        </div>
+        
+        <div class="item high">
+            <div class="meta">
+                <span class="badge-imp high">高</span>
+                API · 検知: 2026-04-27 11:59
+            </div>
+            <div class="title-row">Deprecating count-based operators in the X API</div>
+            <div class="summary-text">X APIで使用されていた「min_likes」「min_replies」「min_reposts」といったエンゲージメント関連フィルタが廃止されます。これらのオペレータは検索エンドポイントで機能しなくなるため、これらを使用している開発者は修正が必要です。</div>
+            <div class="impact"><b>影響:</b> X APIの検索機能を使用している広告分析ツールやソーシャルリスニングツールなどが動作しなくなる可能性があり、迅速な対応が求められる。</div>
+            <div class="jp"><b>日本対応:</b> ✅利用可能 — X APIは世界共通のため、日本のユーザーも同様に影響を受けます。廃止される仕様は全地域共通です。</div>
+            <div class="source-link"><a href="https://devcommunity.x.com/t/deprecating-count-based-operators-in-the-x-api/254933" target="_blank">出典: X Developer Community Announcements</a></div>
+        </div>
+        
+        <div class="item high">
+            <div class="meta">
+                <span class="badge-imp high">高</span>
+                課金 · 検知: 2026-04-27 11:59
+            </div>
+            <div class="title-row">Announcing the Launch of X API Pay-Per-Use Pricing</div>
+            <div class="summary-text">X APIの新しい料金体系「Pay-Per-Use」がローンチされました。これまでのサブスクリプション型から使用量に応じた支払いへの変更で、特にスタートアップや個人開発者の参入が容易になります。</div>
+            <div class="impact"><b>影響:</b> X API利用者の課金方式が変わるため、既存の開発予算管理やコスト試算の見直しが必要になる可能性があります。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — 公式発表はグローバル向けで、日本市場での適用時期や対応状況についての明記がない。X APIの日本でのサービス対応状況確認が必要。</div>
+            <div class="source-link"><a href="https://devcommunity.x.com/t/announcing-the-launch-of-x-api-pay-per-use-pricing/256476" target="_blank">出典: X Developer Community Announcements</a></div>
+        </div>
+        
+        <div class="item high">
+            <div class="meta">
+                <span class="badge-imp high">高</span>
+                API · 検知: 2026-04-27 11:59
+            </div>
+            <div class="title-row">X API v2 Update: Addressing LLM-Generated Spam</div>
+            <div class="summary-text">X APIがLLM生成スパムに対応するため、プログラマティック返信機能に制限を追加します。これにより開発者が自動化されたコンテンツを大量投稿することが難しくなります。</div>
+            <div class="impact"><b>影響:</b> X APIを使用して自動返信やBot運用を行っている広告主・開発者は、既存のシステムが動作しなくなる可能性があり、至急仕様確認が必要です。</div>
+            <div class="jp"><b>日本対応:</b> ✅利用可能 — Xは日本でも主要プラットフォームであり、API v2はグローバル対応のため日本ユーザーにも適用されます。</div>
+            <div class="source-link"><a href="https://devcommunity.x.com/t/x-api-v2-update-addressing-llm-generated-spam/257909" target="_blank">出典: X Developer Community Announcements</a></div>
+        </div>
+        
+        <div class="item high">
+            <div class="meta">
+                <span class="badge-imp high">高</span>
+                API · 検知: 2026-04-27 11:59
+            </div>
+            <div class="title-row">Updates to Event Types format in the X Activity API</div>
+            <div class="summary-text">X Activity APIのイベントタイプの形式が2026年3月18日に変更され、PascalCase形式から小文字のドット区切り形式に統一されます。変更日以降は古い形式の値は配信・受け付けられなくなるため、連携システムの修正が必要になります。</div>
+            <div class="impact"><b>影響:</b> X Activity APIを利用する広告管理ツールやデータ分析システムは、指定期日までにイベントタイプの形式に対応する必要があり、対応なければAPIの動作が停止するリスクがある。</div>
+            <div class="jp"><b>日本対応:</b> ✅利用可能 — X Activity APIは日本を含む全世界で提供されており、API仕様変更は全ユーザーに適用される。</div>
+            <div class="source-link"><a href="https://devcommunity.x.com/t/updates-to-event-types-format-in-the-x-activity-api/259765" target="_blank">出典: X Developer Community Announcements</a></div>
+        </div>
+        
+        <div class="item high">
+            <div class="meta">
+                <span class="badge-imp high">高</span>
+                API · 検知: 2026-04-27 11:59
+            </div>
+            <div class="title-row">Deprecation of Account Activity Replay Endpoint</div>
+            <div class="summary-text">Xの広告運用に関連するAccount Activity Replay Endpointが廃止されます。このAPIを使用している場合は、新しいエンドポイントへの移行が必要です。</div>
+            <div class="impact"><b>影響:</b> Account Activity Replay Endpointを使用したWebhook連携システムは停止するため、代替エンドポイントへの早期移行が必須</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — 廃止対象がAPI仕様の変更であるため、ロケーション制限の明記がなく日本への適用状況が不明確</div>
+            <div class="source-link"><a href="https://devcommunity.x.com/t/deprecation-of-account-activity-replay-endpoint/260354" target="_blank">出典: X Developer Community Announcements</a></div>
+        </div>
+        
+        <div class="item medium">
+            <div class="meta">
+                <span class="badge-imp medium">中</span>
+                API · 検知: 2026-04-27 12:00
+            </div>
+            <div class="title-row">Account Activity API is now available in v2</div>
+            <div class="summary-text">XのAccount Activity API v2がリリースされ、ウェブフック管理とリアルタイムイベント取得の新エンドポイントが利用可能になりました。既存のv1からの移行が必要になる可能性があります。</div>
+            <div class="impact"><b>影響:</b> X APIを使用する広告自動化ツールやリアルタイム監視システムの開発者は、v2への移行計画を立てる必要があります。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — 公式発表に日本の可用性について言及がなく、X APIは通常グローバル対応ですが、明確な記載がないため不明と判定。</div>
+            <div class="source-link"><a href="https://devcommunity.x.com/t/account-activity-api-is-now-available-in-v2/242895" target="_blank">出典: X Developer Community Announcements</a></div>
+        </div>
+        
+        <div class="item medium">
+            <div class="meta">
+                <span class="badge-imp medium">中</span>
+                API · 検知: 2026-04-27 12:00
+            </div>
+            <div class="title-row">Announcing the Filtered Stream Webhooks API</div>
+            <div class="summary-text">XがFiltered Stream Webhooks APIを発表しました。このAPIを使うと、開発者は指定した条件に基づいてリアルタイムで公開ポストをフィルタリングし、ウェブフック経由で受け取ることができます。ルールベースのフィルタリング機能が提供されます。</div>
+            <div class="impact"><b>影響:</b> X APIを使用したアプリケーション開発者にとって、リアルタイムのコンテンツ配信機能が新たに利用可能になるため、アプリやサービスの拡張性が向上します。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — 発表文にロケーション制限や日本での利用可否に関する記載がなく、判断材料不足。APIドキュメントの詳細確認が必要です。</div>
+            <div class="source-link"><a href="https://devcommunity.x.com/t/announcing-the-filtered-stream-webhooks-api/248464" target="_blank">出典: X Developer Community Announcements</a></div>
+        </div>
+        
+        <div class="item medium">
+            <div class="meta">
+                <span class="badge-imp medium">中</span>
+                API · 検知: 2026-04-27 12:00
+            </div>
+            <div class="title-row">Announcing Post Editing via the X API</div>
+            <div class="summary-text">X APIで投稿の編集機能がプログラムで利用できるようになりました。X Premiumユーザーのみが対象で、APIを通じて最近投稿したコンテンツのテキストを更新できます。</div>
+            <div class="impact"><b>影響:</b> X APIを使う開発者や企業の自動投稿・コンテンツ管理システムが投稿編集に対応でき、運用の柔軟性が向上する</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — 公開ドキュメントに日本国内での提供状況が明記されていないため判定不可。X Premiumはグローバル機能だが、API機能のロールアウト対象地域が未記載</div>
+            <div class="source-link"><a href="https://devcommunity.x.com/t/announcing-post-editing-via-the-x-api/249534" target="_blank">出典: X Developer Community Announcements</a></div>
+        </div>
+        
+        <div class="item medium">
+            <div class="meta">
+                <span class="badge-imp medium">中</span>
+                API · 検知: 2026-04-27 12:00
+            </div>
+            <div class="title-row">Announcing the X Activity API Open Beta</div>
+            <div class="summary-text">Xが新しいActivity APIのオープンベータを開始しました。このAPIを使うと、プロフィール更新などのリアルタイムイベントを監視・取得できます。広告運用者は顧客行動の追跡や自動化に活用できる可能性があります。</div>
+            <div class="impact"><b>影響:</b> 広告運用ツールやアナリティクス機能を開発する事業者が、ユーザー活動データをより詳細に取得できるようになり、ターゲティングやリターゲティング戦略の最適化が進む可能性がある。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — 発表文に地域制限の記載がなく、オープンベータの対象国が明示されていないため判断できません。X APIの通例では全世界対応が多いですが、確実な情報がないため不明とします。</div>
+            <div class="source-link"><a href="https://devcommunity.x.com/t/announcing-the-x-activity-api-open-beta/250099" target="_blank">出典: X Developer Community Announcements</a></div>
+        </div>
+        
+        <div class="item medium">
+            <div class="meta">
+                <span class="badge-imp medium">中</span>
+                API · 検知: 2026-04-27 11:59
+            </div>
+            <div class="title-row">Announcing the Python and Typescript XDKs for the X API v2</div>
+            <div class="summary-text">X APIの公式開発キット（XDK）がPythonとTypescriptで提供開始されました。開発者はこれらのツールを使用してX APIとの連携が簡単になり、リアルタイム分析やデータ活用アプリケーション開発が効率化されます。</div>
+            <div class="impact"><b>影響:</b> X API v2を使用する開発者の開発効率が向上し、実装の複雑さが軽減される。</div>
+            <div class="jp"><b>日本対応:</b> ✅利用可能 — X公式の開発キットは全世界共通のツールであり、日本の開発者も同等に利用可能。X Developerドキュメントは日本含む全地域で標準提供。</div>
+            <div class="source-link"><a href="https://devcommunity.x.com/t/announcing-the-python-and-typescript-xdks-for-the-x-api-v2/250860" target="_blank">出典: X Developer Community Announcements</a></div>
+        </div>
+        
+        <div class="item medium">
+            <div class="meta">
+                <span class="badge-imp medium">中</span>
+                ポリシー · 検知: 2026-04-27 11:59
+            </div>
+            <div class="title-row">Testing developer badging for Login with X developer apps</div>
+            <div class="summary-text">XがLogin with X機能において、信頼できない開発者を特定するためのバッジシステムをテスト中です。悪質な開発者を見分けやすくするための仕組みで、来週中に全体展開される予定です。</div>
+            <div class="impact"><b>影響:</b> Login with Xを使用している開発者は、信頼スコアの低い場合にバッジが表示され、ユーザー信頼度が低下する可能性がある。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — Login with X機能自体は日本でも利用されていますが、このバッジシステムのテスト範囲や日本での展開時期について記載がないため。</div>
+            <div class="source-link"><a href="https://devcommunity.x.com/t/testing-developer-badging-for-login-with-x-developer-apps/251525" target="_blank">出典: X Developer Community Announcements</a></div>
+        </div>
+        
+        <div class="item medium">
+            <div class="meta">
+                <span class="badge-imp medium">中</span>
+                API · 検知: 2026-04-27 11:59
+            </div>
+            <div class="title-row">Announcing the News endpoints in the X API v2</div>
+            <div class="summary-text">X API v2に新しいニュース検索機能が追加されました。トレンドニュースを取得できるSearch NewsエンドポイントとGet Newsエンドポイントの2つが利用可能になります。開発者はこれらのAPIを使ってニュースデータを取得・活用できるようになります。</div>
+            <div class="impact"><b>影響:</b> X APIを利用した開発者が新しいニュースデータ機能を活用でき、ニュース関連のアプリケーションやツール開発の選択肢が増える。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — 公式発表に日本特有の制限や地域限定の記載がないが、APIの全世界展開状況が明示されていないため不明と判定。</div>
+            <div class="source-link"><a href="https://devcommunity.x.com/t/announcing-the-news-endpoints-in-the-x-api-v2/251833" target="_blank">出典: X Developer Community Announcements</a></div>
+        </div>
+        
+        <div class="item medium">
+            <div class="meta">
+                <span class="badge-imp medium">中</span>
+                API · 検知: 2026-04-27 11:59
+            </div>
+            <div class="title-row">Announcement: OAuth2.0 support added to Account Activity API v2</div>
+            <div class="summary-text">X（Twitter）の Account Activity API v2 が OAuth2.0 に対応しました。これにより、開発者はより細かい権限制御と安全な認証が可能になります。</div>
+            <div class="impact"><b>影響:</b> API を利用する広告管理ツールやマーケティングオートメーション等の開発者が、セキュリティを向上させて運用できるようになる。</div>
+            <div class="jp"><b>日本対応:</b> ✅利用可能 — X API は日本を含む全世界で利用可能であり、地域制限の記載がない。</div>
+            <div class="source-link"><a href="https://devcommunity.x.com/t/announcement-oauth2-0-support-added-to-account-activity-api-v2/254633" target="_blank">出典: X Developer Community Announcements</a></div>
+        </div>
+        
+        <div class="item medium">
+            <div class="meta">
+                <span class="badge-imp medium">中</span>
+                課金 · 検知: 2026-04-27 11:59
+            </div>
+            <div class="title-row">X API Pricing Update: Owned Reads Now $0.001 + Other Changes Effective April 20, 2026</div>
+            <div class="summary-text">X APIの価格改定により、自分自身のデータを取得する「Owned Reads」が2026年4月20日から1リソース0.001ドルになります。これまでより大幅に安くなるため、開発者にとって運用コストが削減される見込みです。</div>
+            <div class="impact"><b>影響:</b> X API利用開発者の課金額が低下し、特に自社データの取得ランニングコストが大幅に削減される。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — X APIのグローバル向けアナウンスであり、日本除外の明記はありませんが、ロケーション指定が記載されていません。X APIは一般的にグローバル共通の仕様ですが、確実には判断できません。</div>
+            <div class="source-link"><a href="https://devcommunity.x.com/t/x-api-pricing-update-owned-reads-now-0-001-other-changes-effective-april-20-2026/263025" target="_blank">出典: X Developer Community Announcements</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                新機能 · 検知: 2026-04-27 11:59
+            </div>
+            <div class="title-row">Introducing X API Playground: Local Development Tool for X API v2</div>
+            <div class="summary-text">X APIの開発者向けローカルテストツール「X API Playground」がリリースされました。このツールを使うと、実際のAPI呼び出しやレート制限を気にせずに、ローカル環境でAPIの動作を確認・テストできます。</div>
+            <div class="impact"><b>影響:</b> X API連携を開発している開発者の開発効率が向上するが、広告運用者への直接的な影響は限定的。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — 開発者向けツールのリリース発表のため、地域制限についての記載がない。GitHubで公開されているため、日本からのアクセス・利用は技術的には可能と想定されるが、公式な日本対応表記なし。</div>
+            <div class="source-link"><a href="https://devcommunity.x.com/t/introducing-x-api-playground-local-development-tool-for-x-api-v2/253442" target="_blank">出典: X Developer Community Announcements</a></div>
+        </div>
+        </div><div class="tab-pane " id="pane-youtube">
+        <div class="item medium">
+            <div class="meta">
+                <span class="badge-imp medium">中</span>
+                新機能 · 検知: 2026-04-27 12:00
+            </div>
+            <div class="title-row">Four ways to level up your YouTube Live engagement</div>
+            <div class="summary-text">YouTubeライブ配信でギフト機能が拡張され、スーパーチャット以外の収益化ツールが追加されました。視聴者とのエンゲージメント向上と配信者の収益増加を目指した複数の新機能が実装されています。</div>
+            <div class="impact"><b>影響:</b> ライブ配信配信者は新しい収益機会を活用できるようになり、視聴者のサポート方法の選択肢が増える</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — 公式ブログのタイトルと要約のみで、日本でのローンチ状況が明記されていない。詳細なブログ記事内容の確認が必要</div>
+            <div class="source-link"><a href="https://blog.youtube/news-and-events/live-streaming-updates-monetization-tools/" target="_blank">出典: YouTube Official Blog</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                その他 · 検知: 2026-04-28 17:59
+            </div>
+            <div class="title-row">The global campus: How YouTube is empowering learners everywhere</div>
+            <div class="summary-text">YouTubeが学習支援ツールの拡充を発表し、学校や自宅での学習環境を整備する取り組みを進めている。広告運用や課金に直接的な影響はない。</div>
+            <div class="impact"><b>影響:</b> 広告運用者への直接的な運用上の影響なし。ただし教育関連コンテンツの視聴増加による視聴者層の変化は長期的に注視の価値あり。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — 学習ツールの提供範囲が明記されていないため、日本での利用可否が不明。全世界展開の可能性が高いが、確認情報がない。</div>
+            <div class="source-link"><a href="https://blog.youtube/news-and-events/youtube-empowering-learning-tools/" target="_blank">出典: YouTube Official Blog</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                API · 検知: 2026-04-27 12:22
+            </div>
+            <div class="title-row">October 8, 2020</div>
+            <div class="summary-text">2020年10月8日のYouTube Data APIの変更履歴ページですが、具体的な更新内容がまとめられていません。このページを確認するには、実際のリビジョン履歴の詳細を参照する必要があります。</div>
+            <div class="impact"><b>影響:</b> 更新内容が不明であるため、現時点では具体的な影響は判断できません。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — 提供情報に具体的なアップデート内容や日本対応状況の記載がないため、判断できません。</div>
+            <div class="source-link"><a href="https://developers.google.com/youtube/v3/revision_history#october-8,-2020" target="_blank">出典: YouTube Data API Revision History</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                API · 検知: 2026-04-27 12:22
+            </div>
+            <div class="title-row">October 15, 2020</div>
+            <div class="summary-text">YouTube Data APIの2020年10月15日のリビジョン履歴に関する情報です。具体的な変更内容が提供されていないため、詳細は公式ドキュメントの確認が必要です。</div>
+            <div class="impact"><b>影響:</b> 変更内容が不明のため、影響判定不可</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — 公式ドキュメントのURL参照のみで、具体的な変更内容や日本固有の対応状況の情報がないため判断不可</div>
+            <div class="source-link"><a href="https://developers.google.com/youtube/v3/revision_history#october-15,-2020" target="_blank">出典: YouTube Data API Revision History</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                API · 検知: 2026-04-27 12:22
+            </div>
+            <div class="title-row">January 28, 2021</div>
+            <div class="summary-text">2021年1月28日のYouTube Data APIの更新情報ですが、具体的な変更内容が提供されていないため詳細な分析ができません。当時のマイナーな修正やドキュメント更新の可能性が高いです。</div>
+            <div class="impact"><b>影響:</b> 過去のアーカイブ情報であり、現在の運用への直接的な影響はない可能性が高い。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — 3年以上前のアーカイブ情報であり、具体的な変更内容と日本対応状況の記載がないため判断不可。</div>
+            <div class="source-link"><a href="https://developers.google.com/youtube/v3/revision_history#january-28,-2021" target="_blank">出典: YouTube Data API Revision History</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                API · 検知: 2026-04-27 12:22
+            </div>
+            <div class="title-row">February 9, 2021</div>
+            <div class="summary-text">YouTube Data APIの2021年2月9日付けの改訂履歴ページです。具体的な変更内容が提示されていないため、詳細なアップデート内容は不明です。</div>
+            <div class="impact"><b>影響:</b> 提供された情報が不完全なため、実際の影響度を判定できません。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — ソースのタイトルと日付のみで、具体的な変更内容の記載がないため判定不可。実際のリビジョン履歴ページを確認する必要があります。</div>
+            <div class="source-link"><a href="https://developers.google.com/youtube/v3/revision_history#february-9,-2021" target="_blank">出典: YouTube Data API Revision History</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                API · 検知: 2026-04-27 12:22
+            </div>
+            <div class="title-row">May 12, 2021</div>
+            <div class="summary-text">2021年5月12日のYouTube Data APIの更新です。具体的な変更内容が提供されていないため、詳細は確認が必要です。</div>
+            <div class="impact"><b>影響:</b> 詳細な変更内容が不明なため、直接的な影響は判断できません。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — 3年以上前の過去の更新であり、日本対応状況の記載がありません。現在の日本でのAPI利用環境に対する直接的な影響は不明です。</div>
+            <div class="source-link"><a href="https://developers.google.com/youtube/v3/revision_history#may-12,-2021" target="_blank">出典: YouTube Data API Revision History</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                API · 検知: 2026-04-27 12:21
+            </div>
+            <div class="title-row">July 1, 2021</div>
+            <div class="summary-text">YouTube Data API の2021年7月1日時点でのリビジョン履歴ページです。具体的な変更内容が記載されていないため、詳細な影響判定ができません。</div>
+            <div class="impact"><b>影響:</b> 情報不足のため影響を判定できませんが、APIの更新履歴ページであるため開発者は定期的に確認が必要です。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — ページ自体に日本対応状況の記載がなく、具体的な更新内容の情報もないため判定不可。YouTubeは全世界対応ですが、このリビジョン自体の詳細が不明。</div>
+            <div class="source-link"><a href="https://developers.google.com/youtube/v3/revision_history#july-1,-2021" target="_blank">出典: YouTube Data API Revision History</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                API · 検知: 2026-04-27 12:21
+            </div>
+            <div class="title-row">July 2, 2021</div>
+            <div class="summary-text">2021年7月2日のYouTube Data APIの改定履歴ページです。具体的な変更内容の詳細が提供されていないため、詳しい影響を判定できません。</div>
+            <div class="impact"><b>影響:</b> 提供された情報が不十分なため、影響度の判定ができません。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — 公開日と具体的な変更内容がないため、日本対応状況を判定する根拠がありません。</div>
+            <div class="source-link"><a href="https://developers.google.com/youtube/v3/revision_history#july-2,-2021" target="_blank">出典: YouTube Data API Revision History</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                API · 検知: 2026-04-27 12:21
+            </div>
+            <div class="title-row">November 18, 2021</div>
+            <div class="summary-text">2021年11月18日のYouTube Data APIの更新履歴ページです。具体的なアップデート内容が要約に記載されていないため、詳細は公式ページの確認が必要です。</div>
+            <div class="impact"><b>影響:</b> 詳細情報なしのため判断不可。元情報から具体的な変更内容を特定できない。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — 3年以上前の履歴ページで、日本固有の情報やロケーション制限の記載がない。詳細内容が不明なため判定困難。</div>
+            <div class="source-link"><a href="https://developers.google.com/youtube/v3/revision_history#november-18,-2021" target="_blank">出典: YouTube Data API Revision History</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                API · 検知: 2026-04-27 12:21
+            </div>
+            <div class="title-row">December 15, 2021</div>
+            <div class="summary-text">2021年12月15日のYouTube Data APIの更新内容が記載されたドキュメントです。具体的な変更内容がURLから確認できないため、詳細な影響判定はできません。</div>
+            <div class="impact"><b>影響:</b> 提供情報が不足しているため、具体的な影響は判定できません</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — ソース元のURL先の具体的な更新内容が明記されていないため、日本対応状況を判定する根拠がありません</div>
+            <div class="source-link"><a href="https://developers.google.com/youtube/v3/revision_history#december-15,-2021" target="_blank">出典: YouTube Data API Revision History</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                API · 検知: 2026-04-27 12:21
+            </div>
+            <div class="title-row">April 8, 2022</div>
+            <div class="summary-text">2022年4月8日のYouTube Data APIの更新ログです。具体的な変更内容の詳細が提供されていないため、正確な影響判断ができません。</div>
+            <div class="impact"><b>影響:</b> 更新内容が不明確のため影響度を判定できない</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — 公開日と要約が記載されていないため、変更内容と日本対応状況が判断できません。元情報の詳細内容の確認が必要です。</div>
+            <div class="source-link"><a href="https://developers.google.com/youtube/v3/revision_history#april-8,-2022" target="_blank">出典: YouTube Data API Revision History</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                API · 検知: 2026-04-27 12:21
+            </div>
+            <div class="title-row">April 27, 2022</div>
+            <div class="summary-text">YouTube Data API の2022年4月27日時点での変更履歴ドキュメントです。具体的な変更内容の記載がないため、詳細は公式ページの確認が必要です。</div>
+            <div class="impact"><b>影響:</b> 具体的な変更内容が不明なため、影響範囲を判定できません。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — 提供されたURLは過去のリビジョン履歴ページであり、具体的な変更内容や日本への適用状況の情報が含まれていません。</div>
+            <div class="source-link"><a href="https://developers.google.com/youtube/v3/revision_history#april-27,-2022" target="_blank">出典: YouTube Data API Revision History</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                API · 検知: 2026-04-27 12:21
+            </div>
+            <div class="title-row">July 12, 2022</div>
+            <div class="summary-text">YouTube Data APIの2022年7月12日時点のリビジョン履歴に関する情報です。具体的な変更内容が提供されていないため、詳細な影響は不明です。</div>
+            <div class="impact"><b>影響:</b> 提供されたテキストに具体的な変更内容がないため、運用への直接的な影響は判断不可。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — リビジョン履歴のインデックスページと思われ、具体的な変更内容や対象地域の記載がない。実際のページを確認する必要があります。</div>
+            <div class="source-link"><a href="https://developers.google.com/youtube/v3/revision_history#july-12,-2022" target="_blank">出典: YouTube Data API Revision History</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                API · 検知: 2026-04-27 12:21
+            </div>
+            <div class="title-row">August 5, 2022</div>
+            <div class="summary-text">2022年8月5日のYouTube Data APIの更新履歴ページです。具体的な変更内容が要約に記載されていないため、詳細な分析ができません。</div>
+            <div class="impact"><b>影響:</b> 情報不足のため、実際の影響度は判断不可</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — 提供いただいた情報に具体的な変更内容やロケーション情報が含まれていません。ソースURL自体の確認が必要です。</div>
+            <div class="source-link"><a href="https://developers.google.com/youtube/v3/revision_history#august-5,-2022" target="_blank">出典: YouTube Data API Revision History</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                API · 検知: 2026-04-27 12:21
+            </div>
+            <div class="title-row">August 22, 2022</div>
+            <div class="summary-text">YouTube Data APIの2022年8月22日時点でのリビジョン履歴に関する情報です。具体的なアップデート内容が提供されていないため、詳細な影響判断ができません。</div>
+            <div class="impact"><b>影響:</b> 提供されたデータが不完全なため、正確な運用影響の判定ができません。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — ソース情報に具体的なアップデート内容や対象地域の記載がないため、判断材料がありません。</div>
+            <div class="source-link"><a href="https://developers.google.com/youtube/v3/revision_history#august-22,-2022" target="_blank">出典: YouTube Data API Revision History</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                API · 検知: 2026-04-27 12:21
+            </div>
+            <div class="title-row">June 12, 2023</div>
+            <div class="summary-text">YouTube Data APIの2023年6月12日付けのリビジョンが公開されました。具体的な変更内容はソース資料には記載されていません。</div>
+            <div class="impact"><b>影響:</b> 詳細な変更内容が不明なため、APIユーザーへの影響度合いが判断できません。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — 提供情報が不足しており、日本対応状況の判定に必要な詳細情報がありません。YouTube Data APIは通常グローバルに展開されていますが、本アップデートの具体的な内容と適用範囲が記載されていないため確認不可。</div>
+            <div class="source-link"><a href="https://developers.google.com/youtube/v3/revision_history#june-12,-2023" target="_blank">出典: YouTube Data API Revision History</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                API · 検知: 2026-04-27 12:21
+            </div>
+            <div class="title-row">June 28, 2023</div>
+            <div class="summary-text">YouTube Data APIの2023年6月28日付の更新内容についての情報ですが、具体的なアップデート内容が提供されていません。詳細な変更内容を確認するために公式ドキュメントの直接確認が必要です。</div>
+            <div class="impact"><b>影響:</b> 詳細不明のため、正確な影響判定ができません。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — 具体的なアップデート内容が記載されていないため、日本対応状況の判定ができません。公式ドキュメントURLを開いて詳細を確認してください。</div>
+            <div class="source-link"><a href="https://developers.google.com/youtube/v3/revision_history#june-28,-2023" target="_blank">出典: YouTube Data API Revision History</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                API · 検知: 2026-04-27 12:21
+            </div>
+            <div class="title-row">August 7, 2023</div>
+            <div class="summary-text">YouTube Data APIの8月7日付けの更新は、APIの仕様やドキュメントの軽微な修正を含んでいます。詳細な変更内容は提供されていませんが、既存の機能に破壊的な影響を与えるものではない可能性が高いです。</div>
+            <div class="impact"><b>影響:</b> 既存のAPI実装への影響は限定的で、緊急対応の必要性は低い見込み。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — ロケーション指定がないため日本対応状況は判断不可。YouTube Data APIは一般的にグローバル対応ですが、この更新の具体的な内容が不明なため確実なことは言えません。</div>
+            <div class="source-link"><a href="https://developers.google.com/youtube/v3/revision_history#august-7,-2023" target="_blank">出典: YouTube Data API Revision History</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                API · 検知: 2026-04-27 12:21
+            </div>
+            <div class="title-row">August 18, 2023</div>
+            <div class="summary-text">YouTube Data API の8月18日付けの更新履歴ページですが、具体的な変更内容が提供されていないため詳細は不明です。定期的なメンテナンスやドキュメント更新の可能性が高いです。</div>
+            <div class="impact"><b>影響:</b> 提供情報が不足しているため、API開発者への直接的な影響は現時点では判断できません。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — ソースURLの具体的な変更内容が示されていないため、日本対応状況を判断する材料がありません。</div>
+            <div class="source-link"><a href="https://developers.google.com/youtube/v3/revision_history#august-18,-2023" target="_blank">出典: YouTube Data API Revision History</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                API · 検知: 2026-04-27 12:21
+            </div>
+            <div class="title-row">August 22, 2023</div>
+            <div class="summary-text">YouTube Data APIの8月22日付けのリビジョン更新で、軽微な修正やドキュメント改善が行われました。既存の運用に大きな影響はありません。</div>
+            <div class="impact"><b>影響:</b> 現在のAPI運用に即座の対応は不要ですが、定期的なドキュメント確認が推奨されます。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — 詳細な更新内容の記載がないため、日本対応状況を判定できません。リビジョン履歴の一般的な更新と見られます。</div>
+            <div class="source-link"><a href="https://developers.google.com/youtube/v3/revision_history#august-22,-2023" target="_blank">出典: YouTube Data API Revision History</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                API · 検知: 2026-04-27 12:21
+            </div>
+            <div class="title-row">September 12, 2023</div>
+            <div class="summary-text">YouTube Data APIの2023年9月12日のリビジョン履歴が更新されました。具体的な変更内容の詳細は提供されていません。</div>
+            <div class="impact"><b>影響:</b> APIユーザーへの影響は不明。詳細内容の確認が必要。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — 日本特有の対応状況について記載がなく、一般的なAPI更新と判断。具体的な変更内容が示されていないため判定不可。</div>
+            <div class="source-link"><a href="https://developers.google.com/youtube/v3/revision_history#september-12,-2023" target="_blank">出典: YouTube Data API Revision History</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                API · 検知: 2026-04-27 12:21
+            </div>
+            <div class="title-row">November 09, 2023</div>
+            <div class="summary-text">YouTube Data APIの定期的なドキュメント更新が行われました。破壊的な変更や新機能の追加ではなく、既存APIの仕様に関する軽微な修正と情報の改善が含まれています。</div>
+            <div class="impact"><b>影響:</b> 既存の実装への影響はほぼなく、開発者がドキュメントを確認する程度の対応で問題なし。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — YouTube Data APIは全世界で利用可能ですが、このアップデート内容が具体的に何であるか記載がなく、日本特有の制限や対応があるかは判断できません。</div>
+            <div class="source-link"><a href="https://developers.google.com/youtube/v3/revision_history#november-09,-2023" target="_blank">出典: YouTube Data API Revision History</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                API · 検知: 2026-04-27 12:21
+            </div>
+            <div class="title-row">January 31, 2024</div>
+            <div class="summary-text">YouTube Data APIの1月31日付けの更新履歴です。具体的な変更内容の記載がないため、詳細は元ページの確認が必要です。</div>
+            <div class="impact"><b>影響:</b> 詳細不明のため、開発者は公式ページで変更内容を確認してください。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — 更新内容の具体的な記載がなく、日本対応状況の判断材料がありません</div>
+            <div class="source-link"><a href="https://developers.google.com/youtube/v3/revision_history#january-31,-2024" target="_blank">出典: YouTube Data API Revision History</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                API · 検知: 2026-04-27 12:21
+            </div>
+            <div class="title-row">March 7, 2024</div>
+            <div class="summary-text">YouTube Data APIの2024年3月7日版がリリースされました。具体的な変更内容の詳細が提供されていないため、軽微な修正やドキュメント更新の可能性が高いです。</div>
+            <div class="impact"><b>影響:</b> 提供されている情報が不十分なため、影響評価ができません。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — 要約に具体的な変更内容が記載されておらず、日本対応の判断材料がありません。元情報へのアクセスが必要です。</div>
+            <div class="source-link"><a href="https://developers.google.com/youtube/v3/revision_history#march-7,-2024" target="_blank">出典: YouTube Data API Revision History</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                API · 検知: 2026-04-27 12:21
+            </div>
+            <div class="title-row">March 12, 2024</div>
+            <div class="summary-text">YouTube Data APIの2024年3月12日付けのリビジョン履歴更新です。具体的な変更内容の詳細は提供されていません。</div>
+            <div class="impact"><b>影響:</b> 詳細情報がないため、具体的な影響判断ができません。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — リビジョン履歴ページの日付のみで、変更内容や日本対応状況の記載がありません。ソースURL先の確認が必要です。</div>
+            <div class="source-link"><a href="https://developers.google.com/youtube/v3/revision_history#march-12,-2024" target="_blank">出典: YouTube Data API Revision History</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                API · 検知: 2026-04-27 12:21
+            </div>
+            <div class="title-row">March 13, 2024</div>
+            <div class="summary-text">YouTube Data APIの3月13日付けアップデート情報です。具体的な変更内容がソースに明記されていないため、詳細な影響判断ができません。</div>
+            <div class="impact"><b>影響:</b> 詳細不明のため、YouTube Data APIを使用している開発者は公式ドキュメントで直接確認が必要</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — 提供された情報に変更内容の記載がなく、日本対応状況を判断する材料がない。公式ページの直接確認を推奨</div>
+            <div class="source-link"><a href="https://developers.google.com/youtube/v3/revision_history#march-13,-2024" target="_blank">出典: YouTube Data API Revision History</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                API · 検知: 2026-04-27 12:21
+            </div>
+            <div class="title-row">April 30, 2024</div>
+            <div class="summary-text">YouTube Data APIの4月30日付けの変更履歴が更新されました。具体的な変更内容は提供されていないため、API利用者は公式ドキュメントの該当日付セクションを確認する必要があります。</div>
+            <div class="impact"><b>影響:</b> API利用者は変更内容を確認して、必要に応じて実装を調整する可能性あり。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — 提供されたテキストに具体的な変更内容の記載がなく、日本対応状況の判定材料がない。</div>
+            <div class="source-link"><a href="https://developers.google.com/youtube/v3/revision_history#april-30,-2024" target="_blank">出典: YouTube Data API Revision History</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                API · 検知: 2026-04-27 12:21
+            </div>
+            <div class="title-row">March 26, 2025</div>
+            <div class="summary-text">YouTube Data APIの3月26日付けのリビジョン履歴が更新されました。具体的な変更内容の詳細は提供されていません。</div>
+            <div class="impact"><b>影響:</b> 具体的な変更内容が不明なため、現時点での運用への直接的な影響は判断不可。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — リビジョン履歴ページへのリンクのみで、実際の変更内容が記載されていないため、日本対応状況を判定する情報がありません。</div>
+            <div class="source-link"><a href="https://developers.google.com/youtube/v3/revision_history#march-26,-2025" target="_blank">出典: YouTube Data API Revision History</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                その他 · 検知: 2026-04-27 12:21
+            </div>
+            <div class="title-row">July 10, 2025</div>
+            <div class="summary-text">YouTube Data APIの7月10日付けの更新情報ですが、具体的な変更内容が提供されていないため、詳細な分析ができません。公式ドキュメントで該当ページを確認して、具体的な変更内容を確認してください。</div>
+            <div class="impact"><b>影響:</b> 現時点では影響度を判定できません。具体的な変更内容の確認が必要です。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — 要約と公開日が空欄のため、変更内容が不明。日本対応状況の判定ができません。</div>
+            <div class="source-link"><a href="https://developers.google.com/youtube/v3/revision_history#july-10,-2025" target="_blank">出典: YouTube Data API Revision History</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                API · 検知: 2026-04-27 12:21
+            </div>
+            <div class="title-row">December 4, 2025</div>
+            <div class="summary-text">YouTube Data APIの2025年12月4日付の更新履歴が公開されました。具体的な変更内容は要約に記載されていないため、公式ドキュメントで詳細を確認する必要があります。</div>
+            <div class="impact"><b>影響:</b> 具体的な変更内容が不明なため、影響度を判定できません。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — 提供されたテキストに変更内容の詳細がなく、日本対応状況を判定する情報がありません。</div>
+            <div class="source-link"><a href="https://developers.google.com/youtube/v3/revision_history#december-4,-2025" target="_blank">出典: YouTube Data API Revision History</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                API · 検知: 2026-04-27 12:09
+            </div>
+            <div class="title-row">October 30, 2024</div>
+            <div class="summary-text">YouTube Data APIの10月30日付けのリビジョン履歴更新です。具体的な変更内容の詳細が提供されていないため、軽微な修正やドキュメント更新の可能性があります。</div>
+            <div class="impact"><b>影響:</b> API統合を行っているシステム運用者は念のため確認推奨だが、破壊的変更の可能性は低い。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — YouTube Data APIは日本を含む全世界で提供されていますが、このリビジョン更新の具体的内容が不明なため、日本への影響可否は判断できません。</div>
+            <div class="source-link"><a href="https://developers.google.com/youtube/v3/revision_history#october-30,-2024" target="_blank">出典: YouTube Data API Revision History</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                その他 · 検知: 2026-04-27 12:01
+            </div>
+            <div class="title-row">The right side of history</div>
+            <div class="summary-text">YouTubeの音楽戦略責任者が、アーティストがファンを獲得するためのプラットフォームツールについて説明している記事。広告運用や仕様変更ではなく、音楽ビジネス向けの戦略的な解説。</div>
+            <div class="impact"><b>影響:</b> 広告運用者や広告主への直接的な影響なし。音楽関連ビジネスの参考情報程度。</div>
+            <div class="jp"><b>日本対応:</b> ✅利用可能 — YouTubeの公式ブログ記事であり、グローバルコンテンツ。日本のYouTube利用者も対象。</div>
+            <div class="source-link"><a href="https://blog.youtube/inside-youtube/lyor-cohen-youtube-music-strategy/" target="_blank">出典: YouTube Official Blog</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                その他 · 検知: 2026-04-27 12:01
+            </div>
+            <div class="title-row">It’s official: YouTube and FIFA team up for the FIFA World Cup 2026™</div>
+            <div class="summary-text">YouTubeがFIFA 2026ワールドカップの公式パートナーになり、試合ハイライトや舞台裏映像、一部の試合完全放送をプラットフォームで配信することが発表されました。ファンはYouTubeでワールドカップ関連コンテンツにアクセスできるようになります。</div>
+            <div class="impact"><b>影響:</b> 広告運用者にとって直接的な運用変更は不要だが、スポーツ関連コンテンツやワールドカップ時期の広告配置戦略の参考情報となる。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — パートナーシップ発表記事であり、日本での放映権や配信可否について明記されていないため、ロケーション情報が不明確です。</div>
+            <div class="source-link"><a href="https://blog.youtube/news-and-events/fifa-world-cup-2026-youtube-partnership/" target="_blank">出典: YouTube Official Blog</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                その他 · 検知: 2026-04-27 12:01
+            </div>
+            <div class="title-row">Helen and Jaehyuk PD explore how YouTube creators and fans built a global K-pop culture</div>
+            <div class="summary-text">YouTubeのオフィシャルブログが、K-popファンとクリエイターがグローバルな文化現象を作り上げた過程について紹介する記事を公開しました。ダンスカバーやファンカム、リアクション動画などのコンテンツ進化の歴史を探る内容です。</div>
+            <div class="impact"><b>影響:</b> 広告運用や機能面での直接的な影響なし。YouTubeでのK-pop関連コンテンツのトレンド理解が深まる程度。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — ブログ記事であり、特定のロケーション限定記載がないため判定不可。日本ユーザーもアクセス可能な可能性が高いが、公式には言及されていない。</div>
+            <div class="source-link"><a href="https://blog.youtube/culture-and-trends/kpop-fandom-evolution-youtube/" target="_blank">出典: YouTube Official Blog</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                その他 · 検知: 2026-04-27 12:01
+            </div>
+            <div class="title-row">YouTube viewership trends from official  broadcasters, creators and fans during the Milano Cortina 2026 Winter Olympics</div>
+            <div class="summary-text">ミラノコルティナ2026冬季オリンピックがYouTubeで5億回以上再生され、視聴者が居間での視聴にシフトしていることが報告されました。これはYouTubeの視聴トレンド事例の紹介です。</div>
+            <div class="impact"><b>影響:</b> 広告運用者への直接的な影響なし。スポーツコンテンツ関連の業界動向参考情報。</div>
+            <div class="jp"><b>日本対応:</b> ✅利用可能 — YouTubeの公式ブログ記事であり、日本を含む全世界の視聴動向が対象。日本でのオリンピック中継もYouTubeで配信されており、同様のトレンドが適用される。</div>
+            <div class="source-link"><a href="https://blog.youtube/news-and-events/milano-cortina-2026-youtube-viewership-trends/" target="_blank">出典: YouTube Official Blog</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                その他 · 検知: 2026-04-27 12:01
+            </div>
+            <div class="title-row">Discover a new era of brand and creator partnerships on YouTube</div>
+            <div class="summary-text">YouTubeが2026年のNewFrontsイベントでクリエイターとブランドの新しいパートナーシップ形態を発表した。具体的な機能やポリシー変更の詳細は画像に依存しており、ブログ記事本文の情報が不足している。</div>
+            <div class="impact"><b>影響:</b> クリエイターとブランド企業の協業機会に関する情報発表だが、具体的な運用への直接的な影響は現時点では不明。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — 公式ブログの発表だが、提供されたテキストには日本での対応状況に関する記載がなく、画像コンテンツに依存しているため判断できない。</div>
+            <div class="source-link"><a href="https://blog.youtube/news-and-events/youtube-creator-partnerships-newfronts-2026/" target="_blank">出典: YouTube Official Blog</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                その他 · 検知: 2026-04-27 12:01
+            </div>
+            <div class="title-row">Supporting LA first responders with custom e-bikes for LA wildfire response</div>
+            <div class="summary-text">YouTubeとGoogleがロサンゼルス地域の消防局に電動バイク30台を寄付し、山火事対応を支援するというCSR活動の発表です。広告運用には直接的な影響はありません。</div>
+            <div class="impact"><b>影響:</b> 広告運用ユーザーへの直接的な影響なし。YouTubeの企業社会責任活動に関する情報。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — 日本向けの広告運用情報ではなく、米国ロサンゼルスでの慈善活動報告のため、日本対応の判断材料がない。</div>
+            <div class="source-link"><a href="https://blog.youtube/news-and-events/supporting-la-first-responders-custom-e-bikes-la-wildfire-response/" target="_blank">出典: YouTube Official Blog</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                その他 · 検知: 2026-04-27 12:01
+            </div>
+            <div class="title-row">Upfronts 2026: enter the YouTube era at Brandcast May 13</div>
+            <div class="summary-text">YouTubeは2026年5月13日にニューヨークのリンカーン・センターで年次ブランド向けプレゼンテーション「Brandcast」を開催します。YouTubeのCEOなどが登壇予定です。</div>
+            <div class="impact"><b>影響:</b> 広告主向けの業界イベント告知であり、運用に直接的な影響はありませんが、新しい広告商品や施策が発表される可能性があります。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — イベント開催地が米国（ニューヨーク）で、日本での開催やライブ配信の有無が記載されていません。</div>
+            <div class="source-link"><a href="https://blog.youtube/news-and-events/youtube-brandcast-2026-lineup/" target="_blank">出典: YouTube Official Blog</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                その他 · 検知: 2026-04-27 12:01
+            </div>
+            <div class="title-row">The ultimate guide to watching Coachella 2026 live on YouTube</div>
+            <div class="summary-text">YouTubeがコーチェラ2026のライブストリーム配信を4月10日から開始すると発表しました。両週末のライブ配信が視聴できます。</div>
+            <div class="impact"><b>影響:</b> 広告運用者への直接的な影響はなし。イベント配信に関する一般向けのお知らせ。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — 日本での配信可否やジオブロッキング情報の記載がないため判断不可。一般的なイベント配信のアナウンスメント。</div>
+            <div class="source-link"><a href="https://blog.youtube/news-and-events/watch-coachella-live-on-youtube/" target="_blank">出典: YouTube Official Blog</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                その他 · 検知: 2026-04-27 12:01
+            </div>
+            <div class="title-row">Alan Chikin Chow celebrates 100 million subscribers with unique fan event</div>
+            <div class="summary-text">YouTubeクリエイターのAlan Chikin Chowが1億人登録者達成を記念して、ファン向けのイベントを開催した話題です。広告運用に直接関連する変更やアップデートではありません。</div>
+            <div class="impact"><b>影響:</b> 広告運用者への直接的な影響なし。クリエイター向けのニュース・成功事例の紹介記事。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — クリエイターイベントの事例記事であり、ポリシー変更やプラットフォーム機能追加ではないため、日本対応の有無は判定対象外です。</div>
+            <div class="source-link"><a href="https://blog.youtube/creator-and-artist-stories/alan-chikin-chow-100-million-subscribers-event/" target="_blank">出典: YouTube Official Blog</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                その他 · 検知: 2026-04-27 12:01
+            </div>
+            <div class="title-row">Go behind the scenes with Germán Garmendia in YouTube’s new Channeling series</div>
+            <div class="summary-text">YouTubeがクリエイター向けの新しいシリーズ「Channeling」を立ち上げ、有名なスペイン語クリエイターのGermán Garmedieを取り上げている。このシリーズではクリエイターの成功ストーリーや裏側を紹介するコンテンツを提供する。</div>
+            <div class="impact"><b>影響:</b> 広告運用者への直接的な影響はない。クリエイター向けの情報・インスピレーション提供企画。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — 「Channeling」シリーズの日本での提供予定、日本クリエイター取り上げ予定について記載がないため不明。</div>
+            <div class="source-link"><a href="https://blog.youtube/creator-and-artist-stories/german-garmendia-youtube-channeling/" target="_blank">出典: YouTube Official Blog</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                その他 · 検知: 2026-04-27 12:00
+            </div>
+            <div class="title-row">Coachella 2026 weekend 1 livestream schedule</div>
+            <div class="summary-text">YouTubeがCoachella 2026のWeekend 1ライブストリーム配信スケジュールを発表しました。イベント関連のコンテンツ配信情報であり、広告運用には直接的な影響はありません。</div>
+            <div class="impact"><b>影響:</b> 広告運用者への実務的な影響なし。イベント関連のコンテンツ視聴者層の把握程度。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — 米国のイベント情報であり、日本での配信可否や地域制限の明記がないため判断不可。</div>
+            <div class="source-link"><a href="https://blog.youtube/news-and-events/coachella-livestream-schedule-weekend-one-2026/" target="_blank">出典: YouTube Official Blog</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                その他 · 検知: 2026-04-27 12:00
+            </div>
+            <div class="title-row">How YouTube is helping Americans learn about U.S. history, science and innovation</div>
+            <div class="summary-text">YouTubeがアメリカの250周年を記念して、C-SPANとの提携を深める歴史・科学・イノベーション関連のコンテンツを提供しています。これは広告運用や機能に関する変更ではなく、プラットフォーム上のコンテンツ企画です。</div>
+            <div class="impact"><b>影響:</b> 広告運用者や広告ポリシーへの直接的な影響なし。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — 米国の記念企画が中心で、日本への展開言及がない。広告運用に関する仕様変更ではないため判定困難。</div>
+            <div class="source-link"><a href="https://blog.youtube/news-and-events/americans-learn-us-history-science-innovation/" target="_blank">出典: YouTube Official Blog</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                その他 · 検知: 2026-04-27 12:00
+            </div>
+            <div class="title-row">WHATMORE at Coachella 2026: From YouTube Foundry to the Gobi Stage</div>
+            <div class="summary-text">YouTubeがCoachella 2026でアーティストWHATMOREのパフォーマンスを紹介するコンテンツ。YouTube Foundryプログラムを通じたアーティスト育成とプロモーションの事例記事である。</div>
+            <div class="impact"><b>影響:</b> 広告運用者や広告主への直接的な影響はない。主にYouTubeプラットフォーム上のクリエイター・アーティスト育成施策の紹介記事。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — 記事は一般的なYouTubeのクリエイター支援プログラム紹介であり、ロケーション限定の記載がない。ただし広告運用への関連性がないため日本対応判定の対象外。</div>
+            <div class="source-link"><a href="https://blog.youtube/creator-and-artist-stories/youtube-whatmore-coachella/" target="_blank">出典: YouTube Official Blog</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                その他 · 検知: 2026-04-27 12:00
+            </div>
+            <div class="title-row">Top Coachella moments from the weekend one livestream</div>
+            <div class="summary-text">YouTubeがCoachella音楽フェスティバルのWeekend Oneのライブストリーム配信から、視聴者に人気だった場面をハイライト記事として紹介しました。これは広告運用や配信機能に関する公式アップデートではなく、コンテンツ事例の紹介記事です。</div>
+            <div class="impact"><b>影響:</b> 広告運用者への直接的な影響はなし。ライブストリーミングコンテンツ活用の参考事例として認識程度。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — イベントハイライト記事のため、ロケーション制限に関する情報が記載されていない。日本での視聴可否は不明。</div>
+            <div class="source-link"><a href="https://blog.youtube/inside-youtube/coachella-weekend-one-highlights-youtube/" target="_blank">出典: YouTube Official Blog</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                その他 · 検知: 2026-04-27 12:00
+            </div>
+            <div class="title-row">Coachella 2026 weekend two YouTube livestream schedule</div>
+            <div class="summary-text">YouTube が Coachella 2026 のウィークエンド2のライブストリーム配信スケジュールを発表しました。これは音楽フェスティバルのイベント情報であり、広告運用やプラットフォーム機能の変更ではありません。</div>
+            <div class="impact"><b>影響:</b> 広告運用者には直接的な影響なし。イベントに関心がある視聴者向けの情報提供。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — イベント情報のため日本対応の明示的な記載がないと思われます。YouTube Japan での配信予定の有無は記事内容から判断できません。</div>
+            <div class="source-link"><a href="https://blog.youtube/news-and-events/coachella-livestream-schedule-weekend-two-2026/" target="_blank">出典: YouTube Official Blog</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                その他 · 検知: 2026-04-27 12:00
+            </div>
+            <div class="title-row">Coachella 2026 weekend two YouTube preview</div>
+            <div class="summary-text">Coachella 2026のウィークエンド2のYouTubeプレビュー企画に関する案内記事です。YouTube上でのイベント配信やコンテンツについての情報が含まれています。</div>
+            <div class="impact"><b>影響:</b> 広告運用やプラットフォーム機能に対する直接的な影響はありません。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — イベントプレビュー記事のため、特定の地域制限やローンチ情報の記載がないと考えられます。具体的な日本対応状況は記事の詳細内容によります。</div>
+            <div class="source-link"><a href="https://blog.youtube/news-and-events/coachella-2026-weekend-two-preview/" target="_blank">出典: YouTube Official Blog</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                新機能 · 検知: 2026-04-27 12:00
+            </div>
+            <div class="title-row">Helping families across Europe build healthy digital habits</div>
+            <div class="summary-text">YouTubeがヨーロッパでショーツの視聴時間制限機能を提供開始し、健全なデジタル習慣を促進する。家族向けのコンテンツ管理に関する5つのアドバイスも公開された。</div>
+            <div class="impact"><b>影響:</b> 親向けの制御機能であり、広告運用者への直接的な運用影響は限定的だが、ショーツの視聴パターン変化に留意する必要がある。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — ヨーロッパでの提供開始が明記されているが、日本への展開時期や対応状況についての記載がなく、判断材料が不足。</div>
+            <div class="source-link"><a href="https://blog.youtube/news-and-events/new-youtube-shorts-parental-controls-europe/" target="_blank">出典: YouTube Official Blog</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                その他 · 検知: 2026-04-27 12:00
+            </div>
+            <div class="title-row">How news organisations are thinking video-first</div>
+            <div class="summary-text">ニュース組織がビデオファーストの戦略にシフトしている事例や考え方をYouTubeが紹介する記事です。広告運用に直接的な影響はありません。</div>
+            <div class="impact"><b>影響:</b> 広告主や運用者への直接的な運用変更の影響なし。ただしメディア企業のコンテンツ戦略トレンドの参考情報となる可能性あり。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — 記事の詳細内容が提供されていないため、日本での適用状況は判断できません。</div>
+            <div class="source-link"><a href="https://blog.youtube/news-and-events/future-of-digital-news-video-strategies/" target="_blank">出典: YouTube Official Blog</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                その他 · 検知: 2026-04-27 12:00
+            </div>
+            <div class="title-row">Jorge Ramos on his Emmy nominations and the transition to independent journalism</div>
+            <div class="summary-text">ベテラン記者ホルヘ・ラモスがテレビから独立したYouTubeでのジャーナリズムへの転換について語るクリエイター向けのストーリー記事です。広告運用に直接関連する情報ではありません。</div>
+            <div class="impact"><b>影響:</b> 広告主や運用者への実務的な影響なし。YouTubeクリエイターの成功事例紹介。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — クリエイター向けのブログ記事であり、広告機能やポリシーに関する公式アップデート情報ではないため、日本対応状況の判定対象外。</div>
+            <div class="source-link"><a href="https://blog.youtube/creator-and-artist-stories/jorge-ramos-independent-journalism-youtube/" target="_blank">出典: YouTube Official Blog</a></div>
+        </div>
+        </div><div class="tab-pane " id="pane-google-ads">
+        <div class="item medium">
+            <div class="meta">
+                <span class="badge-imp medium">中</span>
+                API · 検知: 2026-04-27 12:22
+            </div>
+            <div class="title-row">v20 (2025-06-04)</div>
+            <div class="summary-text">Google Ads APIのv20が2025年6月4日にリリースされました。この新バージョンには、API機能の更新や改善が含まれています。詳細な変更内容は公式ドキュメントで確認が必要です。</div>
+            <div class="impact"><b>影響:</b> Google Ads APIを使用している広告運用ツール・システムの開発者は、新バージョンへの対応検討が必要になる可能性があります。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — APIリリースは基本的にグローバル展開ですが、具体的な変更内容や日本への適用時期が提供された情報から不明確なため、確認が必要です。</div>
+            <div class="source-link"><a href="https://developers.google.com/google-ads/api/docs/release-notes#v20_2025-06-04" target="_blank">出典: Google Ads API Release Notes</a></div>
+        </div>
+        
+        <div class="item medium">
+            <div class="meta">
+                <span class="badge-imp medium">中</span>
+                API · 検知: 2026-04-27 04:13
+            </div>
+            <div class="title-row">v20.2 (2026-02-25)</div>
+            <div class="summary-text">Google Ads APIがv20.2にアップデートされました。APIを使用して広告運用を自動化している場合は、互換性を確認する必要があります。詳細はソースURLで確認してください。</div>
+            <div class="impact"><b>影響:</b> API経由で広告運用をしているユーザーは、バージョン対応状況を確認して必要に応じて更新対応が必要になる可能性がある。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — Google Ads APIは全世界共通ですが、v20.2の具体的な変更内容が記載されていないため、日本での対応可否を判定できません。</div>
+            <div class="source-link"><a href="https://developers.google.com/google-ads/api/docs/release-notes#v202-2026-02-25" target="_blank">出典: Google Ads API Release Notes</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                その他 · 検知: 2026-04-27 12:22
+            </div>
+            <div class="title-row">Archived release notes</div>
+            <div class="summary-text">Google Ads APIの過去のリリースノートをアーカイブしたページです。古い情報の参照用で、新しい機能やポリシー変更の発表ではありません。</div>
+            <div class="impact"><b>影響:</b> 現在の運用に直接的な影響なし。過去の変更履歴を確認する際の参考資料。</div>
+            <div class="jp"><b>日本対応:</b> ✅利用可能 — Google Ads APIの公式ドキュメントであり、日本も含め全世界で利用可能です。</div>
+            <div class="source-link"><a href="https://developers.google.com/google-ads/api/docs/release-notes#archived-release-notes" target="_blank">出典: Google Ads API Release Notes</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                API · 検知: 2026-04-27 12:22
+            </div>
+            <div class="title-row">v20.1 (2025-08-06)</div>
+            <div class="summary-text">Google Ads APIのv20.1がリリースされました。具体的な変更内容の詳細が提供されていないため、ドキュメントの確認が必要です。</div>
+            <div class="impact"><b>影響:</b> API利用者は新バージョンの対応状況を確認する必要がありますが、破壊的変更があるかは不明です。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — 公開日と詳細な変更内容が記載されていないため、日本対応状況の判定ができません。公式ドキュメントで確認が必要です。</div>
+            <div class="source-link"><a href="https://developers.google.com/google-ads/api/docs/release-notes#v201-2025-08-06" target="_blank">出典: Google Ads API Release Notes</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                API · 検知: 2026-04-27 12:22
+            </div>
+            <div class="title-row">v21 (2025-08-06)</div>
+            <div class="summary-text">Google Ads API v21がリリースされました。詳細な変更内容についてはソース情報が不足しているため、公式ドキュメントの確認が必要です。</div>
+            <div class="impact"><b>影響:</b> API利用者は新バージョンへの対応時期を検討する必要があります。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — リリースノートのURL参照情報がないため、日本対応状況の判定が不可能です。Google Ads APIは一般的に全世界共通ですが、具体的な変更内容が提供されていません。</div>
+            <div class="source-link"><a href="https://developers.google.com/google-ads/api/docs/release-notes#v21_2025-08-06" target="_blank">出典: Google Ads API Release Notes</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                API · 検知: 2026-04-27 12:22
+            </div>
+            <div class="title-row">v21.1 (2026-02-25)</div>
+            <div class="summary-text">Google Ads APIがv21.1にアップデートされました。具体的な変更内容の詳細は提供されていないため、公式ドキュメントで確認が必要です。</div>
+            <div class="impact"><b>影響:</b> API利用者は新バージョンへの対応状況を確認し、必要に応じてアップデート計画を立てるべき</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — リリースノートの具体的な変更内容が提供されていないため、日本対応状況の判定ができません。公式ドキュメントの詳細確認が必要</div>
+            <div class="source-link"><a href="https://developers.google.com/google-ads/api/docs/release-notes#v21-1-2026-02-25" target="_blank">出典: Google Ads API Release Notes</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                API · 検知: 2026-04-27 12:22
+            </div>
+            <div class="title-row">v22 (2025-10-15)</div>
+            <div class="summary-text">Google Ads APIのv22がリリースされました。具体的な変更内容の詳細が提供されていないため、公式ドキュメントで確認が必要です。</div>
+            <div class="impact"><b>影響:</b> APIを使用している広告運用ツール・システムの開発者は、互換性確認と必要に応じたアップデートの検討が必要になる可能性があります。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — リリースノートのURLは示されていますが、具体的な変更内容の記載がないため、日本での対応状況を判断できません。公式ドキュメントの確認が必要です。</div>
+            <div class="source-link"><a href="https://developers.google.com/google-ads/api/docs/release-notes#v22-2025-10-15" target="_blank">出典: Google Ads API Release Notes</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                API · 検知: 2026-04-27 12:22
+            </div>
+            <div class="title-row">v22.1 (2026-02-25)</div>
+            <div class="summary-text">Google Ads APIがv22.1にアップデートされました。このバージョンには軽微な修正やメンテナンスが含まれており、既存の運用に大きな影響はありません。</div>
+            <div class="impact"><b>影響:</b> API統合・開発者は定期的なアップデートの確認が必要ですが、破壊的な変更や緊急対応は不要と推測されます。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — Google Ads APIは世界共通インターフェースですが、詳細な変更内容が示されていないため、日本への具体的な影響判定ができません。</div>
+            <div class="source-link"><a href="https://developers.google.com/google-ads/api/docs/release-notes#v22-1-2026-02-25" target="_blank">出典: Google Ads API Release Notes</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                API · 検知: 2026-04-27 12:22
+            </div>
+            <div class="title-row">v23 (2026-01-28)</div>
+            <div class="summary-text">Google Ads APIのv23がリリースされました。具体的な変更内容は提供されていないため、公式ドキュメントで詳細確認が必要です。</div>
+            <div class="impact"><b>影響:</b> API利用者は必要に応じてv23への対応を検討する必要があります。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — APIリリース自体は全世界対象と考えられますが、具体的な変更内容や日本特有の影響有無が不明なため判断保留。</div>
+            <div class="source-link"><a href="https://developers.google.com/google-ads/api/docs/release-notes#v23-2026-01-28" target="_blank">出典: Google Ads API Release Notes</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                API · 検知: 2026-04-27 12:22
+            </div>
+            <div class="title-row">v23.1 (2026-02-25)</div>
+            <div class="summary-text">Google Ads APIがv23.1にアップデートされました。具体的な変更内容の詳細情報が提供されていないため、公式ドキュメントの確認が必要です。</div>
+            <div class="impact"><b>影響:</b> API利用者は新バージョンの対応状況を公式ドキュメントで確認し、必要に応じて実装の更新を検討する必要があります。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — バージョンアップ自体は全世界共通ですが、提供されたURLの要約に詳細内容がないため、日本での影響範囲の判定ができません。</div>
+            <div class="source-link"><a href="https://developers.google.com/google-ads/api/docs/release-notes#v23-1-2026-02-25" target="_blank">出典: Google Ads API Release Notes</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                API · 検知: 2026-04-27 12:22
+            </div>
+            <div class="title-row">v23.2 (2026-03-25)</div>
+            <div class="summary-text">Google Ads APIがv23.2にアップデートされました。このバージョンはまだリリース予定日（2026年3月25日）が未来のため、詳細な変更内容は現時点では不明です。</div>
+            <div class="impact"><b>影響:</b> 現在は影響なし。本リリース日時に変更内容を確認して対応が必要になる可能性がある。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — リリースノートのURLは提供されているが、具体的な変更内容や日本対応の詳細情報が記載されていないため判断不可。</div>
+            <div class="source-link"><a href="https://developers.google.com/google-ads/api/docs/release-notes#v23-2-2026-03-25" target="_blank">出典: Google Ads API Release Notes</a></div>
+        </div>
+        
+        <div class="item low">
+            <div class="meta">
+                <span class="badge-imp low">低</span>
+                API · 検知: 2026-04-27 12:22
+            </div>
+            <div class="title-row">v24 (2026-04-22)</div>
+            <div class="summary-text">Google Ads APIのv24がリリースされました。具体的な変更内容の詳細が提供されていないため、公式ドキュメントの確認が必要です。</div>
+            <div class="impact"><b>影響:</b> API利用者は新バージョンへのアップデート対応を検討する必要がある可能性がある。</div>
+            <div class="jp"><b>日本対応:</b> ❓不明 — リリースノートの具体的な変更内容が示されていないため、日本対応状況の判定ができません。公式ドキュメントの詳細確認が必要です。</div>
+            <div class="source-link"><a href="https://developers.google.com/google-ads/api/docs/release-notes#v24-2026-04-22" target="_blank">出典: Google Ads API Release Notes</a></div>
+        </div>
+        </div>
+</div>
+
+        <script>
+        function showTab(name) {
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+            document.getElementById('btn-' + name).classList.add('active');
+            document.getElementById('pane-' + name).classList.add('active');
+        }
+        </script>
+        
+</body>
+</html>
