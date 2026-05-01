@@ -1783,5 +1783,22 @@
     "jp_status": "❌未提供",
     "jp_note": "インド限定での機能ローンチであり、日本での利用開始予定は記載されていません。",
     "detected_at": "2026-04-29T16:05:34.427679"
+  },
+  {
+    "item": {
+      "platform": "Meta",
+      "source_name": "Engineering at Meta",
+      "title": "How Meta Is Strengthening End-to-End Encrypted Backups",
+      "url": "https://engineering.fb.com/2026/05/01/security/meta-strengthening-end-to-end-encrypted-backups/",
+      "summary": "<p>The HSM-based Backup Key Vault Meta&#8217;s HSM-based Backup Key Vault provides the foundation for end-to-end encrypted backups for WhatsApp and Messenger. The system allows people to protect their backed-up message history with a recovery code, ensuring that the recovery code is stored in tamper-resistant hardware security modules (HSMs) and is inaccessible to Meta, cloud storage [...]</p>\n<p><a class=\"btn btn-secondary understrap-read-more-link\" href=\"https://engineering.fb.com/2026/05/01/s",
+      "published": "Fri, 01 May 2026 16:00:58 +0000"
+    },
+    "importance": "低",
+    "category": "その他",
+    "summary_ja": "MetaがWhatsAppとMessengerのバックアップをより安全に保護するための技術を強化しています。ユーザーが回復コードを使ってバックアップを暗号化でき、Metaも中身を見られない仕組みになっています。",
+    "impact": "広告運用者への直接的な影響はなく、ユーザーのプライバシー保護技術の向上のみ。",
+    "jp_status": "❓不明",
+    "jp_note": "WhatsAppとMessengerはグローバルサービスだが、本記事は技術ブログの一般的な説明であり日本での提供時期やローンチ予定の明記がない。",
+    "detected_at": "2026-05-01T18:16:44.248740"
   }
 ]
