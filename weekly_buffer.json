@@ -1800,5 +1800,22 @@
     "jp_status": "❓不明",
     "jp_note": "WhatsAppとMessengerはグローバルサービスだが、本記事は技術ブログの一般的な説明であり日本での提供時期やローンチ予定の明記がない。",
     "detected_at": "2026-05-01T18:16:44.248740"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Official Blog",
+      "title": "How to watch the 2026 Met Gala red carpet live stream",
+      "url": "https://blog.youtube/culture-and-trends/watch-met-gala-2026-live-stream/",
+      "summary": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/GettyImages-2213593853.max-600x600.format-webp.webp\" />Watch the 2026 Met Gala red carpet live on Monday, May 4, starting at 6 p.m. ET. Follow the Vogue YouTube channel to see hosts Ashley Graham, Cara Delevingne, and La La …",
+      "published": "Mon, 04 May 2026 10:05:00 +0000"
+    },
+    "importance": "低",
+    "category": "その他",
+    "summary_ja": "YouTubeでメットガラ2026の赤絨毯ライブストリーミングが5月4日に配信される。VogueのYouTubeチャンネルで視聴できる。",
+    "impact": "広告運用者への直接的な影響なし。プラットフォームのコンテンツニュース。",
+    "jp_status": "❓不明",
+    "jp_note": "イベントストリーミング情報であり、日本での配信可能性は記事に明記されていない。",
+    "detected_at": "2026-05-04T17:18:14.361649"
   }
 ]
