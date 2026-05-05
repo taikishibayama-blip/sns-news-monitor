@@ -1684,23 +1684,6 @@
   },
   {
     "item": {
-      "platform": "Google Ads",
-      "source_name": "Google Ads API Release Notes",
-      "title": "v20.2 (2026-02-25)",
-      "url": "https://developers.google.com/google-ads/api/docs/release-notes#v202-2026-02-25",
-      "summary": "",
-      "published": ""
-    },
-    "importance": "中",
-    "category": "API",
-    "summary_ja": "Google Ads APIがv20.2にアップデートされました。APIを使用して広告運用を自動化している場合は、互換性を確認する必要があります。詳細はソースURLで確認してください。",
-    "impact": "API経由で広告運用をしているユーザーは、バージョン対応状況を確認して必要に応じて更新対応が必要になる可能性がある。",
-    "jp_status": "❓不明",
-    "jp_note": "Google Ads APIは全世界共通ですが、v20.2の具体的な変更内容が記載されていないため、日本での対応可否を判定できません。",
-    "detected_at": "2026-04-27T04:13:38.079057"
-  },
-  {
-    "item": {
       "platform": "Meta",
       "source_name": "Meta Newsroom (about.fb.com)",
       "title": "Powering AI, Strengthening the Grid: Innovation in Space Solar Energy and Long-Duration Storage",
@@ -1817,5 +1800,22 @@
     "jp_status": "❓不明",
     "jp_note": "イベントストリーミング情報であり、日本での配信可能性は記事に明記されていない。",
     "detected_at": "2026-05-04T17:18:14.361649"
+  },
+  {
+    "item": {
+      "platform": "X",
+      "source_name": "X Developer Community Announcements",
+      "title": "Important Update: X API Search Endpoints Migrating to New Search Index",
+      "url": "https://devcommunity.x.com/t/important-update-x-api-search-endpoints-migrating-to-new-search-index/264595",
+      "summary": "<p>Hello X Developer Community,</p>\n<p>The core X platform has migrated to a new Search Index which is aimed to significantly improve the Search experience on X.</p>\n<p>As part of this migration, we are retiring the legacy search index that has been powering the X API Search Endpoints. The X Developer Platform team has worked hard to make the transition to the new backend infrastructure as seamless as possible for developers.</p>\n<h3><a class=\"anchor\" href=\"https://devcommunity.x.com#p-511693-wh",
+      "published": "Mon, 04 May 2026 23:09:25 +0000"
+    },
+    "importance": "高",
+    "category": "API",
+    "summary_ja": "X APIの検索エンドポイントが新しい検索インデックスに移行します。開発者は既存の検索機能に影響が出る可能性があるため、対応が必要になる場合があります。",
+    "impact": "X API Search Endpointsを利用している広告管理ツール・分析ツール開発者は、新インデックスへの対応確認と互換性テストが緊急で必要です。",
+    "jp_status": "❓不明",
+    "jp_note": "アナウンスが開発者コミュニティ向けであり、日本特有の対応やロケーション制限の記載がないため。ただしX APIの変更は日本ユーザーにも影響する可能性が高い。",
+    "detected_at": "2026-05-05T07:33:40.204572"
   }
 ]
