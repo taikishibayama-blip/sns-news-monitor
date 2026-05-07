@@ -2,8 +2,8 @@ name: SNS News Monitor
 
 on:
   schedule:
-    # 3時間おきに速報チェック
-    - cron: '0 */3 * * *'
+    # 速報チェック: 1日2回（JST 9:00 = UTC 0:00 / JST 19:00 = UTC 10:00）
+    - cron: '0 0,10 * * *'
     # 毎週金曜 17:00 JST = 08:00 UTC に週次レポート
     - cron: '0 8 * * 5'
   workflow_dispatch:

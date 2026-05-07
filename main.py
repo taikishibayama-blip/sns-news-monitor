@@ -57,7 +57,9 @@ def cmd_check() -> None:
 
     logger.info(f"analyzed {len(analyzed)} items")
 
-    urgent = [a for a in analyzed if a.importance == "高"]
+    # 速報通知: relevance=直結 かつ importance=高 のみ
+    # （2軸ロジック化により、importance=高は業務関連性も担保された状態）
+    urgent = [a for a in analyzed if a.importance == "高" and a.relevance != "無関係"]
     if urgent:
         logger.info(f"sending urgent notification for {len(urgent)} items")
         notifier.notify(urgent, mode="urgent")
@@ -67,8 +69,8 @@ def cmd_check() -> None:
     storage.append_buffer(analyzed)
     storage.mark_seen([a.item.url for a in analyzed])
 
-    # 直近7日分のバッファをダッシュボードHTMLに書き出し
-    dashboard_items = storage.get_weekly_items()
+    # 直近7日分のバッファをダッシュボードHTMLに書き出し（無関係は除外）
+    dashboard_items = [a for a in storage.get_weekly_items() if a.relevance != "無関係"]
     if dashboard_items:
         notifier.write_html_report(
             dashboard_items,
@@ -85,8 +87,10 @@ def cmd_weekly() -> None:
     storage = Storage()
     notifier = Notifier()
 
-    items = storage.get_weekly_items()
-    logger.info(f"{len(items)} items in past 7 days")
+    # 週次レポートからも「無関係」は除外
+    all_items = storage.get_weekly_items()
+    items = [a for a in all_items if a.relevance != "無関係"]
+    logger.info(f"{len(items)}/{len(all_items)} items in past 7 days (filtered)")
 
     if not items:
         logger.info("no items to report, exiting")

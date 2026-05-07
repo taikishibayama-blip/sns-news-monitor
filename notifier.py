@@ -71,27 +71,33 @@ class Notifier:
     # ----- Slack -----
 
     def _build_item_blocks(self, a: AnalyzedItem) -> list:
+        """1件あたり2ブロックのコンパクト表示。
+        header（重要度+プラットフォーム+日本語タイトル）+ section（要約+メタ+出典）。
+        """
         imp_e = IMPORTANCE_EMOJI.get(a.importance, "")
-        title_short = a.item.title[:140] + ("…" if len(a.item.title) > 140 else "")
+        title = a.display_title
+        title_short = title[:120] + ("…" if len(title) > 120 else "")
+        detected = a.detected_at[5:16].replace("T", " ") if len(a.detected_at) >= 16 else a.detected_at
         return [
             {
                 "type": "header",
-                "text": {"type": "plain_text", "text": f"{imp_e} 【{a.importance}】{title_short}", "emoji": True},
+                "text": {
+                    "type": "plain_text",
+                    "text": f"{imp_e}【{a.importance}】{a.item.platform}｜{title_short}",
+                    "emoji": True,
+                },
             },
             {
                 "type": "section",
-                "fields": [
-                    {"type": "mrkdwn", "text": f"*プラットフォーム*\n{a.item.platform}"},
-                    {"type": "mrkdwn", "text": f"*カテゴリ*\n{a.category}"},
-                    {"type": "mrkdwn", "text": f"*日本対応*\n{a.jp_status}"},
-                    {"type": "mrkdwn", "text": f"*検知時刻*\n{a.detected_at[:19]}"},
-                ],
+                "text": {
+                    "type": "mrkdwn",
+                    "text": (
+                        f"{a.summary_ja}\n"
+                        f"_{a.category} · {a.jp_status} · 検知 {detected}_  "
+                        f"<{a.item.url}|出典: {a.item.source_name}>"
+                    ),
+                },
             },
-            {"type": "section", "text": {"type": "mrkdwn", "text": f"*要約*\n{a.summary_ja}"}},
-            {"type": "section", "text": {"type": "mrkdwn", "text": f"*影響*\n{a.impact}"}},
-            {"type": "section", "text": {"type": "mrkdwn", "text": f"*日本対応の根拠*\n{a.jp_note}"}},
-            {"type": "section", "text": {"type": "mrkdwn", "text": f"<{a.item.url}|出典: {a.item.source_name}>"}},
-            {"type": "divider"},
         ]
 
     def _build_full_blocks(self, items: List[AnalyzedItem], header_text: str, group_by_platform: bool) -> list:
@@ -223,10 +229,12 @@ class Notifier:
 
     def _render_item_html(self, a: AnalyzedItem) -> str:
         e = html_lib.escape
+        original_title = "" if a.display_title == a.item.title else f'<div class="orig-title">{e(a.item.title)}</div>'
         return f"""
         <div class="item {self._imp_class(a.importance)}">
             <div class="meta">[{e(a.importance)}] {e(a.item.platform)} / {e(a.category)} / 検知: {e(a.detected_at[:19])}</div>
-            <div class="title">{e(a.item.title)}</div>
+            <div class="title">{e(a.display_title)}</div>
+            {original_title}
             <div class="summary">{e(a.summary_ja)}</div>
             <div class="impact"><b>影響:</b> {e(a.impact)}</div>
             <div class="jp"><b>日本対応:</b> {e(a.jp_status)} - {e(a.jp_note)}</div>
@@ -245,7 +253,8 @@ class Notifier:
         .item.medium { border-left-color: #f39c12; background: #fef5e7; }
         .item.low { border-left-color: #95a5a6; }
         .meta { font-size: 12px; color: #666; margin-bottom: 8px; }
-        .title { font-size: 16px; font-weight: bold; margin-bottom: 8px; }
+        .title { font-size: 16px; font-weight: bold; margin-bottom: 4px; }
+        .orig-title { font-size: 12px; color: #888; margin-bottom: 8px; font-style: italic; }
         .summary { margin: 8px 0; line-height: 1.6; }
         .impact { background: #fff3cd; padding: 8px; border-radius: 4px; margin: 8px 0; }
         .jp { background: #e8f4f8; padding: 8px; border-radius: 4px; margin: 8px 0; font-size: 13px; }
@@ -332,7 +341,8 @@ class Notifier:
         .badge-imp.high { background: #e74c3c; color: white; }
         .badge-imp.medium { background: #f39c12; color: white; }
         .badge-imp.low { background: #95a5a6; color: white; }
-        .title-row { font-size: 15px; font-weight: bold; margin-bottom: 8px; line-height: 1.4; }
+        .title-row { font-size: 15px; font-weight: bold; margin-bottom: 4px; line-height: 1.4; }
+        .orig-title-row { font-size: 11px; color: #999; margin-bottom: 8px; font-style: italic; line-height: 1.4; }
         .summary-text { margin: 8px 0; line-height: 1.7; font-size: 14px; }
         .impact { background: #fff7e0; padding: 8px 12px; border-radius: 4px; margin: 8px 0; font-size: 13px; }
         .jp { background: #e8f4f8; padding: 8px 12px; border-radius: 4px; margin: 8px 0; font-size: 12px; }
@@ -411,13 +421,15 @@ class Notifier:
 
     def _render_item_card(self, a: AnalyzedItem) -> str:
         e = html_lib.escape
+        original_title = "" if a.display_title == a.item.title else f'<div class="orig-title-row">{e(a.item.title)}</div>'
         return f"""
         <div class="item {self._imp_class(a.importance)}">
             <div class="meta">
                 <span class="badge-imp {self._imp_class(a.importance)}">{e(a.importance)}</span>
                 {e(a.category)} · 検知: {e(a.detected_at[:16].replace('T', ' '))}
             </div>
-            <div class="title-row">{e(a.item.title)}</div>
+            <div class="title-row">{e(a.display_title)}</div>
+            {original_title}
             <div class="summary-text">{e(a.summary_ja)}</div>
             <div class="impact"><b>影響:</b> {e(a.impact)}</div>
             <div class="jp"><b>日本対応:</b> {e(a.jp_status)} — {e(a.jp_note)}</div>
