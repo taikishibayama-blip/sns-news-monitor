@@ -1,57 +1,6 @@
 [
   {
     "item": {
-      "platform": "YouTube",
-      "source_name": "YouTube Official Blog",
-      "title": "The global campus: How YouTube is empowering learners everywhere",
-      "url": "https://blog.youtube/news-and-events/youtube-empowering-learning-tools/",
-      "summary": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/youtube-logo.max-700x3000.forma.max-600x600.format-webp.webp\" />At YouTube, we believe \"learning to learn\" is the most vital skill one can acquire. Whether you are at a desk in school or in your home office, we are committed to provi…",
-      "published": "Tue, 28 Apr 2026 11:00:00 +0000"
-    },
-    "importance": "低",
-    "category": "その他",
-    "summary_ja": "YouTubeが学習支援ツールの拡充を発表し、学校や自宅での学習環境を整備する取り組みを進めている。広告運用や課金に直接的な影響はない。",
-    "impact": "広告運用者への直接的な運用上の影響なし。ただし教育関連コンテンツの視聴増加による視聴者層の変化は長期的に注視の価値あり。",
-    "jp_status": "❓不明",
-    "jp_note": "学習ツールの提供範囲が明記されていないため、日本での利用可否が不明。全世界展開の可能性が高いが、確認情報がない。",
-    "detected_at": "2026-04-28T17:59:07.668304"
-  },
-  {
-    "item": {
-      "platform": "Meta",
-      "source_name": "Meta Newsroom (about.fb.com)",
-      "title": "Infrastructure Explained: Data Centers",
-      "url": "https://about.fb.com/news/2026/04/infrastructure-explained-meta-data-centers/",
-      "summary": "<div><img alt=\"\" class=\"attachment-large size-large wp-post-image\" height=\"501\" src=\"https://about.fb.com/wp-content/uploads/2026/04/Infrastructure-Explained-Data-Centers_Thumbnail.gif?fit=890%2C501\" style=\"margin-bottom: 15px;\" width=\"890\" /></div>\n<p>We're explaining what data centers are and how they help you connect to your favorite digital experiences, from sharing a photo on Instagram to chatting with AI assistants.</p>\n<p>The post <a href=\"https://about.fb.com/news/2026/04/infrastructure-",
-      "published": "Tue, 28 Apr 2026 18:30:54 +0000"
-    },
-    "importance": "低",
-    "category": "その他",
-    "summary_ja": "Metaがデータセンターの仕組みについて説明する教育的なコンテンツを公開しました。写真共有やAIチャットなど、Metaの各サービスがどのように支えられているかを解説しています。",
-    "impact": "広告運用者への直接的な影響なし。背景情報として参考になる程度。",
-    "jp_status": "❓不明",
-    "jp_note": "教育的なニュース記事であり、特定のロケーション制限やローンチ情報の記載がないため判断不可。日本でも閲覧可能と考えられるが確実性に欠ける。",
-    "detected_at": "2026-04-28T21:42:23.173610"
-  },
-  {
-    "item": {
-      "platform": "Meta",
-      "source_name": "Meta Newsroom (about.fb.com)",
-      "title": "Bringing Prepaid Mobile Recharges to WhatsApp Users in India",
-      "url": "https://about.fb.com/news/2026/04/bringing-prepaid-mobile-recharges-to-whatsapp-users-in-india/",
-      "summary": "<div><img alt=\"\" class=\"attachment-large size-large wp-post-image\" height=\"501\" src=\"https://about.fb.com/wp-content/uploads/2026/04/Mobile-recharge-1.jpg?fit=890%2C501\" style=\"margin-bottom: 15px;\" width=\"890\" /></div>\n<p>We're introducing the ability for people in India to complete prepaid mobile recharges directly within WhatsApp, making it easier to stay connected by getting an everyday essential done within the app they already use.</p>\n<p>The post <a href=\"https://about.fb.com/news/2026/04",
-      "published": "Wed, 29 Apr 2026 10:02:32 +0000"
-    },
-    "importance": "低",
-    "category": "新機能",
-    "summary_ja": "インドのWhatsAppユーザーが、アプリ内で直接プリペイド携帯電話のチャージができるようになります。ユーザーは既に使っているアプリで日常的な手続きを完結できるようになるため、利便性が向上します。",
-    "impact": "インド市場のWhatsAppユーザーの利便性向上。日本の広告運用者への直接的な影響は限定的。",
-    "jp_status": "❌未提供",
-    "jp_note": "インド限定での機能ローンチであり、日本での利用開始予定は記載されていません。",
-    "detected_at": "2026-04-29T16:05:34.427679"
-  },
-  {
-    "item": {
       "platform": "Meta",
       "source_name": "Engineering at Meta",
       "title": "How Meta Is Strengthening End-to-End Encrypted Backups",
@@ -134,5 +83,24 @@
     "jp_status": "❓不明",
     "jp_note": "イベント参加の告知記事であり、日本対応状況の判断材料がありません。日本のクリエイターの参加有無も記載されていません。",
     "detected_at": "2026-05-06T16:12:38.618126"
+  },
+  {
+    "item": {
+      "platform": "Meta",
+      "source_name": "Meta Newsroom (about.fb.com)",
+      "title": "Meta’s Position on Canada’s Bill C-22",
+      "url": "https://about.fb.com/news/2026/05/metas-position-on-canadas-bill-c-22/",
+      "summary": "<p>Today, Meta appeared in front of the Standing Committee on Public Safety and National Security, where a version of this post was delivered as speaking remarks. We are grateful to the Standing Committee for inviting us to share our perspective with committee members and Canadians. &#160; Delivered by Rachel Curran, Director of Public Policy, Canada, Meta &#160; Thank you, M. Chair.  Good afternoon and thank you for the opportunity to appear before the Committee today. My name is Rachel Curran ",
+      "published": "Thu, 07 May 2026 22:46:00 +0000"
+    },
+    "importance": "低",
+    "category": "その他",
+    "summary_ja": "Metaがカナダの法案C-22について議会委員会で公式見解を述べたもの。カナダの規制政策に関する声明であり、広告運用・代理店業務への直接的な影響はありません。",
+    "impact": "日本の広告主・代理店の運用には影響しません。カナダの規制動向として参考情報になる可能性もありますが、日本国内業務とは無関係です。",
+    "jp_status": "❌未提供",
+    "jp_note": "カナダの規制聴聞会に関する声明であり、地域限定の政治的ロビイング活動です。日本の広告運用・計測・ポリシーに対する直接の仕様変更や機能アップデートではありません。",
+    "detected_at": "2026-05-08T06:19:40.046453",
+    "title_ja": "カナダ法案C-22に対するMetaの立場表明",
+    "relevance": "無関係"
   }
 ]
