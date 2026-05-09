@@ -121,5 +121,24 @@
     "detected_at": "2026-05-08T15:11:33.609268",
     "title_ja": "タビタ・ブラウン：子ども向け安全スペース「Tab Time」の創出",
     "relevance": "無関係"
+  },
+  {
+    "item": {
+      "platform": "Meta",
+      "source_name": "Meta Newsroom (about.fb.com)",
+      "title": "Which AI Glasses Are Right For You?",
+      "url": "https://about.fb.com/news/2026/05/which-meta-ai-glasses-are-right-for-you/",
+      "summary": "<div><img alt=\"\" class=\"attachment-large size-large wp-post-image\" height=\"501\" src=\"https://about.fb.com/wp-content/uploads/2026/05/Which-AI-Glasses-Are-Right-For-You_Thumbnail-1.gif?fit=890%2C501\" style=\"margin-bottom: 15px;\" width=\"890\" /></div>\n<p>From capturing hands-free content to tracking workouts and staying connected on the go, find the AI glasses that fit your lifestyle.</p>\n<p>The post <a href=\"https://about.fb.com/news/2026/05/which-meta-ai-glasses-are-right-for-you/\">Which AI Glass",
+      "published": "Fri, 08 May 2026 19:00:21 +0000"
+    },
+    "importance": "低",
+    "category": "その他",
+    "summary_ja": "Meta AI グラスの製品ラインアップと選択ガイドに関するコンテンツ。ハンズフリー撮影、ワークアウト追跡、モバイル連携などの機能紹介。",
+    "impact": "広告運用・代理店業務には直接影響なし。ハードウェア製品の消費者向けマーケティングコンテンツ。",
+    "jp_status": "❓不明",
+    "jp_note": "Meta AI グラスは日本未発売。記事は一般消費者向けの製品選択ガイドであり、広告運用・代理店業務とは無関係。",
+    "detected_at": "2026-05-09T07:24:31.156319",
+    "title_ja": "あなたに合ったMeta AI グラスの選び方",
+    "relevance": "無関係"
   }
 ]
