@@ -1,23 +1,6 @@
 [
   {
     "item": {
-      "platform": "Meta",
-      "source_name": "Engineering at Meta",
-      "title": "How Meta Is Strengthening End-to-End Encrypted Backups",
-      "url": "https://engineering.fb.com/2026/05/01/security/meta-strengthening-end-to-end-encrypted-backups/",
-      "summary": "<p>The HSM-based Backup Key Vault Meta&#8217;s HSM-based Backup Key Vault provides the foundation for end-to-end encrypted backups for WhatsApp and Messenger. The system allows people to protect their backed-up message history with a recovery code, ensuring that the recovery code is stored in tamper-resistant hardware security modules (HSMs) and is inaccessible to Meta, cloud storage [...]</p>\n<p><a class=\"btn btn-secondary understrap-read-more-link\" href=\"https://engineering.fb.com/2026/05/01/s",
-      "published": "Fri, 01 May 2026 16:00:58 +0000"
-    },
-    "importance": "低",
-    "category": "その他",
-    "summary_ja": "MetaがWhatsAppとMessengerのバックアップをより安全に保護するための技術を強化しています。ユーザーが回復コードを使ってバックアップを暗号化でき、Metaも中身を見られない仕組みになっています。",
-    "impact": "広告運用者への直接的な影響はなく、ユーザーのプライバシー保護技術の向上のみ。",
-    "jp_status": "❓不明",
-    "jp_note": "WhatsAppとMessengerはグローバルサービスだが、本記事は技術ブログの一般的な説明であり日本での提供時期やローンチ予定の明記がない。",
-    "detected_at": "2026-05-01T18:16:44.248740"
-  },
-  {
-    "item": {
       "platform": "YouTube",
       "source_name": "YouTube Official Blog",
       "title": "How to watch the 2026 Met Gala red carpet live stream",
@@ -139,6 +122,25 @@
     "jp_note": "Meta AI グラスは日本未発売。記事は一般消費者向けの製品選択ガイドであり、広告運用・代理店業務とは無関係。",
     "detected_at": "2026-05-09T07:24:31.156319",
     "title_ja": "あなたに合ったMeta AI グラスの選び方",
+    "relevance": "無関係"
+  },
+  {
+    "item": {
+      "platform": "Meta",
+      "source_name": "Meta Newsroom (about.fb.com)",
+      "title": "Meta at The Cannes Film Festival 2026",
+      "url": "https://about.fb.com/news/2026/05/meta-at-the-cannes-film-festival-2026/",
+      "summary": "<div><img alt=\"\" class=\"attachment-large size-large wp-post-image\" height=\"540\" src=\"https://about.fb.com/wp-content/uploads/2026/05/2026_CANNES_SIGNATURES_WEB_COULEUR-1_2560x1440.jpg?fit=960%2C540\" style=\"margin-bottom: 15px;\" width=\"960\" /></div>\n<p>Meta is proud to be an Official Partner of the Festival de Cannes in a new multi-year strategic partnership. </p>\n<p>The post <a href=\"https://about.fb.com/news/2026/05/meta-at-the-cannes-film-festival-2026/\">Meta at The Cannes Film Festival 2026</",
+      "published": "Mon, 11 May 2026 10:00:03 +0000"
+    },
+    "importance": "低",
+    "category": "その他",
+    "summary_ja": "Metaがカンヌ映画祭の複数年スポンサーシップを発表したニュース。映画業界とのパートナーシップについての広報記事です。",
+    "impact": "代理店の広告運用・キャンペーン戦略に直接的な影響なし",
+    "jp_status": "❓不明",
+    "jp_note": "カンヌ映画祭へのスポンサーシップ発表は広報・ブランド活動であり、SNS広告運用仕様や計測、インフルエンサー機能に関する変更ではありません。代理店業務の技術的・運用的な意思決定には結びつきません。",
+    "detected_at": "2026-05-11T12:42:50.589893",
+    "title_ja": "Meta、2026年カンヌ映画祭のオフィシャルパートナーに",
     "relevance": "無関係"
   }
 ]
