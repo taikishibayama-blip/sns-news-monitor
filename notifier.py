@@ -346,14 +346,19 @@ class Notifier:
         slide_reqs = self._build_slides_requests(items, first_slide_id, today)
         if slide_reqs:
             try:
-                requests.post(
+                res = requests.post(
                     f"https://slides.googleapis.com/v1/presentations/{presentation_id}:batchUpdate",
                     headers=headers,
                     json={"requests": slide_reqs},
                     timeout=60,
-                ).raise_for_status()
+                )
+                if not res.ok:
+                    logger.error(f"Slides batchUpdate失敗 {res.status_code}: {res.text[:1000]}")
+                res.raise_for_status()
+            except requests.exceptions.HTTPError:
+                pass  # 上でログ済み
             except Exception as e:
-                logger.error(f"Slides batchUpdate失敗（URL発行は継続）: {e}")
+                logger.error(f"Slides batchUpdate例外: {e}")
 
         # 3. foru.co.jp ドメイン共有
         try:
