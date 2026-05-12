@@ -2,10 +2,12 @@ name: SNS News Monitor
 
 on:
   schedule:
-    # 速報チェック: 1日2回（JST 9:00 = UTC 0:00 / JST 19:00 = UTC 10:00）
-    - cron: '0 0,10 * * *'
-    # 毎週金曜 17:00 JST = 08:00 UTC に週次レポート
-    - cron: '0 8 * * 5'
+    # 速報チェック: JST 9:00 = UTC 0:00 / JST 15:00 = UTC 6:00
+    - cron: '0 0,6 * * *'
+    # 日次ダイジェスト: JST 20:00 = UTC 11:00
+    - cron: '0 11 * * *'
+    # 週次レポート: 毎週月曜 9:00 JST = 0:00 UTC（先週分をまとめて送信）
+    - cron: '0 0 * * 1'
   workflow_dispatch:
     inputs:
       mode:
@@ -15,6 +17,7 @@ on:
         type: choice
         options:
           - check
+          - daily
           - weekly
           - test_dm
 
@@ -41,8 +44,10 @@ jobs:
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "mode=${{ github.event.inputs.mode }}" >> "$GITHUB_OUTPUT"
-          elif [ "${{ github.event.schedule }}" = "0 8 * * 5" ]; then
+          elif [ "${{ github.event.schedule }}" = "0 0 * * 1" ]; then
             echo "mode=weekly" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event.schedule }}" = "0 11 * * *" ]; then
+            echo "mode=daily" >> "$GITHUB_OUTPUT"
           else
             echo "mode=check" >> "$GITHUB_OUTPUT"
           fi

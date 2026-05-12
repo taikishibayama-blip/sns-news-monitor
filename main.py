@@ -1,8 +1,9 @@
 """SNS News Monitor CLI エントリポイント。
 
 Usage:
-    python main.py check    # 速報チェック（3時間おき想定）
-    python main.py weekly   # 週次レポート（金曜17:00 JST想定）
+    python main.py check    # 速報チェック（1日2回）: 新着取得 + 重要度「高」を即時通知
+    python main.py daily    # 日次ダイジェスト（夕方1回）: 過去24時間の「高」+「中」をまとめて通知
+    python main.py weekly   # 週次レポート（月曜朝）: 先週分全件レポート
 """
 import sys
 import logging
@@ -82,12 +83,28 @@ def cmd_check() -> None:
     logger.info("=== check mode complete ===")
 
 
+def cmd_daily() -> None:
+    logger.info("=== daily mode start ===")
+    storage = Storage()
+    notifier = Notifier()
+
+    all_items = storage.get_daily_items()
+    items = [a for a in all_items if a.relevance != "無関係" and a.importance in ("高", "中")]
+    logger.info(f"{len(items)}/{len(all_items)} items in past 24h (高+中, filtered)")
+
+    if not items:
+        logger.info("no items to notify, exiting")
+        return
+
+    notifier.notify(items, mode="daily")
+    logger.info("=== daily mode complete ===")
+
+
 def cmd_weekly() -> None:
     logger.info("=== weekly mode start ===")
     storage = Storage()
     notifier = Notifier()
 
-    # 週次レポートからも「無関係」は除外
     all_items = storage.get_weekly_items()
     items = [a for a in all_items if a.relevance != "無関係"]
     logger.info(f"{len(items)}/{len(all_items)} items in past 7 days (filtered)")
@@ -96,9 +113,15 @@ def cmd_weekly() -> None:
         logger.info("no items to report, exiting")
         return
 
-    notifier.notify(items, mode="weekly")
+    # Google Slides生成（CA-API経由）→ URLをSlack通知に埋め込む
+    slides_url = notifier.create_weekly_slides(items)
+    if slides_url:
+        logger.info(f"slides created: {slides_url}")
+    else:
+        logger.warning("slides作成失敗 - URLなしで通知")
 
-    # 週次レポートを日付付きファイルでアーカイブ
+    notifier.notify(items, mode="weekly", slides_url=slides_url or "")
+
     today = datetime.now().strftime("%Y-%m-%d")
     notifier.write_html_report(
         items,
@@ -140,13 +163,15 @@ def main() -> None:
     mode = sys.argv[1]
     if mode == "check":
         cmd_check()
+    elif mode == "daily":
+        cmd_daily()
     elif mode == "weekly":
         cmd_weekly()
     elif mode == "test_dm":
         cmd_test_dm()
     else:
         print(f"Unknown mode: {mode}")
-        print("Usage: python main.py [check|weekly|test_dm]")
+        print("Usage: python main.py [check|daily|weekly|test_dm]")
         sys.exit(1)
 
 

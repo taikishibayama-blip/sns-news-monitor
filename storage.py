@@ -83,6 +83,18 @@ class Storage:
         except Exception as e:
             logger.error(f"failed to save {BUFFER_FILE}: {e}")
 
+    def get_daily_items(self) -> List[AnalyzedItem]:
+        cutoff = datetime.now() - timedelta(hours=24)
+        result: List[AnalyzedItem] = []
+        for entry in self.buffer:
+            try:
+                detected = datetime.fromisoformat(entry.get("detected_at", ""))
+                if detected >= cutoff:
+                    result.append(AnalyzedItem.from_dict(entry))
+            except Exception as e:
+                logger.error(f"failed to parse buffer entry: {e}")
+        return result
+
     def get_weekly_items(self) -> List[AnalyzedItem]:
         cutoff = datetime.now() - timedelta(days=WEEKLY_WINDOW_DAYS)
         result: List[AnalyzedItem] = []

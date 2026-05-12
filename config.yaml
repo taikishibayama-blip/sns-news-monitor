@@ -1,56 +1,59 @@
 # 監視対象ソース定義
 #
 # 【設計方針】
-# 公式RSSを最優先。HTMLスクレイピングは構造変更で容易に壊れるため最小限。
+# - 公式RSSを最優先。HTMLスクレイピングは構造変更で容易に壊れるため最小限。
+# - 読者: SNSキャンペーン担当・インフルエンサー施策担当・広告運用担当
+# - プラットフォーム優先度: Instagram > TikTok > YouTube > X
+#
+# 【TikTokについて】
+# 公式ソース（Newsroom / for Business Blog）は全てSPA化で取得不可。
+# Influencer Marketing Hub / Social Media Examiner が TikTok 情報を頻繁にカバーするため
+# 業界メディア経由で間接的に補足する。
 #
 # 【除外したソースと理由】
-# - Meta for Developers Blog / Graph API Changelog: bot対策で400エラー固定。代替として about.fb.com を使用
-# - X Developer Changelog (docs.x.com): React SPA でJS未実行では取得不可
-# - TikTok Newsroom RSS: 2025年頃にRSSが廃止されHTMLへ置換、SPA化で取得不可
-# - TikTok Developers Changelog / API for Business Blog: SPA化で取得不可
-#
-# 【セレクタ保守】
-# HTMLソースが0件継続する場合は対象サイトの構造変化を疑い、本ファイルを更新。
+# - Engineering at Meta: 開発者・インフラ向けで業務関連性が低い
+# - YouTube Data API Revision History: 開発者向けAPIドキュメント
+# - Google Ads API Release Notes: 広告APIの技術変更のみで範囲が狭い
+# - X Developer Community: API開発者向け、業務への関連性が低い
+# - Meta for Developers Blog / Graph API Changelog: bot対策で400エラー固定
+# - TikTok Newsroom / for Business Blog: SPA化で取得不可
 
 sources:
-  # ===== Meta（公式コーポレートRSS）=====
-  - name: Meta Newsroom (about.fb.com)
-    platform: Meta
+  # ===== Meta / Instagram（公式）=====
+  - name: Meta Newsroom
+    platform: Instagram / Meta
     type: rss
     url: https://about.fb.com/feed/
 
-  - name: Engineering at Meta
-    platform: Meta
-    type: rss
-    url: https://engineering.fb.com/feed/
-
-  # ===== X (Twitter) =====
-  - name: X Developer Community Announcements
-    platform: X
-    type: rss
-    url: https://devcommunity.x.com/c/announcements/22.rss
-
-  # ===== YouTube =====
+  # ===== YouTube（公式）=====
   - name: YouTube Official Blog
     platform: YouTube
     type: rss
     url: https://blog.youtube/rss/
 
-  - name: YouTube Data API Revision History
-    platform: YouTube
-    type: html
-    url: https://developers.google.com/youtube/v3/revision_history
-    item_selector: h3
-    title_selector: ""
-    link_selector: ""
-    base_url: https://developers.google.com/youtube/v3/revision_history
+  # ===== X（公式）=====
+  - name: X Developer Community Announcements
+    platform: X
+    type: rss
+    url: https://devcommunity.x.com/c/announcements/22.rss
 
-  # ===== Google Ads =====
-  - name: Google Ads API Release Notes
-    platform: Google Ads
-    type: html
-    url: https://developers.google.com/google-ads/api/docs/release-notes
-    item_selector: h2
-    title_selector: ""
-    link_selector: ""
-    base_url: https://developers.google.com/google-ads/api/docs/release-notes
+  # ===== 業界メディア（SNS全般・インフルエンサー・トレンド）=====
+  - name: Influencer Marketing Hub
+    platform: 業界動向
+    type: rss
+    url: https://influencermarketinghub.com/feed/
+
+  - name: Social Media Examiner
+    platform: 業界動向
+    type: rss
+    url: https://www.socialmediaexaminer.com/feed/
+
+  - name: Sprout Social Insights
+    platform: 業界動向
+    type: rss
+    url: https://sproutsocial.com/insights/feed/
+
+  - name: TechCrunch Social
+    platform: 業界動向
+    type: rss
+    url: https://techcrunch.com/tag/social/feed/
