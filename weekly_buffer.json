@@ -1,23 +1,6 @@
 [
   {
     "item": {
-      "platform": "YouTube",
-      "source_name": "YouTube Official Blog",
-      "title": "How to watch the 2026 Met Gala red carpet live stream",
-      "url": "https://blog.youtube/culture-and-trends/watch-met-gala-2026-live-stream/",
-      "summary": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/GettyImages-2213593853.max-600x600.format-webp.webp\" />Watch the 2026 Met Gala red carpet live on Monday, May 4, starting at 6 p.m. ET. Follow the Vogue YouTube channel to see hosts Ashley Graham, Cara Delevingne, and La La …",
-      "published": "Mon, 04 May 2026 10:05:00 +0000"
-    },
-    "importance": "低",
-    "category": "その他",
-    "summary_ja": "YouTubeでメットガラ2026の赤絨毯ライブストリーミングが5月4日に配信される。VogueのYouTubeチャンネルで視聴できる。",
-    "impact": "広告運用者への直接的な影響なし。プラットフォームのコンテンツニュース。",
-    "jp_status": "❓不明",
-    "jp_note": "イベントストリーミング情報であり、日本での配信可能性は記事に明記されていない。",
-    "detected_at": "2026-05-04T17:18:14.361649"
-  },
-  {
-    "item": {
       "platform": "X",
       "source_name": "X Developer Community Announcements",
       "title": "Important Update: X API Search Endpoints Migrating to New Search Index",
@@ -1224,6 +1207,101 @@
     "jp_note": "グローバル業界動向の記事であり、日本固有の実装・ローンチ情報がない。ただしMeta・TikTok・Snapは日本でも主要プラットフォームのため、将来的に日本のポリシー運用に波及する可能性が高い",
     "detected_at": "2026-05-12T08:35:11.659609",
     "title_ja": "Meta・TikTok・Snapが自殺・自傷害コンテンツ対策プログラムに参加表明",
+    "relevance": "間接"
+  },
+  {
+    "item": {
+      "platform": "Instagram / Meta",
+      "source_name": "Meta Newsroom",
+      "title": "New Supervision Tools Give Parents Insights Into Their Teen’s Algorithm and More",
+      "url": "https://about.fb.com/news/2026/05/new-supervision-tools-parents-insights-teens-algorithm/",
+      "summary": "<div><img alt=\"\" class=\"attachment-large size-large wp-post-image\" height=\"501\" src=\"https://about.fb.com/wp-content/uploads/2026/05/Boosting-Parental-Supervision-Across-Our-Apps-With-Family-Center_Thumbnail.jpg?fit=890%2C501\" style=\"margin-bottom: 15px;\" width=\"890\" /></div>\n<p>We’re making it easier for parents to manage and supervise their teen’s experiences across our apps.</p>\n<p>The post <a href=\"https://about.fb.com/news/2026/05/new-supervision-tools-parents-insights-teens-algorithm/\">New",
+      "published": "Tue, 12 May 2026 16:00:17 +0000"
+    },
+    "importance": "中",
+    "category": "レギュレーション・ポリシー",
+    "summary_ja": "Metaが親向けの監督機能を拡張し、ティーンユーザーが見ているアルゴリズムやコンテンツについての情報を親が確認できるようにした。プラットフォームの安全性・規制対応を強化する施策。",
+    "impact": "キャンペーン担当者には、ティーン向けコンテンツ配信時の親の可視化を考慮した施策設計が必要になる可能性がある。インフルエンサー施策担当者は、ティーン視聴者向けコラボレーションの透明性要件に留意すべき。広告運用担当者は、ティーンオーディエンス向け広告の規制強化に向けた準備が今後必要になる可能性がある。",
+    "jp_status": "❓不明",
+    "jp_note": "Meta Newsroomの公式発表だが、日本国内での提供開始時期やロケーション情報が記事要約に記載されていないため不明。米国をはじめとした主要市場での展開が先行する可能性が高いが、日本展開の時期は不確定。",
+    "detected_at": "2026-05-13T02:34:41.152951",
+    "title_ja": "親向け監督ツール拡張、ティーンのアルゴリズム情報を可視化",
+    "relevance": "間接"
+  },
+  {
+    "item": {
+      "platform": "X",
+      "source_name": "X Developer Community Announcements",
+      "title": "X Ads API – Share Your Feedback!",
+      "url": "https://devcommunity.x.com/t/x-ads-api-share-your-feedback/265247",
+      "summary": "<p>Hello X Developer Community,</p>\n<p>We’re actively working on improving the <strong>X Ads API</strong> and want to hear directly from you — the developers, partners, and advertisers who build on and use it every day.</p>\n<p>Whether you’ve hit roadblocks or have ideas that would make your life easier, now is the perfect time to share. We’re collecting input through a dedicated feedback form <strong>and</strong> by reading replies in this thread.</p>\n<p><strong>We want to hear about:</strong></",
+      "published": "Wed, 13 May 2026 00:29:10 +0000"
+    },
+    "importance": "中",
+    "category": "計測・API",
+    "summary_ja": "XがAds API の改善に向けて、開発者・パートナー・広告主からのフィードバックを募集している。専用フォームとコミュニティスレッドで意見を受け付ける。",
+    "impact": "広告運用担当者にとって最も直結。API経由での広告配信・計測・自動化機能の改善要望が反映される可能性がある。キャンペーン担当者にはAPI利用がない場合は無関係。インフルエンサー施策担当者も同様に関連性は低い。",
+    "jp_status": "❓不明",
+    "jp_note": "X Ads API は日本を含む全世界で利用可能だが、本フィードバック募集が日本開発者・パートナーを明示的に対象としているかが不明。グローバル開発者コミュニティ向けのアナウンスと判断。",
+    "detected_at": "2026-05-13T02:34:44.446453",
+    "title_ja": "X Ads API – 開発者向けフィードバック募集",
+    "relevance": "直結"
+  },
+  {
+    "item": {
+      "platform": "業界動向",
+      "source_name": "Influencer Marketing Hub",
+      "title": "Resonate by Linqia",
+      "url": "https://influencermarketinghub.com/resonate-by-linqia/",
+      "summary": "<p><a href=\"https://influencermarketinghub.com\">Influencer Marketing Hub</a><br />\n<a href=\"https://influencermarketinghub.com/resonate-by-linqia/\">Resonate by Linqia</a></p>\n<div class=\"featured_image\"><img alt=\"Linqia\" class=\"attachment-medium size-medium wp-post-image\" height=\"300\" src=\"https://s.influencermarketinghub.com/imaginary/convert?type=webp&amp;url=https://influencermarketinghub.com/wp-content/uploads/2026/05/bdd8e53b-3smpzhjqqoza3afduqn9qaopoohgeytmnjdqaqpg.png\" width=\"300\" /></div",
+      "published": "Tue, 12 May 2026 14:13:05 +0000"
+    },
+    "importance": "低",
+    "category": "トレンド・業界動向",
+    "summary_ja": "インフルエンサーマーケティング業界メディアがLinqiaの新プラットフォーム「Resonate」を紹介しており、クリエイターエコノミーの周辺サービス動向を示す記事と推定される。",
+    "impact": "キャンペーン担当者・インフルエンサー施策担当者にとっては、クリエイター支援ツールの新展開として将来的に参考になる可能性がある。広告運用担当者への直接的な影響は限定的。",
+    "jp_status": "❓不明",
+    "jp_note": "業界メディアの分析記事であり、日本対応や地域限定情報の明記がないため不明。Linqiaが日本で利用可能なプラットフォームであるかは確認が必要。",
+    "detected_at": "2026-05-13T02:34:47.207831",
+    "title_ja": "Linqiaの新プラットフォーム「Resonate」",
+    "relevance": "間接"
+  },
+  {
+    "item": {
+      "platform": "業界動向",
+      "source_name": "Influencer Marketing Hub",
+      "title": "Top AI Tools for Creator Discovery",
+      "url": "https://influencermarketinghub.com/ai-tools-for-creator-discovery/",
+      "summary": "<p><a href=\"https://influencermarketinghub.com\">Influencer Marketing Hub</a><br />\n<a href=\"https://influencermarketinghub.com/ai-tools-for-creator-discovery/\">Top AI Tools for Creator Discovery</a></p>\n<div class=\"featured_image\"><img alt=\"Top AI Tools for Creator Discovery\" class=\"attachment-medium size-medium wp-post-image\" height=\"200\" src=\"https://s.influencermarketinghub.com/imaginary/convert?type=webp&amp;url=https://influencermarketinghub.com/wp-content/uploads/2026/05/060da00c-chatgpt-i",
+      "published": "Tue, 12 May 2026 09:17:25 +0000"
+    },
+    "importance": "中",
+    "category": "トレンド・業界動向",
+    "summary_ja": "インフルエンサーマーケティングハブがAIを活用したクリエイター発掘ツールの最新トレンドをまとめた記事。インフルエンサー施策担当者が効率的にクリエイターを選定・評価する際のAI活用方法を紹介している。",
+    "impact": "インフルエンサー施策担当者にとって、AI活用によるクリエイター発掘の生産性向上・効率化トレンドを理解できる。キャンペーン担当者にも、ターゲットに適したクリエイター選定の最新手法として参考になる可能性がある。広告運用担当者への直接的な影響は限定的。",
+    "jp_status": "❓不明",
+    "jp_note": "業界メディアの分析・トレンド記事のため地域限定情報なし。AI活用のベストプラクティスは地域不問で参考可能だが、各ツールの日本対応状況は記事内容次第で不明。",
+    "detected_at": "2026-05-13T02:34:50.819244",
+    "title_ja": "クリエイター発掘向けAIツール活用ガイド",
+    "relevance": "直結"
+  },
+  {
+    "item": {
+      "platform": "業界動向",
+      "source_name": "Social Media Examiner",
+      "title": "Upscaling Your People: Advanced AI Training",
+      "url": "https://www.socialmediaexaminer.com/upscaling-your-people-advanced-ai-training/",
+      "summary": "<img alt=\"Upscaling Your People: Advanced AI Training by Social Media Examiner\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"1080\" src=\"https://www.socialmediaexaminer.com/wp-content/uploads/2026/05/Upscaling-Your-People-Advanced-AI-Training-by-Social-Media-Examiner.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" width=\"1920\" /><p>Are your employees using AI every day but barely scratching the surface of what it can do? Have you invested in AI training only to watch people ",
+      "published": "Tue, 12 May 2026 10:00:00 +0000"
+    },
+    "importance": "低",
+    "category": "トレンド・業界動向",
+    "summary_ja": "Social Media Examinerが企業の従業員向けAI研修プログラムについて取り上げた記事。AIツールの活用を深掘りするための研修内容に関する業界トレンド情報。",
+    "impact": "キャンペーン担当者・インフルエンサー施策担当者・広告運用担当者いずれも、AI活用スキルの向上という周辺的なトレンド情報として参考になる可能性があるが、直接的な業務フローや施策実行には即座の影響なし。",
+    "jp_status": "❓不明",
+    "jp_note": "業界メディアの汎用的なAI研修トレンド記事。地域限定情報なし、日本での適用可否は不明。記事の要約が不完全で詳細な内容判定が困難。",
+    "detected_at": "2026-05-13T02:34:54.301066",
+    "title_ja": "従業員のAIスキル向上：高度なAI研修プログラム",
     "relevance": "間接"
   }
 ]
