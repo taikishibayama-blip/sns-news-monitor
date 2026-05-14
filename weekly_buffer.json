@@ -1,40 +1,6 @@
 [
   {
     "item": {
-      "platform": "X",
-      "source_name": "X Developer Community Announcements",
-      "title": "Important Update: X API Search Endpoints Migrating to New Search Index",
-      "url": "https://devcommunity.x.com/t/important-update-x-api-search-endpoints-migrating-to-new-search-index/264595",
-      "summary": "<p>Hello X Developer Community,</p>\n<p>The core X platform has migrated to a new Search Index which is aimed to significantly improve the Search experience on X.</p>\n<p>As part of this migration, we are retiring the legacy search index that has been powering the X API Search Endpoints. The X Developer Platform team has worked hard to make the transition to the new backend infrastructure as seamless as possible for developers.</p>\n<h3><a class=\"anchor\" href=\"https://devcommunity.x.com#p-511693-wh",
-      "published": "Mon, 04 May 2026 23:09:25 +0000"
-    },
-    "importance": "高",
-    "category": "API",
-    "summary_ja": "X APIの検索エンドポイントが新しい検索インデックスに移行します。開発者は既存の検索機能に影響が出る可能性があるため、対応が必要になる場合があります。",
-    "impact": "X API Search Endpointsを利用している広告管理ツール・分析ツール開発者は、新インデックスへの対応確認と互換性テストが緊急で必要です。",
-    "jp_status": "❓不明",
-    "jp_note": "アナウンスが開発者コミュニティ向けであり、日本特有の対応やロケーション制限の記載がないため。ただしX APIの変更は日本ユーザーにも影響する可能性が高い。",
-    "detected_at": "2026-05-05T07:33:40.204572"
-  },
-  {
-    "item": {
-      "platform": "Meta",
-      "source_name": "Meta Newsroom (about.fb.com)",
-      "title": "New AI-Powered Age Assurance Measures to Place Teens in Age-Appropriate Experiences",
-      "url": "https://about.fb.com/news/2026/05/ai-age-assurance-teens/",
-      "summary": "<div><img alt=\"\" class=\"attachment-large size-large wp-post-image\" height=\"501\" src=\"https://about.fb.com/wp-content/uploads/2026/05/AI-Age-Assurance_Thumbnail-1.jpg?fit=890%2C501\" style=\"margin-bottom: 15px;\" width=\"890\" /></div>\n<p>We’re strengthening our underage enforcement measures with AI to ensure young people have safe experiences online.</p>\n<p>The post <a href=\"https://about.fb.com/news/2026/05/ai-age-assurance-teens/\">New AI-Powered Age Assurance Measures to Place Teens in Age-Appropr",
-      "published": "Tue, 05 May 2026 11:00:40 +0000"
-    },
-    "importance": "高",
-    "category": "ポリシー",
-    "summary_ja": "MetaがAI技術を使った年齢確認システムを導入し、未成年ユーザーに安全な環境を提供する取り組みを強化しました。広告配信や機能へのアクセスが年齢に基づいて制限される可能性があります。",
-    "impact": "未成年ユーザーへのターゲット広告配信が制限される可能性があり、広告主の配信セグメント設定や効果測定への影響が予想される。",
-    "jp_status": "❓不明",
-    "jp_note": "提供されたコンテンツは要約のみで、詳細な実装范囲や地域別の展開スケジュールが明記されていない。日本での適用時期・方法は不明確。",
-    "detected_at": "2026-05-05T12:15:55.524169"
-  },
-  {
-    "item": {
       "platform": "YouTube",
       "source_name": "YouTube Official Blog",
       "title": "Creators take the spotlight at White House Correspondents' Weekend",
@@ -1302,6 +1268,177 @@
     "jp_note": "業界メディアの汎用的なAI研修トレンド記事。地域限定情報なし、日本での適用可否は不明。記事の要約が不完全で詳細な内容判定が困難。",
     "detected_at": "2026-05-13T02:34:54.301066",
     "title_ja": "従業員のAIスキル向上：高度なAI研修プログラム",
+    "relevance": "間接"
+  },
+  {
+    "item": {
+      "platform": "Instagram / Meta",
+      "source_name": "Meta Newsroom",
+      "title": "Introducing Instants: A New Way to Share in the Moment",
+      "url": "https://about.fb.com/news/2026/05/instants-share-in-the-moment/",
+      "summary": "<div><img alt=\"\" class=\"attachment-large size-large wp-post-image\" height=\"501\" src=\"https://about.fb.com/wp-content/uploads/2026/05/IG_Instants_A-New-Way-to-Share-in-the-Moment_Thumbnail.gif?fit=890%2C501\" style=\"margin-bottom: 15px;\" width=\"890\" /></div>\n<p>Share authentic moments as they’re happening with your Close Friends or mutual followers with just a tap.</p>\n<p>The post <a href=\"https://about.fb.com/news/2026/05/instants-share-in-the-moment/\">Introducing Instants: A New Way to Share in ",
+      "published": "Wed, 13 May 2026 16:00:19 +0000"
+    },
+    "importance": "中",
+    "category": "UI・体験変更",
+    "summary_ja": "Instagramが新機能「Instants」をリリースし、Close Friendsと相互フォロワーに対してリアルタイムで瞬間をシェアできるようになった。タップ一つで認証度の高いコンテンツを即座に配信可能な機能である。",
+    "impact": "A) キャンペーン担当者：Close Friends限定配信により高エンゲージメント層への直接リーチが可能になり、オーガニック戦略が多層化される。B) インフルエンサー施策担当者：クリエイター向けのストーリー類似機能として、ファン向けの即時性の高いコンテンツ配信が増加し、インフルエンサーの運用幅が広がる。C) 広告運用担当者：新フォーマットの広告配信対応やアトリビューション設定が今後必要となる可能性があり、準備が必要。",
+    "jp_status": "❓不明",
+    "jp_note": "Meta Newsroomでの公式発表だが、ロケーション明記なし。Instagramは世界展開プラットフォームのため、日本を含む主要市場への段階的ロールアウトが想定されるが、具体的な日本対応時期は不明。",
+    "detected_at": "2026-05-14T02:35:17.412705",
+    "title_ja": "Instants登場：その瞬間をシェアする新機能",
+    "relevance": "直結"
+  },
+  {
+    "item": {
+      "platform": "Instagram / Meta",
+      "source_name": "Meta Newsroom",
+      "title": "Introducing a Completely Private Way to Chat With AI",
+      "url": "https://about.fb.com/news/2026/05/incognito-chat-whatsapp-meta-ai/",
+      "summary": "<div><img alt=\"\" class=\"attachment-large size-large wp-post-image\" height=\"501\" src=\"https://about.fb.com/wp-content/uploads/2026/05/Incognito-Chat-with-Meta-AI_Thumbnail.jpg?fit=890%2C501\" style=\"margin-bottom: 15px;\" width=\"890\" /></div>\n<p>Incognito Chat lets you talk to Meta AI in a way that is invisible to anyone else.</p>\n<p>The post <a href=\"https://about.fb.com/news/2026/05/incognito-chat-whatsapp-meta-ai/\">Introducing a Completely Private Way to Chat With AI</a> appeared first on <a hre",
+      "published": "Wed, 13 May 2026 14:45:19 +0000"
+    },
+    "importance": "低",
+    "category": "UI・体験変更",
+    "summary_ja": "MetaはMeta AIとの会話を他者から見えないようにする「Incognito Chat」機能を発表した。プライバシー保護を重視したAI対話機能の拡張である。",
+    "impact": "SNSキャンペーン担当者・インフルエンサー施策担当者・広告運用担当者いずれにとっても、直接的な業務影響は限定的。今後AI活用の拡大とともに、ユーザー行動分析やAI関連施策検討の参考情報となる可能性がある。",
+    "jp_status": "❓不明",
+    "jp_note": "Meta Newsroomでの公式発表だが、日本含む具体的なロケーション情報、ローンチ時期の記載なし。AI機能の性質上、グローバル展開が見込まれるが確実性を欠く。",
+    "detected_at": "2026-05-14T02:35:20.740142",
+    "title_ja": "Meta AI とプライベートに会話できる「Incognito Chat」を発表",
+    "relevance": "間接"
+  },
+  {
+    "item": {
+      "platform": "Instagram / Meta",
+      "source_name": "Meta Newsroom",
+      "title": "Celebrating African Cinema With the ‘Made by Africa, Loved by the World’ 2026 Campaign",
+      "url": "https://about.fb.com/news/2026/05/celebrating-african-cinema-with-the-made-by-africa-loved-by-the-world-2026-campaign/",
+      "summary": "<div><img alt=\"\" class=\"attachment-large size-large wp-post-image\" height=\"366\" src=\"https://about.fb.com/wp-content/uploads/2026/05/Nigeria-Banner.jpg?fit=960%2C366\" style=\"margin-bottom: 15px;\" width=\"960\" /></div>\n<p>In celebration of Africa Day on May 25, Facebook has launched the sixth edition of its pan-African campaign, ‘Made by Africa, loved by the world: Where stories spark community.’ This year’s campaign shifts the spotlight to African cinema.  The 2026 campaign features a five-part v",
+      "published": "Wed, 13 May 2026 09:00:35 +0000"
+    },
+    "importance": "低",
+    "category": "トレンド・業界動向",
+    "summary_ja": "Metaがアフリカ・デーを記念して、アフリカ映画にスポットを当てた『Made by Africa, Loved by the World』キャンペーンの第6弾を展開。アフリカのクリエイターとコンテンツを発信する地域キャンペーン。",
+    "impact": "キャンペーン担当者にとってはアフリカ向けコンテンツ施策の参考例となるが、日本のマーケッターへの直接的な運用影響は限定的。インフルエンサー施策担当者はアフリカのクリエイターを視野に入れる場合の情報源として参考可能。広告運用担当者への影響はほぼなし。",
+    "jp_status": "❓不明",
+    "jp_note": "アフリカ地域向けの期間限定キャンペーンであり、日本展開に関する言及なし。業界トレンド情報として参考価値あるが、日本市場への直接適用は不明。",
+    "detected_at": "2026-05-14T02:35:24.182733",
+    "title_ja": "アフリカ映画を祝う『Made by Africa, Loved by the World』2026キャンペーン",
+    "relevance": "間接"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Official Blog",
+      "title": "Behind the scenes: Alex Cooper's next era",
+      "url": "https://blog.youtube/creator-and-artist-stories/behind-the-scenes-alex-cooper/",
+      "summary": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Screenshot_2026-05-13_at_11.44..max-600x600.format-webp.webp\" />Discover how the Call Her Daddy creator is expanding her Unwell Network with four upcoming shows on YouTube.",
+      "published": "Wed, 13 May 2026 23:30:00 +0000"
+    },
+    "importance": "中",
+    "category": "トレンド・業界動向",
+    "summary_ja": "YouTubeの公式ブログで、人気クリエイターAlex Cooperが自身のメディアネットワーク「Unwell Network」をYouTubeで拡大し、4つの新番組をローンチすることが紹介されました。クリエイターエコノミーとプラットフォーム活用の新しい事例です。",
+    "impact": "キャンペーン担当者にはメジャークリエイターのネットワーク構築事例として参考になります。インフルエンサー施策担当者には、大型クリエイターのマルチ番組展開と収益化モデルの事例として、戦略的なコラボ機会を検討する際の参考になる動向です。広告運用担当者にはプレミアムコンテンツへの出稿機会として関心があります。",
+    "jp_status": "❓不明",
+    "jp_note": "YouTubeの公式ブログの事例紹介記事であり、特定地域限定の記載はありません。Alex Cooperは米国ベースのクリエイターですが、クリエイターエコノミー全体のトレンド情報として業界的には日本でも参考価値があります。ただし日本への具体的展開可否の明記がないため不明としました。",
+    "detected_at": "2026-05-14T02:35:28.816041",
+    "title_ja": "Alex Cooperが「Unwell Network」を拡大、YouTubeで4つの新番組を展開",
+    "relevance": "間接"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Official Blog",
+      "title": "Behind the scenes: Jesser’s sports media empire",
+      "url": "https://blog.youtube/creator-and-artist-stories/behind-the-scenes-jesser/",
+      "summary": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/NJR56375.max-600x600.format-webp.webp\" />From 2K skits to global series, how Jesse Riedel built a modern sports entertainment empire.",
+      "published": "Wed, 13 May 2026 23:30:00 +0000"
+    },
+    "importance": "低",
+    "category": "トレンド・業界動向",
+    "summary_ja": "YouTubeが有名クリエイターJesser（Jesse Riedel）のコンテンツ成功事例を紹介するもので、2Kゲーム関連スキットから国際的なスポーツエンタメシリーズへの展開過程をハイライトしている。",
+    "impact": "A層（キャンペーン担当）: スポーツエンタメジャンルのコンテンツ戦略参考例となり、バイラルコンテンツの成長パターンを学べます。B層（インフルエンサー施策担当）: クリエイター事例研究として重要で、スケーラビリティのあるコンテンツビジネスモデルを理解するための参考情報。C層（広告運用担当）: 直接的な広告機能変更ではなく、スポーツメディア層向けターゲティング戦略の参考材料となる可能性あり。",
+    "jp_status": "❓不明",
+    "jp_note": "YouTube公式ブログの個別クリエイター事例紹介であり、ロケーション限定情報ではなく、グローバル読者向けコンテンツ。ただしJesserが日本で展開中かは明記されていないため、日本市場への直接的な関連性は不明。",
+    "detected_at": "2026-05-14T02:35:33.695079",
+    "title_ja": "Jesserのスポーツメディア帝国に迫る：2Kコンテンツから世界展開まで",
+    "relevance": "間接"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Official Blog",
+      "title": "Everything we announced at YouTube Brandcast 2026",
+      "url": "https://blog.youtube/news-and-events/brandcast-2026-highlights/",
+      "summary": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Brandcast_2026_Key_Art.max-600x600.format-webp.webp\" />New Creator Shows, frictionless checkout on connected TVs, affiliate partnership ads, and more are here to help brands connect with viewers.",
+      "published": "Wed, 13 May 2026 23:30:00 +0000"
+    },
+    "importance": "高",
+    "category": "クリエイター・インフルエンサー機能",
+    "summary_ja": "YouTubeが年次イベント「Brandcast 2026」で、新クリエイター番組機能、接続TVでのシームレスなチェックアウト、アフィリエイトパートナーシップ広告など複数の新機能を発表しました。ブランドとクリエイターがより効果的に視聴者と繋がるための施策群です。",
+    "impact": "キャンペーン担当者：新番組フォーマット活用によるリーチ拡大機会が増加。インフルエンサー施策担当者：アフィリエイト広告機能やクリエイター番組は収益化オプション拡充で、インフルエンサー交渉時の価値提案が強化。広告運用担当者：TV連携チェックアウトやアフィリエイト広告フォーマットは新しい配信・計測オプションとなり、キャンペーン設計の幅が広がる。",
+    "jp_status": "❓不明",
+    "jp_note": "YouTube Brandcast 2026は世界的なイベントだが、各機能の日本展開時期・対応状況は公式発表に記載されていません。通常YouTubeの主要機能は日本含む主要市場に展開されますが、確実性がないため不明と判定。日本オフィシャルブログでの後続発表を待つ必要があります。",
+    "detected_at": "2026-05-14T02:35:38.905482",
+    "title_ja": "YouTube Brandcast 2026：クリエイター番組、TV決済、アフィリエイト広告など新機能発表",
+    "relevance": "直結"
+  },
+  {
+    "item": {
+      "platform": "YouTube",
+      "source_name": "YouTube Official Blog",
+      "title": "New creator shows coming exclusively to YouTube from Dude Perfect, Trevor Noah, Quen Blackwell and more",
+      "url": "https://blog.youtube/news-and-events/new-youtube-series-2026/",
+      "summary": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Image_20260513_200049_069_eZ6GS.max-600x600.format-webp.webp\" />Discover the highly anticipated new YouTube series coming in 2026 and 2027, from creators Dude Perfect, Alex Cooper, Trevor Noah, Johnny Harris, Erling Haaland & more.",
+      "published": "Wed, 13 May 2026 23:30:00 +0000"
+    },
+    "importance": "中",
+    "category": "トレンド・業界動向",
+    "summary_ja": "YouTubeが2026～2027年に配信予定の新番組シリーズを発表し、Dude Perfect、Trevor Noah、Johnny Harrisなど大型クリエイターが参加予定。プラットフォームの独占コンテンツ戦略を示すもの。",
+    "impact": "キャンペーン担当者には大型クリエイターのコンテンツスケジュール情報として参考になり、インフルエンサー施策担当者には注目クリエイターの活動動向やYouTube独占契約の傾向をトレンド把握できる。広告運用担当者には主要クリエイター番組周辺での広告配置機会や視聴者ボリューム予測の材料となる。",
+    "jp_status": "❓不明",
+    "jp_note": "YouTubeの公式ブログ記事だが、日本での放映・配信対象地域が明記されていない。大型クリエイター番組は通常グローバル配信されるが、確定情報がないため不明と判定。",
+    "detected_at": "2026-05-14T02:35:43.053110",
+    "title_ja": "YouTubeが2026～2027年に配信予定の新番組を発表、Dude Perfectなど人気クリエイター参加",
+    "relevance": "間接"
+  },
+  {
+    "item": {
+      "platform": "業界動向",
+      "source_name": "Sprout Social Insights",
+      "title": "How to build a social media calendar that actually drives strategy",
+      "url": "https://sproutsocial.com/insights/social-media-calendar/",
+      "summary": "<p>Managing multiple social media accounts means constant decisions: what to post, when to post and how to keep every platform aligned with your broader <a href=\"https://sproutsocial.com/insights/social-media-calendar/\">Read more...</a></p>\n<p>The post <a href=\"https://sproutsocial.com/insights/social-media-calendar/\">How to build a social media calendar that actually drives strategy</a> appeared first on <a href=\"https://sproutsocial.com/insights\">Sprout Social</a>.</p>",
+      "published": "Wed, 13 May 2026 18:05:56 +0000"
+    },
+    "importance": "中",
+    "category": "トレンド・業界動向",
+    "summary_ja": "複数のソーシャルメディアアカウント管理における投稿内容・タイミング・プラットフォーム間の統一性を確保するためのカレンダー構築ベストプラクティスを解説したガイド記事。",
+    "impact": "キャンペーン担当者にとっては投稿計画・スケジューリングの最適化方法の参考になります。インフルエンサー施策担当者にはコンテンツ配信タイミングの一元管理が関連し、広告運用担当者にはメディアプランニングとの連携効率化が参考情報として有用です。",
+    "jp_status": "❓不明",
+    "jp_note": "業界メディア（Sprout Social）のベストプラクティス解説記事であり、地域限定情報ではありませんが、日本での具体的な適用状況は記事内容から不明。",
+    "detected_at": "2026-05-14T02:35:46.560658",
+    "title_ja": "戦略を実現するソーシャルメディアカレンダーの構築方法",
+    "relevance": "間接"
+  },
+  {
+    "item": {
+      "platform": "業界動向",
+      "source_name": "Sprout Social Insights",
+      "title": "Social intelligence isn’t the future, it’s right now",
+      "url": "https://sproutsocial.com/insights/social-media-intelligence/",
+      "summary": "<p>Social media used to be straightforward. Brands posted content, reached audiences, handled the occasional customer service issue. If someone had a problem with your <a href=\"https://sproutsocial.com/insights/social-media-intelligence/\">Read more...</a></p>\n<p>The post <a href=\"https://sproutsocial.com/insights/social-media-intelligence/\">Social intelligence isn&#8217;t the future, it&#8217;s right now</a> appeared first on <a href=\"https://sproutsocial.com/insights\">Sprout Social</a>.</p>",
+      "published": "Wed, 13 May 2026 14:00:22 +0000"
+    },
+    "importance": "中",
+    "category": "トレンド・業界動向",
+    "summary_ja": "業界メディアが、SNSマーケティング担当者にとってソーシャルインテリジェンス（データ分析・市場洞察）がもはや将来のスキルではなく、現在の必須能力であることを指摘する記事。ブランドのSNS運用は単なるコンテンツ投稿から、データドリブンな意思決定へシフトしている。",
+    "impact": "A) キャンペーン担当者は、オーガニック投稿の効果測定やオーディエンスインサイトに基づいた戦略立案の重要性を認識すべき。B) インフルエンサー施策担当者は、クリエイター選定やコラボ効果の測定にデータ活用が欠かせないことを示唆。C) 広告運用担当者は、キャンペーン計測やROI分析、オーディエンス分析の深度化が競争優位性になることを認識できる。",
+    "jp_status": "❓不明",
+    "jp_note": "業界メディアの分析記事であり、特定地域限定情報ではないが、記事本体が「Read more...」で省略されており、具体的な日本展開予定やプラットフォーム仕様変更の記載がないため、確認できず。",
+    "detected_at": "2026-05-14T02:35:51.479996",
+    "title_ja": "ソーシャルインテリジェンスは未来ではなく今、必須スキル",
     "relevance": "間接"
   }
 ]
