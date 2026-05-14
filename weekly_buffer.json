@@ -1440,5 +1440,24 @@
     "detected_at": "2026-05-14T02:35:51.479996",
     "title_ja": "ソーシャルインテリジェンスは未来ではなく今、必須スキル",
     "relevance": "間接"
+  },
+  {
+    "item": {
+      "platform": "Instagram / Meta",
+      "source_name": "Meta Newsroom",
+      "title": "From Scroll to Chat to Cart: Trends Reshaping How India Shops",
+      "url": "https://about.fb.com/news/2026/05/from-scroll-to-chat-to-cart-trends-reshaping-how-india-shops/",
+      "summary": "<div><img alt=\"\" class=\"attachment-large size-large wp-post-image\" height=\"501\" src=\"https://about.fb.com/wp-content/uploads/2026/05/NRP-2.png?fit=890%2C501\" style=\"margin-bottom: 15px;\" width=\"890\" /></div>\n<p>On the sidelines of the 2026 Meta Marketing Summit E-Commerce edition, we are sharing key trends shaping the future of shopping in India — from the rise of AI-powered discovery and video-first commerce to the growing role of conversational messaging in driving transactions.</p>\n<p>The pos",
+      "published": "Thu, 14 May 2026 06:27:46 +0000"
+    },
+    "importance": "中",
+    "category": "トレンド・業界動向",
+    "summary_ja": "Meta が 2026 年のマーケティングサミット E-Commerce 版でインドのショッピングトレンドを発表。AI 活用の商品発見、動画ファースト、会話型メッセージングが取引を促進する新しい購買体験へシフトしている。",
+    "impact": "キャンペーン担当者は動画コンテンツ・会話型機能を活用した施策への転換を検討する参考になります。インフルエンサー施策担当者はDM・メッセージング経由の商品紹介機会の拡大に注視。広告運用担当者はAI発見機能・会話型コマース対応の広告フォーマットが今後提供される可能性に備える必要があります。",
+    "jp_status": "❓不明",
+    "jp_note": "インド市場の動向記事のため、日本展開時期・対応予定が明記されていません。ただし Meta マーケティングサミットで発表されたグローバルトレンドの可能性があり、日本への波及を注視する価値はあります。",
+    "detected_at": "2026-05-14T08:30:58.615862",
+    "title_ja": "インドのショッピング変革：スクロールからチャットまで、AI活用の新トレンド",
+    "relevance": "間接"
   }
 ]
