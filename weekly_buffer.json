@@ -1,23 +1,6 @@
 [
   {
     "item": {
-      "platform": "YouTube",
-      "source_name": "YouTube Official Blog",
-      "title": "Creators take the spotlight at White House Correspondents' Weekend",
-      "url": "https://blog.youtube/news-and-events/youtube-creators-white-house-correspondents-weekend/",
-      "summary": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/TK4L6677.max-600x600.format-webp.webp\" />Independent news creators joined events in Washington D.C. to discuss the evolution of the free press. From advocating for artist rights on Capitol Hill to attending the…",
-      "published": "Wed, 06 May 2026 16:00:00 +0000"
-    },
-    "importance": "低",
-    "category": "その他",
-    "summary_ja": "YouTubeのクリエイターがホワイトハウス記者週間のイベントに参加し、報道の自由や著作権について議論しました。これはYouTubeが業界イベントでの活動を紹介するニュース記事です。",
-    "impact": "広告運用やプラットフォーム機能に直接的な影響はありません。",
-    "jp_status": "❓不明",
-    "jp_note": "イベント参加の告知記事であり、日本対応状況の判断材料がありません。日本のクリエイターの参加有無も記載されていません。",
-    "detected_at": "2026-05-06T16:12:38.618126"
-  },
-  {
-    "item": {
       "platform": "Meta",
       "source_name": "Meta Newsroom (about.fb.com)",
       "title": "Meta’s Position on Canada’s Bill C-22",
@@ -1458,6 +1441,101 @@
     "jp_note": "インド市場の動向記事のため、日本展開時期・対応予定が明記されていません。ただし Meta マーケティングサミットで発表されたグローバルトレンドの可能性があり、日本への波及を注視する価値はあります。",
     "detected_at": "2026-05-14T08:30:58.615862",
     "title_ja": "インドのショッピング変革：スクロールからチャットまで、AI活用の新トレンド",
+    "relevance": "間接"
+  },
+  {
+    "item": {
+      "platform": "業界動向",
+      "source_name": "Influencer Marketing Hub",
+      "title": "Is MrBeast Building a Creator Media Network?",
+      "url": "https://influencermarketinghub.com/mrbeast-building-a-creator-media-network/",
+      "summary": "<p><a href=\"https://influencermarketinghub.com\">Influencer Marketing Hub</a><br />\n<a href=\"https://influencermarketinghub.com/mrbeast-building-a-creator-media-network/\">Is MrBeast Building a Creator Media Network?</a></p>\n<div class=\"featured_image\"><img alt=\"Is MrBeast Building a Creator Media Network?\" class=\"attachment-medium size-medium wp-post-image\" height=\"200\" src=\"https://s.influencermarketinghub.com/imaginary/convert?type=webp&amp;url=https://influencermarketinghub.com/wp-content/uplo",
+      "published": "Thu, 14 May 2026 13:37:59 +0000"
+    },
+    "importance": "中",
+    "category": "トレンド・業界動向",
+    "summary_ja": "大型クリエイターのMrBeastがクリエイターメディアネットワークの構築を検討しており、クリエイターエコノミーの集約化・プロフェッショナル化の新たな事例として注目されている。",
+    "impact": "キャンペーン担当：新しいクリエイター集約メディアの台頭により、パートナーシップやコラボレーション機会の多様化を視野に。インフルエンサー施策担当：大手クリエイター主導のネットワーク構築が進めば、新たなコラボレーション・サポート制度の登場により、インフルエンサー選定や契約形態が変わる可能性。広告運用担当：新規メディアチャネルとしての価値評価や、広告配信・計測の対象先拡大の可能性は限定的。",
+    "jp_status": "❓不明",
+    "jp_note": "業界メディアの分析記事であり、MrBeastのプロジェクトが日本展開を明示していないため地域情報不明。クリエイターエコノミートレンドとしての参考情報。",
+    "detected_at": "2026-05-15T02:35:13.215956",
+    "title_ja": "MrBeastがクリエイターメディアネットワークを構築中？",
+    "relevance": "間接"
+  },
+  {
+    "item": {
+      "platform": "業界動向",
+      "source_name": "Social Media Examiner",
+      "title": "YouTube Tools That Scale Attention",
+      "url": "https://www.socialmediaexaminer.com/youtube-tools-that-scale-attention/",
+      "summary": "<img alt=\"YouTube Tools That Scale Attention by Social Media Examiner\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"1080\" src=\"https://www.socialmediaexaminer.com/wp-content/uploads/2026/05/YouTube-Tools-That-Scale-Attention-by-Social-Media-Examiner.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" width=\"1920\" /><p>Is your YouTube content failing to gain traction? Wondering if YouTube has tools and features you’re not using to full advantage? In this article, you'll learn ho",
+      "published": "Thu, 14 May 2026 10:00:00 +0000"
+    },
+    "importance": "中",
+    "category": "トレンド・業界動向",
+    "summary_ja": "Social Media ExaminerがYouTubeのコンテンツリーチ最大化に活用できるツールと機能について解説した業界分析記事。コンテンツ制作者がより効果的に視聴者を獲得するための機能活用法を紹介している。",
+    "impact": "キャンペーン担当者はYouTubeオーガニック配信戦略の参考になる可能性がある。インフルエンサー施策担当者はクリエイター向けYouTube機能の理解が深まる。広告運用担当者への直接的な影響は限定的だが、YouTubeプラットフォーム全体のトレンド把握の一助となる。",
+    "jp_status": "❓不明",
+    "jp_note": "業界メディアのトレンド分析記事であり、特定地域の展開情報が記載されていない。記事内容がYouTubeの汎用的なツール・機能解説と推測されるため、日本対応状況は不明。",
+    "detected_at": "2026-05-15T02:35:17.027073",
+    "title_ja": "YouTubeの注目度スケーリングツール活用ガイド",
+    "relevance": "間接"
+  },
+  {
+    "item": {
+      "platform": "業界動向",
+      "source_name": "Sprout Social Insights",
+      "title": "How to get more views on TikTok: Master signals to win loyal followers",
+      "url": "https://sproutsocial.com/insights/how-to-get-more-views-on-tiktok/",
+      "summary": "<p>More TikTok views mean more reach, more engagement and more opportunities to grow your brand. The path to getting them starts with understanding how <a href=\"https://sproutsocial.com/insights/how-to-get-more-views-on-tiktok/\">Read more...</a></p>\n<p>The post <a href=\"https://sproutsocial.com/insights/how-to-get-more-views-on-tiktok/\">How to get more views on TikTok: Master signals to win loyal followers</a> appeared first on <a href=\"https://sproutsocial.com/insights\">Sprout Social</a>.</p>",
+      "published": "Thu, 14 May 2026 17:10:01 +0000"
+    },
+    "importance": "中",
+    "category": "アルゴリズム・リーチ",
+    "summary_ja": "Sprout Socialが公開したTikTokのビュー増加戦略に関するガイド記事。アルゴリズムシグナルの理解を通じてリーチと エンゲージメント拡大の方法論を解説しています。",
+    "impact": "キャンペーン担当者はオーガニックリーチ最大化のためのアルゴリズム理解が得られます。インフルエンサー施策担当者はクリエイターのビュー獲得戦略を支援する際の参考になります。広告運用担当者にとっては直接的な影響は限定的ですが、プラットフォームの動作メカニズム理解が補助的に役立つ可能性があります。",
+    "jp_status": "❓不明",
+    "jp_note": "業界メディア（Sprout Social）のトレンド分析記事で、地域限定情報の記載がありません。内容はTikTokグローバル仕様の解説と推定されますが、日本での適用可能性は個別検証が必要です。",
+    "detected_at": "2026-05-15T02:35:21.097095",
+    "title_ja": "TikTokのビューを増やす方法：アルゴリズムシグナルを理解してファンを獲得",
+    "relevance": "直結"
+  },
+  {
+    "item": {
+      "platform": "業界動向",
+      "source_name": "Sprout Social Insights",
+      "title": "Social media ROI statistics marketers need to know in 2026",
+      "url": "https://sproutsocial.com/insights/social-media-marketing-roi-statistics/",
+      "summary": "<p>Social media ROI reports often present a challenge: a disconnect between available metrics and actual business impact. Reach and impressions don&#8217;t always equal immediate ROI, <a href=\"https://sproutsocial.com/insights/social-media-marketing-roi-statistics/\">Read more...</a></p>\n<p>The post <a href=\"https://sproutsocial.com/insights/social-media-marketing-roi-statistics/\">Social media ROI statistics marketers need to know in 2026</a> appeared first on <a href=\"https://sproutsocial.com/in",
+      "published": "Thu, 14 May 2026 14:23:05 +0000"
+    },
+    "importance": "中",
+    "category": "トレンド・業界動向",
+    "summary_ja": "Sprout Socialが2026年のSNSマーケティングROI動向を分析した記事。リーチやインプレッションと実際のビジネスインパクトのギャップが課題として指摘されている。",
+    "impact": "キャンペーン担当者はROI測定方法を見直し、リーチ以外のKPI設定が必要になる可能性。広告運用担当者はコンバージョン・計測設定の重要性が強化される。インフルエンサー施策担当者はブランドコラボの成果測定方法の改善が求められる。",
+    "jp_status": "❓不明",
+    "jp_note": "業界メディアの分析記事であり、地域限定情報の記載がなく、グローバルトレンド記事のため日本対応状況が明確でない。ただし日本のマーケターにも汎用的に参考となる業界動向。",
+    "detected_at": "2026-05-15T02:35:24.648156",
+    "title_ja": "2026年のSNSマーケティングROI統計：マーケター必読",
+    "relevance": "間接"
+  },
+  {
+    "item": {
+      "platform": "業界動向",
+      "source_name": "Sprout Social Insights",
+      "title": "The importance of social media marketing: 8 stats that prove social’s role in business success",
+      "url": "https://sproutsocial.com/insights/importance-of-social-media-marketing-in-business/",
+      "summary": "<p>Social media has solidified its place as a key component of the customer journey. It shapes how people discover your brand and determines who <a href=\"https://sproutsocial.com/insights/importance-of-social-media-marketing-in-business/\">Read more...</a></p>\n<p>The post <a href=\"https://sproutsocial.com/insights/importance-of-social-media-marketing-in-business/\">The importance of social media marketing: 8 stats that prove social’s role in business success</a> appeared first on <a href=\"https://",
+      "published": "Wed, 13 May 2026 19:00:29 +0000"
+    },
+    "importance": "中",
+    "category": "トレンド・業界動向",
+    "summary_ja": "Sprout Socialが公表した業界統計レポート。ソーシャルメディアが顧客ジャーニーにおける重要な役割を果たし、ブランド認知と購買決定に影響することを8つのデータで実証している。",
+    "impact": "キャンペーン担当者：SNS投稿の戦略的価値を経営陣に説明する際の根拠データとして活用可能。インフルエンサー施策担当者：クリエイター施策の投資対効果を示す業界データとして参考になる。広告運用担当者：ソーシャル広告の位置付けを再確認し、予算配分の根拠を強化できる。",
+    "jp_status": "❓不明",
+    "jp_note": "業界メディアの分析記事のため、特定の地域限定情報ではなく、グローバルトレンド分析。日本での適用可能性は高いが、地域別データの詳細は記事内容未確認のため不明と判定。",
+    "detected_at": "2026-05-15T02:35:28.652296",
+    "title_ja": "ソーシャルメディアマーケティングの重要性：ビジネス成功を証明する8つの統計",
     "relevance": "間接"
   }
 ]
