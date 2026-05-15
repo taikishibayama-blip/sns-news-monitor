@@ -1537,5 +1537,24 @@
     "detected_at": "2026-05-15T02:35:28.652296",
     "title_ja": "ソーシャルメディアマーケティングの重要性：ビジネス成功を証明する8つの統計",
     "relevance": "間接"
+  },
+  {
+    "item": {
+      "platform": "Instagram / Meta",
+      "source_name": "Meta Newsroom",
+      "title": "Introducing Business AI on WhatsApp for Small Businesses in India",
+      "url": "https://about.fb.com/news/2026/05/introducing-business-ai-on-whatsapp-for-small-businesses-in-india/",
+      "summary": "<div><img alt=\"\" class=\"attachment-large size-large wp-post-image\" height=\"501\" src=\"https://about.fb.com/wp-content/uploads/2026/05/English-US-WA-Biz-AI-Onboarding-key-steps.jpg?fit=890%2C501\" style=\"margin-bottom: 15px;\" width=\"890\" /></div>\n<p>To enable small businesses with AI-powered customer support directly into the WhatsApp Business app, we've launched Business AI in India.</p>\n<p>The post <a href=\"https://about.fb.com/news/2026/05/introducing-business-ai-on-whatsapp-for-small-businesses",
+      "published": "Fri, 15 May 2026 04:59:51 +0000"
+    },
+    "importance": "低",
+    "category": "その他",
+    "summary_ja": "MetaがインドでWhatsApp Business AIを立ち上げ、小規模企業向けにAI搭載カスタマーサポート機能を提供開始した。",
+    "impact": "キャンペーン担当者・インフルエンサー施策担当者・広告運用担当者にとって、直接的な業務影響は限定的だが、WhatsAppのビジネス機能拡充動向として参考情報となる可能性がある。",
+    "jp_status": "❓不明",
+    "jp_note": "インド限定ローンチであり、日本展開予定の記載なし。業界メディアではなくMeta公式発表だが、日本対応可否が明示されていない。",
+    "detected_at": "2026-05-15T08:42:36.125133",
+    "title_ja": "インドの小規模企業向けWhatsApp Business AIを発表",
+    "relevance": "間接"
   }
 ]
